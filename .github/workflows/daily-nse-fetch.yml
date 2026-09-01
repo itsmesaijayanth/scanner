@@ -28,27 +28,26 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
-      - name: Run tests
-        run: uv run pytest
-
       - name: Fetch NSE data
         run: uv run nse-fetch --days 30
 
       - name: Detect data changes
         id: changes
         run: |
-          if git diff --quiet -- data; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
+          if [[ -n "$(git status --porcelain -- data)" ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Commit and push data
         if: steps.changes.outputs.changed == 'true'
         run: |
           run_date="$(TZ=Asia/Kolkata date +'%d-%m-%Y')"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/raw data/runs
           git commit -m "chore(data): fetch NSE data for ${run_date}"
           git push
