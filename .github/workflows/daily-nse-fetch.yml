@@ -5,6 +5,8 @@ on:
     # GitHub cron is UTC. 11:00 UTC is 4:30 PM Asia/Kolkata.
     - cron: "0 11 * * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [nse-fetch-trigger]
 
 permissions:
   contents: write
