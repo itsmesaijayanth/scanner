@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "NESTLEIND",
+  "window": {
+    "start_date": "07-09-2021",
+    "end_date": "07-10-2021",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "14-09-2021",
+      "price": 20609.15,
+      "distance_to_current_trading_rows": 17
+    },
+    "monthly_low": {
+      "date": "07-10-2021",
+      "price": 18955.35,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "07-10-2021",
+      "open": 19200.8,
+      "high": 19304.2,
+      "low": 18955.35,
+      "close": 19045.65
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "07-09-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 20166.15,
+        "high": 20392.7,
+        "low": 20166.15,
+        "close": 20368.45
+      },
+      {
+        "date": "22-09-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 20173.85,
+        "high": 20173.85,
+        "low": 19810.1,
+        "close": 19925.2
+      },
+      {
+        "date": "27-09-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 19900.0,
+        "high": 19900.0,
+        "low": 19601.1,
+        "close": 19642.2
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 20609.15
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 18955.35
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 18955.35
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "07-09-2021",
+      "open": 20166.15,
+      "high": 20392.7,
+      "low": 20166.15,
+      "close": 20368.45
+    },
+    {
+      "date": "08-09-2021",
+      "open": 20300.0,
+      "high": 20530.0,
+      "low": 19785.0,
+      "close": 19839.6
+    },
+    {
+      "date": "09-09-2021",
+      "open": 19910.0,
+      "high": 20525.0,
+      "low": 19840.4,
+      "close": 20457.2
+    },
+    {
+      "date": "13-09-2021",
+      "open": 20300.0,
+      "high": 20500.0,
+      "low": 20230.0,
+      "close": 20452.25
+    },
+    {
+      "date": "14-09-2021",
+      "open": 20450.0,
+      "high": 20609.15,
+      "low": 20180.0,
+      "close": 20230.45
+    },
+    {
+      "date": "15-09-2021",
+      "open": 20369.85,
+      "high": 20370.0,
+      "low": 20087.9,
+      "close": 20119.2
+    },
+    {
+      "date": "16-09-2021",
+      "open": 20106.05,
+      "high": 20241.7,
+      "low": 19970.0,
+      "close": 20027.85
+    },
+    {
+      "date": "17-09-2021",
+      "open": 20155.0,
+      "high": 20299.0,
+      "low": 20100.05,
+      "close": 20175.7
+    },
+    {
+      "date": "20-09-2021",
+      "open": 20125.0,
+      "high": 20386.0,
+      "low": 20101.0,
+      "close": 20322.6
+    },
+    {
+      "date": "21-09-2021",
+      "open": 20200.0,
+      "high": 20330.0,
+      "low": 20002.15,
+      "close": 20189.55
+    },
+    {
+      "date": "22-09-2021",
+      "open": 20173.85,
+      "high": 20173.85,
+      "low": 19810.1,
+      "close": 19925.2
+    },
+    {
+      "date": "23-09-2021",
+      "open": 20000.0,
+      "high": 20121.0,
+      "low": 19820.0,
+      "close": 19839.0
+    },
+    {
+      "date": "24-09-2021",
+      "open": 19927.0,
+      "high": 19980.0,
+      "low": 19800.0,
+      "close": 19864.25
+    },
+    {
+      "date": "27-09-2021",
+      "open": 19900.0,
+      "high": 19900.0,
+      "low": 19601.1,
+      "close": 19642.2
+    },
+    {
+      "date": "28-09-2021",
+      "open": 19690.0,
+      "high": 19718.65,
+      "low": 19459.05,
+      "close": 19544.75
+    },
+    {
+      "date": "29-09-2021",
+      "open": 19544.75,
+      "high": 19700.0,
+      "low": 19421.65,
+      "close": 19506.75
+    },
+    {
+      "date": "30-09-2021",
+      "open": 19478.3,
+      "high": 19589.95,
+      "low": 19316.15,
+      "close": 19445.55
+    },
+    {
+      "date": "01-10-2021",
+      "open": 19445.0,
+      "high": 19644.95,
+      "low": 19252.05,
+      "close": 19549.95
+    },
+    {
+      "date": "04-10-2021",
+      "open": 19549.95,
+      "high": 19650.0,
+      "low": 19362.05,
+      "close": 19492.95
+    },
+    {
+      "date": "05-10-2021",
+      "open": 19500.0,
+      "high": 19587.05,
+      "low": 19344.85,
+      "close": 19395.55
+    },
+    {
+      "date": "06-10-2021",
+      "open": 19444.9,
+      "high": 19624.25,
+      "low": 19078.0,
+      "close": 19157.15
+    },
+    {
+      "date": "07-10-2021",
+      "open": 19200.8,
+      "high": 19304.2,
+      "low": 18955.35,
+      "close": 19045.65
+    }
+  ]
+}

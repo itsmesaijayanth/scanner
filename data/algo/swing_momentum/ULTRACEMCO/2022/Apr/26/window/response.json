@@ -1,0 +1,221 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ULTRACEMCO",
+  "window": {
+    "start_date": "27-03-2022",
+    "end_date": "26-04-2022",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "11-04-2022",
+      "price": 6918.5,
+      "distance_to_current_trading_rows": 9
+    },
+    "monthly_low": {
+      "date": "28-03-2022",
+      "price": 6245.05,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "26-04-2022",
+      "open": 6680.0,
+      "high": 6694.2,
+      "low": 6615.0,
+      "close": 6660.2
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "30-03-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 6542.5,
+        "high": 6668.8,
+        "low": 6542.5,
+        "close": 6642.7
+      },
+      {
+        "date": "07-04-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 6696.0,
+        "high": 6796.5,
+        "low": 6696.0,
+        "close": 6736.65
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 6245.05
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 6918.5
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 6918.5
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "28-03-2022",
+      "open": 6345.0,
+      "high": 6394.95,
+      "low": 6245.05,
+      "close": 6359.95
+    },
+    {
+      "date": "29-03-2022",
+      "open": 6377.0,
+      "high": 6548.0,
+      "low": 6376.0,
+      "close": 6526.6
+    },
+    {
+      "date": "30-03-2022",
+      "open": 6542.5,
+      "high": 6668.8,
+      "low": 6542.5,
+      "close": 6642.7
+    },
+    {
+      "date": "31-03-2022",
+      "open": 6660.0,
+      "high": 6699.0,
+      "low": 6581.0,
+      "close": 6602.3
+    },
+    {
+      "date": "01-04-2022",
+      "open": 6603.0,
+      "high": 6688.85,
+      "low": 6565.05,
+      "close": 6670.55
+    },
+    {
+      "date": "04-04-2022",
+      "open": 6632.0,
+      "high": 6758.45,
+      "low": 6622.0,
+      "close": 6743.9
+    },
+    {
+      "date": "05-04-2022",
+      "open": 6770.0,
+      "high": 6816.0,
+      "low": 6680.05,
+      "close": 6726.15
+    },
+    {
+      "date": "06-04-2022",
+      "open": 6700.0,
+      "high": 6792.0,
+      "low": 6690.0,
+      "close": 6736.15
+    },
+    {
+      "date": "07-04-2022",
+      "open": 6696.0,
+      "high": 6796.5,
+      "low": 6696.0,
+      "close": 6736.65
+    },
+    {
+      "date": "08-04-2022",
+      "open": 6799.0,
+      "high": 6850.0,
+      "low": 6722.85,
+      "close": 6837.0
+    },
+    {
+      "date": "11-04-2022",
+      "open": 6834.65,
+      "high": 6918.5,
+      "low": 6800.0,
+      "close": 6858.75
+    },
+    {
+      "date": "12-04-2022",
+      "open": 6850.0,
+      "high": 6858.75,
+      "low": 6721.8,
+      "close": 6775.55
+    },
+    {
+      "date": "13-04-2022",
+      "open": 6750.0,
+      "high": 6840.0,
+      "low": 6694.2,
+      "close": 6730.05
+    },
+    {
+      "date": "18-04-2022",
+      "open": 6645.5,
+      "high": 6689.9,
+      "low": 6570.05,
+      "close": 6639.6
+    },
+    {
+      "date": "19-04-2022",
+      "open": 6700.0,
+      "high": 6764.25,
+      "low": 6506.05,
+      "close": 6585.7
+    },
+    {
+      "date": "20-04-2022",
+      "open": 6587.0,
+      "high": 6827.75,
+      "low": 6585.7,
+      "close": 6807.15
+    },
+    {
+      "date": "21-04-2022",
+      "open": 6830.0,
+      "high": 6887.0,
+      "low": 6808.0,
+      "close": 6846.5
+    },
+    {
+      "date": "22-04-2022",
+      "open": 6800.0,
+      "high": 6809.95,
+      "low": 6710.1,
+      "close": 6744.1
+    },
+    {
+      "date": "25-04-2022",
+      "open": 6694.0,
+      "high": 6713.05,
+      "low": 6556.65,
+      "close": 6595.05
+    },
+    {
+      "date": "26-04-2022",
+      "open": 6680.0,
+      "high": 6694.2,
+      "low": 6615.0,
+      "close": 6660.2
+    }
+  ]
+}

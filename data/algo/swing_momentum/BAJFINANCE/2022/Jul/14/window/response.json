@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJFINANCE",
+  "window": {
+    "start_date": "14-06-2022",
+    "end_date": "14-07-2022",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "07-07-2022",
+      "price": 5986.9,
+      "distance_to_current_trading_rows": 5
+    },
+    "monthly_low": {
+      "date": "17-06-2022",
+      "price": 5220.0,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "14-07-2022",
+      "open": 5925.0,
+      "high": 5926.95,
+      "low": 5794.7,
+      "close": 5830.85
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "17-06-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 5220.0,
+        "high": 5475.0,
+        "low": 5220.0,
+        "close": 5419.55
+      },
+      {
+        "date": "22-06-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 5531.5,
+        "high": 5531.5,
+        "low": 5405.0,
+        "close": 5439.6
+      },
+      {
+        "date": "08-07-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 5928.0,
+        "high": 5928.0,
+        "low": 5801.0,
+        "close": 5873.2
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 5220.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 5986.9
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 5986.9
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "14-06-2022",
+      "open": 5347.0,
+      "high": 5461.0,
+      "low": 5284.2,
+      "close": 5375.75
+    },
+    {
+      "date": "15-06-2022",
+      "open": 5418.0,
+      "high": 5499.9,
+      "low": 5396.15,
+      "close": 5484.95
+    },
+    {
+      "date": "16-06-2022",
+      "open": 5565.0,
+      "high": 5614.95,
+      "low": 5254.85,
+      "close": 5283.9
+    },
+    {
+      "date": "17-06-2022",
+      "open": 5220.0,
+      "high": 5475.0,
+      "low": 5220.0,
+      "close": 5419.55
+    },
+    {
+      "date": "20-06-2022",
+      "open": 5428.0,
+      "high": 5510.0,
+      "low": 5352.0,
+      "close": 5470.45
+    },
+    {
+      "date": "21-06-2022",
+      "open": 5525.0,
+      "high": 5564.0,
+      "low": 5455.0,
+      "close": 5549.15
+    },
+    {
+      "date": "22-06-2022",
+      "open": 5531.5,
+      "high": 5531.5,
+      "low": 5405.0,
+      "close": 5439.6
+    },
+    {
+      "date": "23-06-2022",
+      "open": 5445.6,
+      "high": 5495.0,
+      "low": 5343.0,
+      "close": 5448.15
+    },
+    {
+      "date": "24-06-2022",
+      "open": 5510.0,
+      "high": 5616.65,
+      "low": 5455.0,
+      "close": 5587.75
+    },
+    {
+      "date": "27-06-2022",
+      "open": 5700.0,
+      "high": 5725.0,
+      "low": 5587.75,
+      "close": 5641.2
+    },
+    {
+      "date": "28-06-2022",
+      "open": 5607.0,
+      "high": 5619.0,
+      "low": 5525.0,
+      "close": 5576.25
+    },
+    {
+      "date": "29-06-2022",
+      "open": 5485.0,
+      "high": 5554.0,
+      "low": 5460.0,
+      "close": 5512.8
+    },
+    {
+      "date": "30-06-2022",
+      "open": 5512.8,
+      "high": 5535.2,
+      "low": 5377.0,
+      "close": 5400.5
+    },
+    {
+      "date": "01-07-2022",
+      "open": 5364.0,
+      "high": 5633.95,
+      "low": 5335.05,
+      "close": 5614.4
+    },
+    {
+      "date": "04-07-2022",
+      "open": 5612.9,
+      "high": 5648.95,
+      "low": 5541.0,
+      "close": 5630.3
+    },
+    {
+      "date": "05-07-2022",
+      "open": 5660.0,
+      "high": 5755.0,
+      "low": 5626.45,
+      "close": 5661.1
+    },
+    {
+      "date": "06-07-2022",
+      "open": 5680.0,
+      "high": 5938.85,
+      "low": 5645.9,
+      "close": 5916.7
+    },
+    {
+      "date": "07-07-2022",
+      "open": 5935.0,
+      "high": 5986.9,
+      "low": 5816.0,
+      "close": 5860.7
+    },
+    {
+      "date": "08-07-2022",
+      "open": 5928.0,
+      "high": 5928.0,
+      "low": 5801.0,
+      "close": 5873.2
+    },
+    {
+      "date": "11-07-2022",
+      "open": 5850.0,
+      "high": 5903.95,
+      "low": 5813.8,
+      "close": 5861.5
+    },
+    {
+      "date": "12-07-2022",
+      "open": 5849.8,
+      "high": 5959.55,
+      "low": 5784.0,
+      "close": 5873.55
+    },
+    {
+      "date": "13-07-2022",
+      "open": 5929.95,
+      "high": 5979.0,
+      "low": 5866.6,
+      "close": 5878.9
+    },
+    {
+      "date": "14-07-2022",
+      "open": 5925.0,
+      "high": 5926.95,
+      "low": 5794.7,
+      "close": 5830.85
+    }
+  ]
+}

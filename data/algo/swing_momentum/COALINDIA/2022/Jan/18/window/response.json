@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "COALINDIA",
+  "window": {
+    "start_date": "19-12-2021",
+    "end_date": "18-01-2022",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "13-01-2022",
+      "price": 166.45,
+      "distance_to_current_trading_rows": 3
+    },
+    "monthly_low": {
+      "date": "20-12-2021",
+      "price": 139.15,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "18-01-2022",
+      "open": 164.0,
+      "high": 165.5,
+      "low": 160.3,
+      "close": 160.8
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "28-12-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 146.25,
+        "high": 149.25,
+        "low": 146.25,
+        "close": 148.85
+      },
+      {
+        "date": "29-12-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 149.25,
+        "high": 149.25,
+        "low": 146.3,
+        "close": 146.75
+      },
+      {
+        "date": "11-01-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 160.65,
+        "high": 160.65,
+        "low": 158.1,
+        "close": 158.55
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 139.15
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 166.45
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 166.45
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "20-12-2021",
+      "open": 145.35,
+      "high": 145.65,
+      "low": 139.15,
+      "close": 140.7
+    },
+    {
+      "date": "21-12-2021",
+      "open": 141.8,
+      "high": 146.0,
+      "low": 141.4,
+      "close": 144.65
+    },
+    {
+      "date": "22-12-2021",
+      "open": 145.45,
+      "high": 149.4,
+      "low": 144.45,
+      "close": 145.35
+    },
+    {
+      "date": "23-12-2021",
+      "open": 146.25,
+      "high": 147.95,
+      "low": 146.0,
+      "close": 147.7
+    },
+    {
+      "date": "24-12-2021",
+      "open": 148.0,
+      "high": 148.15,
+      "low": 145.4,
+      "close": 145.9
+    },
+    {
+      "date": "27-12-2021",
+      "open": 145.0,
+      "high": 146.5,
+      "low": 144.1,
+      "close": 146.05
+    },
+    {
+      "date": "28-12-2021",
+      "open": 146.25,
+      "high": 149.25,
+      "low": 146.25,
+      "close": 148.85
+    },
+    {
+      "date": "29-12-2021",
+      "open": 149.25,
+      "high": 149.25,
+      "low": 146.3,
+      "close": 146.75
+    },
+    {
+      "date": "30-12-2021",
+      "open": 146.75,
+      "high": 149.0,
+      "low": 143.9,
+      "close": 146.2
+    },
+    {
+      "date": "31-12-2021",
+      "open": 145.95,
+      "high": 147.55,
+      "low": 145.35,
+      "close": 146.05
+    },
+    {
+      "date": "03-01-2022",
+      "open": 147.25,
+      "high": 155.95,
+      "low": 147.0,
+      "close": 155.3
+    },
+    {
+      "date": "04-01-2022",
+      "open": 156.0,
+      "high": 156.65,
+      "low": 152.35,
+      "close": 153.0
+    },
+    {
+      "date": "05-01-2022",
+      "open": 153.0,
+      "high": 154.3,
+      "low": 152.1,
+      "close": 153.7
+    },
+    {
+      "date": "06-01-2022",
+      "open": 154.5,
+      "high": 155.25,
+      "low": 153.05,
+      "close": 154.65
+    },
+    {
+      "date": "07-01-2022",
+      "open": 155.0,
+      "high": 157.45,
+      "low": 154.95,
+      "close": 156.95
+    },
+    {
+      "date": "10-01-2022",
+      "open": 157.8,
+      "high": 161.0,
+      "low": 157.05,
+      "close": 160.7
+    },
+    {
+      "date": "11-01-2022",
+      "open": 160.65,
+      "high": 160.65,
+      "low": 158.1,
+      "close": 158.55
+    },
+    {
+      "date": "12-01-2022",
+      "open": 160.4,
+      "high": 160.75,
+      "low": 158.5,
+      "close": 159.35
+    },
+    {
+      "date": "13-01-2022",
+      "open": 159.35,
+      "high": 166.45,
+      "low": 159.0,
+      "close": 164.75
+    },
+    {
+      "date": "14-01-2022",
+      "open": 164.75,
+      "high": 166.15,
+      "low": 163.25,
+      "close": 164.75
+    },
+    {
+      "date": "17-01-2022",
+      "open": 165.6,
+      "high": 166.1,
+      "low": 162.05,
+      "close": 163.7
+    },
+    {
+      "date": "18-01-2022",
+      "open": 164.0,
+      "high": 165.5,
+      "low": 160.3,
+      "close": 160.8
+    }
+  ]
+}

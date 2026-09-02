@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SUNPHARMA",
+  "window": {
+    "start_date": "15-11-2022",
+    "end_date": "15-12-2022",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "30-11-2022",
+      "price": 1058.3,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "08-12-2022",
+      "price": 975.0,
+      "distance_to_current_trading_rows": 5
+    },
+    "current": {
+      "date": "15-12-2022",
+      "open": 1001.0,
+      "high": 1007.0,
+      "low": 998.1,
+      "close": 1002.2
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "15-11-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1022.0,
+        "high": 1022.0,
+        "low": 1004.45,
+        "close": 1016.05
+      },
+      {
+        "date": "16-11-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1007.1,
+        "high": 1022.8,
+        "low": 1007.1,
+        "close": 1018.65
+      },
+      {
+        "date": "25-11-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1037.95,
+        "high": 1037.95,
+        "low": 1026.95,
+        "close": 1033.85
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1058.3
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 975.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 975.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "15-11-2022",
+      "open": 1022.0,
+      "high": 1022.0,
+      "low": 1004.45,
+      "close": 1016.05
+    },
+    {
+      "date": "16-11-2022",
+      "open": 1007.1,
+      "high": 1022.8,
+      "low": 1007.1,
+      "close": 1018.65
+    },
+    {
+      "date": "17-11-2022",
+      "open": 1023.3,
+      "high": 1030.5,
+      "low": 1010.45,
+      "close": 1013.35
+    },
+    {
+      "date": "18-11-2022",
+      "open": 1015.25,
+      "high": 1017.85,
+      "low": 1006.0,
+      "close": 1009.6
+    },
+    {
+      "date": "21-11-2022",
+      "open": 1003.0,
+      "high": 1012.8,
+      "low": 993.5,
+      "close": 1003.15
+    },
+    {
+      "date": "22-11-2022",
+      "open": 1006.15,
+      "high": 1012.4,
+      "low": 996.25,
+      "close": 1010.1
+    },
+    {
+      "date": "23-11-2022",
+      "open": 1015.2,
+      "high": 1019.1,
+      "low": 1009.45,
+      "close": 1017.65
+    },
+    {
+      "date": "24-11-2022",
+      "open": 1020.65,
+      "high": 1037.4,
+      "low": 1013.8,
+      "close": 1035.1
+    },
+    {
+      "date": "25-11-2022",
+      "open": 1037.95,
+      "high": 1037.95,
+      "low": 1026.95,
+      "close": 1033.85
+    },
+    {
+      "date": "28-11-2022",
+      "open": 1033.0,
+      "high": 1041.5,
+      "low": 1027.95,
+      "close": 1034.75
+    },
+    {
+      "date": "29-11-2022",
+      "open": 1035.0,
+      "high": 1051.2,
+      "low": 1034.0,
+      "close": 1049.85
+    },
+    {
+      "date": "30-11-2022",
+      "open": 1053.0,
+      "high": 1058.3,
+      "low": 1039.35,
+      "close": 1046.05
+    },
+    {
+      "date": "01-12-2022",
+      "open": 1055.0,
+      "high": 1057.85,
+      "low": 1039.6,
+      "close": 1046.45
+    },
+    {
+      "date": "02-12-2022",
+      "open": 1048.3,
+      "high": 1049.85,
+      "low": 1034.8,
+      "close": 1040.0
+    },
+    {
+      "date": "05-12-2022",
+      "open": 1042.15,
+      "high": 1045.95,
+      "low": 1030.75,
+      "close": 1039.4
+    },
+    {
+      "date": "06-12-2022",
+      "open": 1039.4,
+      "high": 1040.0,
+      "low": 1023.25,
+      "close": 1033.55
+    },
+    {
+      "date": "07-12-2022",
+      "open": 1036.55,
+      "high": 1037.15,
+      "low": 1015.35,
+      "close": 1017.75
+    },
+    {
+      "date": "08-12-2022",
+      "open": 1015.0,
+      "high": 1018.0,
+      "low": 975.0,
+      "close": 980.8
+    },
+    {
+      "date": "09-12-2022",
+      "open": 980.8,
+      "high": 997.0,
+      "low": 980.0,
+      "close": 992.85
+    },
+    {
+      "date": "12-12-2022",
+      "open": 994.9,
+      "high": 995.0,
+      "low": 980.15,
+      "close": 987.4
+    },
+    {
+      "date": "13-12-2022",
+      "open": 980.0,
+      "high": 996.35,
+      "low": 979.8,
+      "close": 994.65
+    },
+    {
+      "date": "14-12-2022",
+      "open": 999.0,
+      "high": 1003.0,
+      "low": 994.55,
+      "close": 1000.25
+    },
+    {
+      "date": "15-12-2022",
+      "open": 1001.0,
+      "high": 1007.0,
+      "low": 998.1,
+      "close": 1002.2
+    }
+  ]
+}

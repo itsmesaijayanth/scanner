@@ -1,0 +1,260 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ADANIENT",
+  "window": {
+    "start_date": "28-07-2026",
+    "end_date": "27-08-2026",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "27-08-2026",
+      "price": 3169.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "13-08-2026",
+      "price": 2932.8,
+      "distance_to_current_trading_rows": 10
+    },
+    "current": {
+      "date": "27-08-2026",
+      "open": 3125.0,
+      "high": 3169.0,
+      "low": 3125.0,
+      "close": 3169.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "28-07-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3038.0,
+        "high": 3038.0,
+        "low": 2996.2,
+        "close": 3002.3
+      },
+      {
+        "date": "11-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3062.0,
+        "high": 3062.0,
+        "low": 2980.0,
+        "close": 2995.5
+      },
+      {
+        "date": "12-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3020.0,
+        "high": 3020.0,
+        "low": 2943.0,
+        "close": 2985.7
+      },
+      {
+        "date": "27-08-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 3125.0,
+        "high": 3169.0,
+        "low": 3125.0,
+        "close": 3169.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 2932.8
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 3169.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 3169.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "28-07-2026",
+      "open": 3038.0,
+      "high": 3038.0,
+      "low": 2996.2,
+      "close": 3002.3
+    },
+    {
+      "date": "29-07-2026",
+      "open": 3017.8,
+      "high": 3048.3,
+      "low": 2972.7,
+      "close": 3024.5
+    },
+    {
+      "date": "30-07-2026",
+      "open": 3024.5,
+      "high": 3060.9,
+      "low": 2994.6,
+      "close": 3049.1
+    },
+    {
+      "date": "31-07-2026",
+      "open": 3051.0,
+      "high": 3067.5,
+      "low": 3002.4,
+      "close": 3009.5
+    },
+    {
+      "date": "03-08-2026",
+      "open": 3025.0,
+      "high": 3077.0,
+      "low": 3024.5,
+      "close": 3068.0
+    },
+    {
+      "date": "04-08-2026",
+      "open": 3063.1,
+      "high": 3091.5,
+      "low": 3020.9,
+      "close": 3050.0
+    },
+    {
+      "date": "05-08-2026",
+      "open": 3055.0,
+      "high": 3085.9,
+      "low": 3037.3,
+      "close": 3050.0
+    },
+    {
+      "date": "06-08-2026",
+      "open": 3050.0,
+      "high": 3072.4,
+      "low": 3025.7,
+      "close": 3026.0
+    },
+    {
+      "date": "07-08-2026",
+      "open": 3025.9,
+      "high": 3039.5,
+      "low": 3004.5,
+      "close": 3020.0
+    },
+    {
+      "date": "10-08-2026",
+      "open": 3020.0,
+      "high": 3021.8,
+      "low": 2969.9,
+      "close": 3010.0
+    },
+    {
+      "date": "11-08-2026",
+      "open": 3062.0,
+      "high": 3062.0,
+      "low": 2980.0,
+      "close": 2995.5
+    },
+    {
+      "date": "12-08-2026",
+      "open": 3020.0,
+      "high": 3020.0,
+      "low": 2943.0,
+      "close": 2985.7
+    },
+    {
+      "date": "13-08-2026",
+      "open": 2986.2,
+      "high": 3019.5,
+      "low": 2932.8,
+      "close": 2964.9
+    },
+    {
+      "date": "14-08-2026",
+      "open": 2965.0,
+      "high": 3048.0,
+      "low": 2950.0,
+      "close": 3035.1
+    },
+    {
+      "date": "17-08-2026",
+      "open": 3049.0,
+      "high": 3058.6,
+      "low": 3005.5,
+      "close": 3007.3
+    },
+    {
+      "date": "18-08-2026",
+      "open": 3014.0,
+      "high": 3036.0,
+      "low": 3002.5,
+      "close": 3002.5
+    },
+    {
+      "date": "19-08-2026",
+      "open": 3012.7,
+      "high": 3019.0,
+      "low": 2967.3,
+      "close": 2990.3
+    },
+    {
+      "date": "20-08-2026",
+      "open": 3000.0,
+      "high": 3011.0,
+      "low": 2990.0,
+      "close": 2994.9
+    },
+    {
+      "date": "21-08-2026",
+      "open": 2995.0,
+      "high": 3007.5,
+      "low": 2981.0,
+      "close": 2997.0
+    },
+    {
+      "date": "24-08-2026",
+      "open": 3010.0,
+      "high": 3019.8,
+      "low": 2971.5,
+      "close": 2998.6
+    },
+    {
+      "date": "25-08-2026",
+      "open": 2998.0,
+      "high": 3110.0,
+      "low": 2962.5,
+      "close": 3110.0
+    },
+    {
+      "date": "26-08-2026",
+      "open": 3122.8,
+      "high": 3165.0,
+      "low": 3092.8,
+      "close": 3112.0
+    },
+    {
+      "date": "27-08-2026",
+      "open": 3125.0,
+      "high": 3169.0,
+      "low": 3125.0,
+      "close": 3169.0
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TITAN",
+  "window": {
+    "start_date": "25-02-2024",
+    "end_date": "26-03-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "07-03-2024",
+      "price": 3824.25,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "19-03-2024",
+      "price": 3547.05,
+      "distance_to_current_trading_rows": 4
+    },
+    "current": {
+      "date": "26-03-2024",
+      "open": 3665.0,
+      "high": 3729.95,
+      "low": 3665.0,
+      "close": 3698.2
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "26-02-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3690.0,
+        "high": 3690.0,
+        "low": 3610.85,
+        "close": 3622.5
+      },
+      {
+        "date": "02-03-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3778.0,
+        "high": 3778.0,
+        "low": 3747.35,
+        "close": 3764.1
+      },
+      {
+        "date": "26-03-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 3665.0,
+        "high": 3729.95,
+        "low": 3665.0,
+        "close": 3698.2
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 3824.25
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 3547.05
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 3547.05
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "26-02-2024",
+      "open": 3690.0,
+      "high": 3690.0,
+      "low": 3610.85,
+      "close": 3622.5
+    },
+    {
+      "date": "27-02-2024",
+      "open": 3630.0,
+      "high": 3675.0,
+      "low": 3621.05,
+      "close": 3653.85
+    },
+    {
+      "date": "28-02-2024",
+      "open": 3655.0,
+      "high": 3669.0,
+      "low": 3582.15,
+      "close": 3594.7
+    },
+    {
+      "date": "29-02-2024",
+      "open": 3595.2,
+      "high": 3654.0,
+      "low": 3585.3,
+      "close": 3624.4
+    },
+    {
+      "date": "01-03-2024",
+      "open": 3630.0,
+      "high": 3774.0,
+      "low": 3626.0,
+      "close": 3765.9
+    },
+    {
+      "date": "02-03-2024",
+      "open": 3778.0,
+      "high": 3778.0,
+      "low": 3747.35,
+      "close": 3764.1
+    },
+    {
+      "date": "04-03-2024",
+      "open": 3761.6,
+      "high": 3764.1,
+      "low": 3715.0,
+      "close": 3732.4
+    },
+    {
+      "date": "05-03-2024",
+      "open": 3748.0,
+      "high": 3759.15,
+      "low": 3708.0,
+      "close": 3750.75
+    },
+    {
+      "date": "06-03-2024",
+      "open": 3748.05,
+      "high": 3815.0,
+      "low": 3702.7,
+      "close": 3810.75
+    },
+    {
+      "date": "07-03-2024",
+      "open": 3812.05,
+      "high": 3824.25,
+      "low": 3768.1,
+      "close": 3786.9
+    },
+    {
+      "date": "11-03-2024",
+      "open": 3802.9,
+      "high": 3808.0,
+      "low": 3742.05,
+      "close": 3750.15
+    },
+    {
+      "date": "12-03-2024",
+      "open": 3762.0,
+      "high": 3766.0,
+      "low": 3713.5,
+      "close": 3748.8
+    },
+    {
+      "date": "13-03-2024",
+      "open": 3759.0,
+      "high": 3762.0,
+      "low": 3590.0,
+      "close": 3625.7
+    },
+    {
+      "date": "14-03-2024",
+      "open": 3629.95,
+      "high": 3648.0,
+      "low": 3580.15,
+      "close": 3640.15
+    },
+    {
+      "date": "15-03-2024",
+      "open": 3634.7,
+      "high": 3655.95,
+      "low": 3610.0,
+      "close": 3633.2
+    },
+    {
+      "date": "18-03-2024",
+      "open": 3619.0,
+      "high": 3620.0,
+      "low": 3565.1,
+      "close": 3579.7
+    },
+    {
+      "date": "19-03-2024",
+      "open": 3579.0,
+      "high": 3606.65,
+      "low": 3547.05,
+      "close": 3583.4
+    },
+    {
+      "date": "20-03-2024",
+      "open": 3583.4,
+      "high": 3596.9,
+      "low": 3550.0,
+      "close": 3590.5
+    },
+    {
+      "date": "21-03-2024",
+      "open": 3606.95,
+      "high": 3637.0,
+      "low": 3590.05,
+      "close": 3627.55
+    },
+    {
+      "date": "22-03-2024",
+      "open": 3627.55,
+      "high": 3726.9,
+      "low": 3621.25,
+      "close": 3706.7
+    },
+    {
+      "date": "26-03-2024",
+      "open": 3665.0,
+      "high": 3729.95,
+      "low": 3665.0,
+      "close": 3698.2
+    }
+  ]
+}

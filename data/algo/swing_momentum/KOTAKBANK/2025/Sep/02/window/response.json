@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "KOTAKBANK",
+  "window": {
+    "start_date": "03-08-2025",
+    "end_date": "02-09-2025",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "21-08-2025",
+      "price": 2039.0,
+      "distance_to_current_trading_rows": 7
+    },
+    "monthly_low": {
+      "date": "02-09-2025",
+      "price": 1940.4,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "02-09-2025",
+      "open": 1966.0,
+      "high": 1975.2,
+      "low": 1940.4,
+      "close": 1942.5
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "05-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2008.0,
+        "high": 2008.0,
+        "low": 1994.8,
+        "close": 2003.0
+      },
+      {
+        "date": "21-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2039.0,
+        "high": 2039.0,
+        "low": 2012.9,
+        "close": 2017.8
+      },
+      {
+        "date": "29-08-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1950.2,
+        "high": 1984.9,
+        "low": 1950.2,
+        "close": 1960.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 2039.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1940.4
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1940.4
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "04-08-2025",
+      "open": 1987.0,
+      "high": 2007.0,
+      "low": 1982.1,
+      "close": 1997.0
+    },
+    {
+      "date": "05-08-2025",
+      "open": 2008.0,
+      "high": 2008.0,
+      "low": 1994.8,
+      "close": 2003.0
+    },
+    {
+      "date": "06-08-2025",
+      "open": 2003.0,
+      "high": 2025.6,
+      "low": 1992.7,
+      "close": 2002.4
+    },
+    {
+      "date": "07-08-2025",
+      "open": 1981.0,
+      "high": 1995.5,
+      "low": 1965.0,
+      "close": 1992.1
+    },
+    {
+      "date": "08-08-2025",
+      "open": 1993.9,
+      "high": 1999.5,
+      "low": 1948.2,
+      "close": 1952.7
+    },
+    {
+      "date": "11-08-2025",
+      "open": 1964.0,
+      "high": 2024.0,
+      "low": 1956.4,
+      "close": 1975.9
+    },
+    {
+      "date": "12-08-2025",
+      "open": 1975.0,
+      "high": 1985.9,
+      "low": 1956.4,
+      "close": 1959.0
+    },
+    {
+      "date": "13-08-2025",
+      "open": 1968.0,
+      "high": 1996.3,
+      "low": 1962.2,
+      "close": 1987.7
+    },
+    {
+      "date": "14-08-2025",
+      "open": 1988.0,
+      "high": 1993.5,
+      "low": 1975.5,
+      "close": 1978.2
+    },
+    {
+      "date": "18-08-2025",
+      "open": 1997.9,
+      "high": 2026.0,
+      "low": 1997.1,
+      "close": 2001.4
+    },
+    {
+      "date": "19-08-2025",
+      "open": 1994.0,
+      "high": 2032.5,
+      "low": 1992.5,
+      "close": 2029.9
+    },
+    {
+      "date": "20-08-2025",
+      "open": 2020.5,
+      "high": 2024.2,
+      "low": 2005.5,
+      "close": 2017.5
+    },
+    {
+      "date": "21-08-2025",
+      "open": 2039.0,
+      "high": 2039.0,
+      "low": 2012.9,
+      "close": 2017.8
+    },
+    {
+      "date": "22-08-2025",
+      "open": 2010.2,
+      "high": 2018.6,
+      "low": 1980.2,
+      "close": 1986.6
+    },
+    {
+      "date": "25-08-2025",
+      "open": 1987.0,
+      "high": 1998.8,
+      "low": 1976.7,
+      "close": 1983.3
+    },
+    {
+      "date": "26-08-2025",
+      "open": 1978.0,
+      "high": 1983.9,
+      "low": 1961.2,
+      "close": 1965.7
+    },
+    {
+      "date": "28-08-2025",
+      "open": 1955.0,
+      "high": 1968.0,
+      "low": 1941.1,
+      "close": 1944.7
+    },
+    {
+      "date": "29-08-2025",
+      "open": 1950.2,
+      "high": 1984.9,
+      "low": 1950.2,
+      "close": 1960.3
+    },
+    {
+      "date": "01-09-2025",
+      "open": 1960.3,
+      "high": 1972.8,
+      "low": 1955.2,
+      "close": 1968.6
+    },
+    {
+      "date": "02-09-2025",
+      "open": 1966.0,
+      "high": 1975.2,
+      "low": 1940.4,
+      "close": 1942.5
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BEL",
+  "window": {
+    "start_date": "09-08-2021",
+    "end_date": "08-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 4
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-09-2021",
+      "price": 202.9,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 190.55,
+      "distance_to_current_trading_rows": 3
+    },
+    "current": {
+      "date": "08-09-2021",
+      "open": 196.0,
+      "high": 199.4,
+      "low": 194.25,
+      "close": 197.1
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 190.55
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 202.9
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 202.9
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 192.0,
+      "high": 199.55,
+      "low": 190.55,
+      "close": 198.6
+    },
+    {
+      "date": "06-09-2021",
+      "open": 201.25,
+      "high": 202.9,
+      "low": 194.75,
+      "close": 195.45
+    },
+    {
+      "date": "07-09-2021",
+      "open": 195.45,
+      "high": 198.0,
+      "low": 193.35,
+      "close": 194.3
+    },
+    {
+      "date": "08-09-2021",
+      "open": 196.0,
+      "high": 199.4,
+      "low": 194.25,
+      "close": 197.1
+    }
+  ]
+}

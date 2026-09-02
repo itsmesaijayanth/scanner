@@ -1,0 +1,83 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SUNPHARMA",
+  "window": {
+    "start_date": "08-08-2021",
+    "end_date": "07-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 3
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-09-2021",
+      "price": 797.2,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "07-09-2021",
+      "price": 766.6,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "07-09-2021",
+      "open": 782.0,
+      "high": 783.0,
+      "low": 766.6,
+      "close": 769.9
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 797.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 766.6
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 766.6
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 793.0,
+      "high": 797.2,
+      "low": 784.0,
+      "close": 789.4
+    },
+    {
+      "date": "06-09-2021",
+      "open": 789.4,
+      "high": 793.1,
+      "low": 779.75,
+      "close": 784.25
+    },
+    {
+      "date": "07-09-2021",
+      "open": 782.0,
+      "high": 783.0,
+      "low": 766.6,
+      "close": 769.9
+    }
+  ]
+}

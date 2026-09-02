@@ -1,0 +1,198 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ETERNAL",
+  "window": {
+    "start_date": "06-08-2022",
+    "end_date": "05-09-2022",
+    "calendar_days": 30,
+    "trading_rows": 18
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "18-08-2022",
+      "price": 69.25,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "08-08-2022",
+      "price": 54.2,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "05-09-2022",
+      "open": 60.45,
+      "high": 60.8,
+      "low": 59.3,
+      "close": 59.65
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "02-09-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 63.4,
+        "high": 63.4,
+        "low": 59.4,
+        "close": 59.75
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 54.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 69.25
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 69.25
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "08-08-2022",
+      "open": 54.7,
+      "high": 56.2,
+      "low": 54.2,
+      "close": 55.45
+    },
+    {
+      "date": "10-08-2022",
+      "open": 56.2,
+      "high": 56.55,
+      "low": 54.5,
+      "close": 55.95
+    },
+    {
+      "date": "11-08-2022",
+      "open": 56.9,
+      "high": 58.15,
+      "low": 56.35,
+      "close": 57.9
+    },
+    {
+      "date": "12-08-2022",
+      "open": 58.1,
+      "high": 63.1,
+      "low": 57.9,
+      "close": 61.75
+    },
+    {
+      "date": "16-08-2022",
+      "open": 62.65,
+      "high": 67.45,
+      "low": 62.5,
+      "close": 64.25
+    },
+    {
+      "date": "17-08-2022",
+      "open": 64.8,
+      "high": 65.6,
+      "low": 61.8,
+      "close": 65.25
+    },
+    {
+      "date": "18-08-2022",
+      "open": 65.6,
+      "high": 69.25,
+      "low": 65.0,
+      "close": 67.1
+    },
+    {
+      "date": "19-08-2022",
+      "open": 67.4,
+      "high": 68.25,
+      "low": 60.15,
+      "close": 61.45
+    },
+    {
+      "date": "22-08-2022",
+      "open": 61.0,
+      "high": 62.85,
+      "low": 59.25,
+      "close": 62.0
+    },
+    {
+      "date": "23-08-2022",
+      "open": 62.3,
+      "high": 65.25,
+      "low": 62.15,
+      "close": 64.45
+    },
+    {
+      "date": "24-08-2022",
+      "open": 64.1,
+      "high": 64.2,
+      "low": 61.7,
+      "close": 62.2
+    },
+    {
+      "date": "25-08-2022",
+      "open": 62.8,
+      "high": 63.2,
+      "low": 61.65,
+      "close": 62.1
+    },
+    {
+      "date": "26-08-2022",
+      "open": 62.4,
+      "high": 62.7,
+      "low": 60.55,
+      "close": 61.85
+    },
+    {
+      "date": "29-08-2022",
+      "open": 59.7,
+      "high": 60.55,
+      "low": 58.35,
+      "close": 59.2
+    },
+    {
+      "date": "30-08-2022",
+      "open": 60.2,
+      "high": 61.25,
+      "low": 57.3,
+      "close": 57.95
+    },
+    {
+      "date": "01-09-2022",
+      "open": 58.7,
+      "high": 63.15,
+      "low": 58.25,
+      "close": 62.45
+    },
+    {
+      "date": "02-09-2022",
+      "open": 63.4,
+      "high": 63.4,
+      "low": 59.4,
+      "close": 59.75
+    },
+    {
+      "date": "05-09-2022",
+      "open": 60.45,
+      "high": 60.8,
+      "low": 59.3,
+      "close": 59.65
+    }
+  ]
+}

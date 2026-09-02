@@ -1,0 +1,235 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "EICHERMOT",
+  "window": {
+    "start_date": "31-10-2023",
+    "end_date": "30-11-2023",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "30-11-2023",
+      "price": 3920.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "01-11-2023",
+      "price": 3275.0,
+      "distance_to_current_trading_rows": 20
+    },
+    "current": {
+      "date": "30-11-2023",
+      "open": 3857.95,
+      "high": 3920.0,
+      "low": 3828.05,
+      "close": 3896.9
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "07-11-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 3480.1,
+        "high": 3538.95,
+        "low": 3480.1,
+        "close": 3509.05
+      },
+      {
+        "date": "29-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3852.0,
+        "high": 3852.0,
+        "low": 3791.0,
+        "close": 3812.25
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 3275.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 3920.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 3920.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "31-10-2023",
+      "open": 3366.55,
+      "high": 3367.0,
+      "low": 3287.2,
+      "close": 3295.55
+    },
+    {
+      "date": "01-11-2023",
+      "open": 3309.8,
+      "high": 3315.1,
+      "low": 3275.0,
+      "close": 3282.25
+    },
+    {
+      "date": "02-11-2023",
+      "open": 3285.0,
+      "high": 3345.0,
+      "low": 3284.2,
+      "close": 3338.3
+    },
+    {
+      "date": "03-11-2023",
+      "open": 3360.0,
+      "high": 3458.15,
+      "low": 3353.0,
+      "close": 3428.0
+    },
+    {
+      "date": "06-11-2023",
+      "open": 3454.9,
+      "high": 3543.45,
+      "low": 3437.45,
+      "close": 3510.95
+    },
+    {
+      "date": "07-11-2023",
+      "open": 3480.1,
+      "high": 3538.95,
+      "low": 3480.1,
+      "close": 3509.05
+    },
+    {
+      "date": "08-11-2023",
+      "open": 3510.0,
+      "high": 3565.0,
+      "low": 3505.85,
+      "close": 3550.3
+    },
+    {
+      "date": "09-11-2023",
+      "open": 3545.3,
+      "high": 3596.4,
+      "low": 3526.1,
+      "close": 3541.9
+    },
+    {
+      "date": "10-11-2023",
+      "open": 3540.0,
+      "high": 3565.0,
+      "low": 3502.1,
+      "close": 3540.75
+    },
+    {
+      "date": "12-11-2023",
+      "open": 3590.0,
+      "high": 3611.55,
+      "low": 3570.0,
+      "close": 3579.3
+    },
+    {
+      "date": "13-11-2023",
+      "open": 3590.0,
+      "high": 3675.0,
+      "low": 3586.0,
+      "close": 3645.4
+    },
+    {
+      "date": "15-11-2023",
+      "open": 3689.0,
+      "high": 3860.0,
+      "low": 3672.1,
+      "close": 3848.3
+    },
+    {
+      "date": "16-11-2023",
+      "open": 3848.05,
+      "high": 3873.0,
+      "low": 3813.15,
+      "close": 3836.75
+    },
+    {
+      "date": "17-11-2023",
+      "open": 3824.9,
+      "high": 3898.0,
+      "low": 3816.9,
+      "close": 3865.3
+    },
+    {
+      "date": "20-11-2023",
+      "open": 3850.55,
+      "high": 3898.9,
+      "low": 3824.0,
+      "close": 3846.45
+    },
+    {
+      "date": "21-11-2023",
+      "open": 3865.0,
+      "high": 3865.6,
+      "low": 3826.05,
+      "close": 3844.2
+    },
+    {
+      "date": "22-11-2023",
+      "open": 3830.1,
+      "high": 3854.4,
+      "low": 3805.0,
+      "close": 3833.8
+    },
+    {
+      "date": "23-11-2023",
+      "open": 3836.55,
+      "high": 3915.0,
+      "low": 3833.0,
+      "close": 3883.8
+    },
+    {
+      "date": "24-11-2023",
+      "open": 3895.7,
+      "high": 3920.0,
+      "low": 3842.05,
+      "close": 3849.05
+    },
+    {
+      "date": "28-11-2023",
+      "open": 3855.95,
+      "high": 3892.15,
+      "low": 3777.75,
+      "close": 3826.7
+    },
+    {
+      "date": "29-11-2023",
+      "open": 3852.0,
+      "high": 3852.0,
+      "low": 3791.0,
+      "close": 3812.25
+    },
+    {
+      "date": "30-11-2023",
+      "open": 3857.95,
+      "high": 3920.0,
+      "low": 3828.05,
+      "close": 3896.9
+    }
+  ]
+}

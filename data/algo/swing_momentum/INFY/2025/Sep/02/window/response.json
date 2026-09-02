@@ -1,0 +1,284 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "INFY",
+  "window": {
+    "start_date": "03-08-2025",
+    "end_date": "02-09-2025",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "25-08-2025",
+      "price": 1539.0,
+      "distance_to_current_trading_rows": 5
+    },
+    "monthly_low": {
+      "date": "11-08-2025",
+      "price": 1414.0,
+      "distance_to_current_trading_rows": 14
+    },
+    "current": {
+      "date": "02-09-2025",
+      "open": 1499.4,
+      "high": 1512.8,
+      "low": 1486.3,
+      "close": 1498.7
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "05-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1478.7,
+        "high": 1478.7,
+        "low": 1455.0,
+        "close": 1460.3
+      },
+      {
+        "date": "14-08-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1426.2,
+        "high": 1470.0,
+        "low": 1426.2,
+        "close": 1447.7
+      },
+      {
+        "date": "18-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1464.7,
+        "high": 1464.7,
+        "low": 1429.6,
+        "close": 1435.8
+      },
+      {
+        "date": "19-08-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1432.7,
+        "high": 1449.4,
+        "low": 1432.7,
+        "close": 1440.0
+      },
+      {
+        "date": "20-08-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1440.7,
+        "high": 1499.0,
+        "low": 1440.7,
+        "close": 1496.2
+      },
+      {
+        "date": "21-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1508.0,
+        "high": 1508.0,
+        "low": 1484.3,
+        "close": 1496.4
+      },
+      {
+        "date": "25-08-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1506.7,
+        "high": 1539.0,
+        "low": 1506.7,
+        "close": 1532.1
+      },
+      {
+        "date": "28-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1529.6,
+        "high": 1529.6,
+        "low": 1498.0,
+        "close": 1500.1
+      },
+      {
+        "date": "29-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1501.9,
+        "high": 1501.9,
+        "low": 1467.7,
+        "close": 1469.6
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1414.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1539.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1539.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "04-08-2025",
+      "open": 1461.5,
+      "high": 1482.8,
+      "low": 1451.0,
+      "close": 1480.5
+    },
+    {
+      "date": "05-08-2025",
+      "open": 1478.7,
+      "high": 1478.7,
+      "low": 1455.0,
+      "close": 1460.3
+    },
+    {
+      "date": "06-08-2025",
+      "open": 1452.0,
+      "high": 1456.1,
+      "low": 1430.3,
+      "close": 1436.7
+    },
+    {
+      "date": "07-08-2025",
+      "open": 1430.0,
+      "high": 1442.0,
+      "low": 1414.2,
+      "close": 1436.9
+    },
+    {
+      "date": "08-08-2025",
+      "open": 1425.0,
+      "high": 1433.2,
+      "low": 1417.1,
+      "close": 1423.1
+    },
+    {
+      "date": "11-08-2025",
+      "open": 1419.9,
+      "high": 1433.4,
+      "low": 1414.0,
+      "close": 1428.2
+    },
+    {
+      "date": "12-08-2025",
+      "open": 1428.2,
+      "high": 1441.0,
+      "low": 1421.0,
+      "close": 1424.1
+    },
+    {
+      "date": "13-08-2025",
+      "open": 1425.0,
+      "high": 1434.0,
+      "low": 1422.4,
+      "close": 1426.6
+    },
+    {
+      "date": "14-08-2025",
+      "open": 1426.2,
+      "high": 1470.0,
+      "low": 1426.2,
+      "close": 1447.7
+    },
+    {
+      "date": "18-08-2025",
+      "open": 1464.7,
+      "high": 1464.7,
+      "low": 1429.6,
+      "close": 1435.8
+    },
+    {
+      "date": "19-08-2025",
+      "open": 1432.7,
+      "high": 1449.4,
+      "low": 1432.7,
+      "close": 1440.0
+    },
+    {
+      "date": "20-08-2025",
+      "open": 1440.7,
+      "high": 1499.0,
+      "low": 1440.7,
+      "close": 1496.2
+    },
+    {
+      "date": "21-08-2025",
+      "open": 1508.0,
+      "high": 1508.0,
+      "low": 1484.3,
+      "close": 1496.4
+    },
+    {
+      "date": "22-08-2025",
+      "open": 1498.1,
+      "high": 1504.3,
+      "low": 1486.1,
+      "close": 1487.5
+    },
+    {
+      "date": "25-08-2025",
+      "open": 1506.7,
+      "high": 1539.0,
+      "low": 1506.7,
+      "close": 1532.1
+    },
+    {
+      "date": "26-08-2025",
+      "open": 1523.0,
+      "high": 1538.4,
+      "low": 1518.6,
+      "close": 1529.6
+    },
+    {
+      "date": "28-08-2025",
+      "open": 1529.6,
+      "high": 1529.6,
+      "low": 1498.0,
+      "close": 1500.1
+    },
+    {
+      "date": "29-08-2025",
+      "open": 1501.9,
+      "high": 1501.9,
+      "low": 1467.7,
+      "close": 1469.6
+    },
+    {
+      "date": "01-09-2025",
+      "open": 1476.7,
+      "high": 1503.4,
+      "low": 1476.2,
+      "close": 1499.4
+    },
+    {
+      "date": "02-09-2025",
+      "open": 1499.4,
+      "high": 1512.8,
+      "low": 1486.3,
+      "close": 1498.7
+    }
+  ]
+}

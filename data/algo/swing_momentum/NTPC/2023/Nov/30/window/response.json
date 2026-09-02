@@ -1,0 +1,253 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "NTPC",
+  "window": {
+    "start_date": "31-10-2023",
+    "end_date": "30-11-2023",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "30-11-2023",
+      "price": 261.65,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "01-11-2023",
+      "price": 232.1,
+      "distance_to_current_trading_rows": 20
+    },
+    "current": {
+      "date": "30-11-2023",
+      "open": 257.95,
+      "high": 261.65,
+      "low": 256.0,
+      "close": 261.3
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "01-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 236.7,
+        "high": 236.7,
+        "low": 232.1,
+        "close": 232.6
+      },
+      {
+        "date": "03-11-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 233.3,
+        "high": 235.25,
+        "low": 233.3,
+        "close": 234.35
+      },
+      {
+        "date": "15-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 248.95,
+        "high": 248.95,
+        "low": 245.95,
+        "close": 247.3
+      },
+      {
+        "date": "29-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 259.55,
+        "high": 259.55,
+        "low": 256.1,
+        "close": 258.4
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 232.1
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 261.65
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 261.65
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "31-10-2023",
+      "open": 234.5,
+      "high": 237.2,
+      "low": 233.55,
+      "close": 235.8
+    },
+    {
+      "date": "01-11-2023",
+      "open": 236.7,
+      "high": 236.7,
+      "low": 232.1,
+      "close": 232.6
+    },
+    {
+      "date": "02-11-2023",
+      "open": 234.2,
+      "high": 235.7,
+      "low": 233.75,
+      "close": 235.25
+    },
+    {
+      "date": "03-11-2023",
+      "open": 233.3,
+      "high": 235.25,
+      "low": 233.3,
+      "close": 234.35
+    },
+    {
+      "date": "06-11-2023",
+      "open": 235.35,
+      "high": 237.2,
+      "low": 234.55,
+      "close": 235.85
+    },
+    {
+      "date": "07-11-2023",
+      "open": 236.3,
+      "high": 239.55,
+      "low": 235.2,
+      "close": 239.15
+    },
+    {
+      "date": "08-11-2023",
+      "open": 239.85,
+      "high": 240.9,
+      "low": 235.95,
+      "close": 236.7
+    },
+    {
+      "date": "09-11-2023",
+      "open": 237.2,
+      "high": 239.7,
+      "low": 236.0,
+      "close": 237.95
+    },
+    {
+      "date": "10-11-2023",
+      "open": 237.85,
+      "high": 243.25,
+      "low": 235.8,
+      "close": 242.75
+    },
+    {
+      "date": "12-11-2023",
+      "open": 245.95,
+      "high": 246.35,
+      "low": 243.0,
+      "close": 244.55
+    },
+    {
+      "date": "13-11-2023",
+      "open": 244.95,
+      "high": 250.6,
+      "low": 243.3,
+      "close": 245.7
+    },
+    {
+      "date": "15-11-2023",
+      "open": 248.95,
+      "high": 248.95,
+      "low": 245.95,
+      "close": 247.3
+    },
+    {
+      "date": "16-11-2023",
+      "open": 248.8,
+      "high": 254.25,
+      "low": 247.65,
+      "close": 252.35
+    },
+    {
+      "date": "17-11-2023",
+      "open": 253.0,
+      "high": 253.1,
+      "low": 251.0,
+      "close": 251.6
+    },
+    {
+      "date": "20-11-2023",
+      "open": 251.0,
+      "high": 255.4,
+      "low": 250.3,
+      "close": 251.05
+    },
+    {
+      "date": "21-11-2023",
+      "open": 252.6,
+      "high": 252.8,
+      "low": 247.3,
+      "close": 250.0
+    },
+    {
+      "date": "22-11-2023",
+      "open": 250.8,
+      "high": 254.0,
+      "low": 249.35,
+      "close": 253.65
+    },
+    {
+      "date": "23-11-2023",
+      "open": 254.0,
+      "high": 255.7,
+      "low": 251.7,
+      "close": 252.75
+    },
+    {
+      "date": "24-11-2023",
+      "open": 253.3,
+      "high": 256.85,
+      "low": 253.0,
+      "close": 253.9
+    },
+    {
+      "date": "28-11-2023",
+      "open": 254.85,
+      "high": 258.3,
+      "low": 253.65,
+      "close": 257.55
+    },
+    {
+      "date": "29-11-2023",
+      "open": 259.55,
+      "high": 259.55,
+      "low": 256.1,
+      "close": 258.4
+    },
+    {
+      "date": "30-11-2023",
+      "open": 257.95,
+      "high": 261.65,
+      "low": 256.0,
+      "close": 261.3
+    }
+  ]
+}

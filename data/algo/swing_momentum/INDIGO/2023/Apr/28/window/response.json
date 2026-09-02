@@ -1,0 +1,223 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "INDIGO",
+  "window": {
+    "start_date": "29-03-2023",
+    "end_date": "28-04-2023",
+    "calendar_days": 30,
+    "trading_rows": 19
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "28-04-2023",
+      "price": 2037.45,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "29-03-2023",
+      "price": 1810.8,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "28-04-2023",
+      "open": 2027.7,
+      "high": 2037.45,
+      "low": 2007.2,
+      "close": 2020.95
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "19-04-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1950.0,
+        "high": 1980.0,
+        "low": 1950.0,
+        "close": 1968.85
+      },
+      {
+        "date": "24-04-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2000.0,
+        "high": 2000.0,
+        "low": 1975.05,
+        "close": 1991.95
+      },
+      {
+        "date": "25-04-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1975.0,
+        "high": 1997.7,
+        "low": 1975.0,
+        "close": 1992.7
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1810.8
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2037.45
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2037.45
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "29-03-2023",
+      "open": 1818.05,
+      "high": 1840.0,
+      "low": 1810.8,
+      "close": 1825.35
+    },
+    {
+      "date": "31-03-2023",
+      "open": 1834.5,
+      "high": 1916.2,
+      "low": 1833.0,
+      "close": 1910.65
+    },
+    {
+      "date": "03-04-2023",
+      "open": 1900.0,
+      "high": 1903.95,
+      "low": 1861.0,
+      "close": 1900.0
+    },
+    {
+      "date": "05-04-2023",
+      "open": 1890.0,
+      "high": 1933.3,
+      "low": 1884.4,
+      "close": 1927.75
+    },
+    {
+      "date": "06-04-2023",
+      "open": 1933.8,
+      "high": 1939.7,
+      "low": 1902.0,
+      "close": 1911.95
+    },
+    {
+      "date": "10-04-2023",
+      "open": 1913.25,
+      "high": 1922.45,
+      "low": 1896.65,
+      "close": 1902.1
+    },
+    {
+      "date": "11-04-2023",
+      "open": 1906.5,
+      "high": 1922.95,
+      "low": 1876.5,
+      "close": 1879.05
+    },
+    {
+      "date": "12-04-2023",
+      "open": 1880.0,
+      "high": 1884.8,
+      "low": 1864.55,
+      "close": 1880.05
+    },
+    {
+      "date": "13-04-2023",
+      "open": 1889.0,
+      "high": 1899.0,
+      "low": 1873.5,
+      "close": 1879.35
+    },
+    {
+      "date": "17-04-2023",
+      "open": 1890.0,
+      "high": 1940.0,
+      "low": 1882.85,
+      "close": 1937.0
+    },
+    {
+      "date": "18-04-2023",
+      "open": 1947.0,
+      "high": 1970.0,
+      "low": 1936.35,
+      "close": 1960.0
+    },
+    {
+      "date": "19-04-2023",
+      "open": 1950.0,
+      "high": 1980.0,
+      "low": 1950.0,
+      "close": 1968.85
+    },
+    {
+      "date": "20-04-2023",
+      "open": 1967.8,
+      "high": 1994.7,
+      "low": 1962.5,
+      "close": 1990.35
+    },
+    {
+      "date": "21-04-2023",
+      "open": 1999.0,
+      "high": 1999.95,
+      "low": 1971.15,
+      "close": 1987.65
+    },
+    {
+      "date": "24-04-2023",
+      "open": 2000.0,
+      "high": 2000.0,
+      "low": 1975.05,
+      "close": 1991.95
+    },
+    {
+      "date": "25-04-2023",
+      "open": 1975.0,
+      "high": 1997.7,
+      "low": 1975.0,
+      "close": 1992.7
+    },
+    {
+      "date": "26-04-2023",
+      "open": 1990.0,
+      "high": 2021.45,
+      "low": 1979.15,
+      "close": 2017.55
+    },
+    {
+      "date": "27-04-2023",
+      "open": 2024.0,
+      "high": 2033.05,
+      "low": 2010.2,
+      "close": 2021.05
+    },
+    {
+      "date": "28-04-2023",
+      "open": 2027.7,
+      "high": 2037.45,
+      "low": 2007.2,
+      "close": 2020.95
+    }
+  ]
+}

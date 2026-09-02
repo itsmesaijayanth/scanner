@@ -1,0 +1,221 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HDFCLIFE",
+  "window": {
+    "start_date": "05-04-2022",
+    "end_date": "05-05-2022",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "29-04-2022",
+      "price": 594.0,
+      "distance_to_current_trading_rows": 3
+    },
+    "monthly_low": {
+      "date": "25-04-2022",
+      "price": 536.0,
+      "distance_to_current_trading_rows": 7
+    },
+    "current": {
+      "date": "05-05-2022",
+      "open": 570.5,
+      "high": 577.4,
+      "low": 563.5,
+      "close": 569.75
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "22-04-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 568.9,
+        "high": 568.9,
+        "low": 552.0,
+        "close": 554.05
+      },
+      {
+        "date": "25-04-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 552.0,
+        "high": 552.0,
+        "low": 536.0,
+        "close": 540.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 536.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 594.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 594.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "05-04-2022",
+      "open": 572.0,
+      "high": 575.65,
+      "low": 567.0,
+      "close": 569.65
+    },
+    {
+      "date": "06-04-2022",
+      "open": 567.0,
+      "high": 568.0,
+      "low": 553.75,
+      "close": 555.85
+    },
+    {
+      "date": "07-04-2022",
+      "open": 560.0,
+      "high": 560.55,
+      "low": 552.85,
+      "close": 559.0
+    },
+    {
+      "date": "08-04-2022",
+      "open": 558.95,
+      "high": 566.85,
+      "low": 553.8,
+      "close": 564.8
+    },
+    {
+      "date": "11-04-2022",
+      "open": 564.95,
+      "high": 571.7,
+      "low": 560.6,
+      "close": 567.4
+    },
+    {
+      "date": "12-04-2022",
+      "open": 566.5,
+      "high": 572.8,
+      "low": 560.45,
+      "close": 562.3
+    },
+    {
+      "date": "13-04-2022",
+      "open": 565.0,
+      "high": 568.75,
+      "low": 562.0,
+      "close": 564.85
+    },
+    {
+      "date": "18-04-2022",
+      "open": 560.5,
+      "high": 576.85,
+      "low": 555.25,
+      "close": 574.3
+    },
+    {
+      "date": "19-04-2022",
+      "open": 576.9,
+      "high": 579.9,
+      "low": 542.0,
+      "close": 546.7
+    },
+    {
+      "date": "20-04-2022",
+      "open": 548.0,
+      "high": 560.75,
+      "low": 541.0,
+      "close": 559.3
+    },
+    {
+      "date": "21-04-2022",
+      "open": 560.5,
+      "high": 575.7,
+      "low": 557.05,
+      "close": 570.95
+    },
+    {
+      "date": "22-04-2022",
+      "open": 568.9,
+      "high": 568.9,
+      "low": 552.0,
+      "close": 554.05
+    },
+    {
+      "date": "25-04-2022",
+      "open": 552.0,
+      "high": 552.0,
+      "low": 536.0,
+      "close": 540.0
+    },
+    {
+      "date": "26-04-2022",
+      "open": 541.1,
+      "high": 556.0,
+      "low": 537.95,
+      "close": 549.85
+    },
+    {
+      "date": "27-04-2022",
+      "open": 552.0,
+      "high": 558.45,
+      "low": 537.25,
+      "close": 547.65
+    },
+    {
+      "date": "28-04-2022",
+      "open": 550.9,
+      "high": 575.35,
+      "low": 546.5,
+      "close": 571.4
+    },
+    {
+      "date": "29-04-2022",
+      "open": 575.35,
+      "high": 594.0,
+      "low": 573.2,
+      "close": 582.4
+    },
+    {
+      "date": "02-05-2022",
+      "open": 577.45,
+      "high": 585.75,
+      "low": 574.7,
+      "close": 579.85
+    },
+    {
+      "date": "04-05-2022",
+      "open": 570.3,
+      "high": 580.55,
+      "low": 564.4,
+      "close": 567.6
+    },
+    {
+      "date": "05-05-2022",
+      "open": 570.5,
+      "high": 577.4,
+      "low": 563.5,
+      "close": 569.75
+    }
+  ]
+}

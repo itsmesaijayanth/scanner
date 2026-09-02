@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ULTRACEMCO",
+  "window": {
+    "start_date": "18-10-2022",
+    "end_date": "17-11-2022",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "09-11-2022",
+      "price": 7060.0,
+      "distance_to_current_trading_rows": 6
+    },
+    "monthly_low": {
+      "date": "19-10-2022",
+      "price": 6250.1,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "17-11-2022",
+      "open": 6933.0,
+      "high": 6959.6,
+      "low": 6850.1,
+      "close": 6871.85
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "21-10-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 6315.6,
+        "high": 6421.0,
+        "low": 6315.6,
+        "close": 6362.9
+      },
+      {
+        "date": "27-10-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 6474.0,
+        "high": 6474.0,
+        "low": 6372.0,
+        "close": 6436.8
+      },
+      {
+        "date": "10-11-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 6895.0,
+        "high": 6895.0,
+        "low": 6790.0,
+        "close": 6801.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 6250.1
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 7060.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 7060.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "18-10-2022",
+      "open": 6305.0,
+      "high": 6444.0,
+      "low": 6290.25,
+      "close": 6346.75
+    },
+    {
+      "date": "19-10-2022",
+      "open": 6348.1,
+      "high": 6446.0,
+      "low": 6250.1,
+      "close": 6398.4
+    },
+    {
+      "date": "20-10-2022",
+      "open": 6340.0,
+      "high": 6413.0,
+      "low": 6277.0,
+      "close": 6302.3
+    },
+    {
+      "date": "21-10-2022",
+      "open": 6315.6,
+      "high": 6421.0,
+      "low": 6315.6,
+      "close": 6362.9
+    },
+    {
+      "date": "24-10-2022",
+      "open": 6440.0,
+      "high": 6444.0,
+      "low": 6370.35,
+      "close": 6394.6
+    },
+    {
+      "date": "25-10-2022",
+      "open": 6420.0,
+      "high": 6474.0,
+      "low": 6387.2,
+      "close": 6415.7
+    },
+    {
+      "date": "27-10-2022",
+      "open": 6474.0,
+      "high": 6474.0,
+      "low": 6372.0,
+      "close": 6436.8
+    },
+    {
+      "date": "28-10-2022",
+      "open": 6442.0,
+      "high": 6470.0,
+      "low": 6406.5,
+      "close": 6445.85
+    },
+    {
+      "date": "31-10-2022",
+      "open": 6478.1,
+      "high": 6730.9,
+      "low": 6454.75,
+      "close": 6714.95
+    },
+    {
+      "date": "01-11-2022",
+      "open": 6743.95,
+      "high": 6850.0,
+      "low": 6718.2,
+      "close": 6820.9
+    },
+    {
+      "date": "02-11-2022",
+      "open": 6825.05,
+      "high": 6875.0,
+      "low": 6725.05,
+      "close": 6779.9
+    },
+    {
+      "date": "03-11-2022",
+      "open": 6730.05,
+      "high": 6784.0,
+      "low": 6670.05,
+      "close": 6728.25
+    },
+    {
+      "date": "04-11-2022",
+      "open": 6759.0,
+      "high": 6960.0,
+      "low": 6735.8,
+      "close": 6893.05
+    },
+    {
+      "date": "07-11-2022",
+      "open": 6925.0,
+      "high": 7018.0,
+      "low": 6868.0,
+      "close": 6973.5
+    },
+    {
+      "date": "09-11-2022",
+      "open": 7000.0,
+      "high": 7060.0,
+      "low": 6858.0,
+      "close": 6903.5
+    },
+    {
+      "date": "10-11-2022",
+      "open": 6895.0,
+      "high": 6895.0,
+      "low": 6790.0,
+      "close": 6801.3
+    },
+    {
+      "date": "11-11-2022",
+      "open": 6839.95,
+      "high": 6927.8,
+      "low": 6787.45,
+      "close": 6813.2
+    },
+    {
+      "date": "14-11-2022",
+      "open": 6845.0,
+      "high": 6897.5,
+      "low": 6819.4,
+      "close": 6854.4
+    },
+    {
+      "date": "15-11-2022",
+      "open": 6880.0,
+      "high": 7000.0,
+      "low": 6867.05,
+      "close": 6964.55
+    },
+    {
+      "date": "16-11-2022",
+      "open": 6986.95,
+      "high": 7035.0,
+      "low": 6868.8,
+      "close": 6912.0
+    },
+    {
+      "date": "17-11-2022",
+      "open": 6933.0,
+      "high": 6959.6,
+      "low": 6850.1,
+      "close": 6871.85
+    }
+  ]
+}

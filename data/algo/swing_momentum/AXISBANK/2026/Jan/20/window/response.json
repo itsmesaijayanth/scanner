@@ -1,0 +1,221 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "AXISBANK",
+  "window": {
+    "start_date": "21-12-2025",
+    "end_date": "20-01-2026",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "19-01-2026",
+      "price": 1327.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "monthly_low": {
+      "date": "29-12-2025",
+      "price": 1219.0,
+      "distance_to_current_trading_rows": 15
+    },
+    "current": {
+      "date": "20-01-2026",
+      "open": 1306.1,
+      "high": 1310.9,
+      "low": 1290.0,
+      "close": 1293.5
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "23-12-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1239.0,
+        "high": 1239.0,
+        "low": 1223.5,
+        "close": 1225.0
+      },
+      {
+        "date": "06-01-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1304.6,
+        "high": 1304.6,
+        "low": 1285.4,
+        "close": 1293.8
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1219.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1327.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1327.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "22-12-2025",
+      "open": 1235.0,
+      "high": 1236.9,
+      "low": 1226.8,
+      "close": 1233.2
+    },
+    {
+      "date": "23-12-2025",
+      "open": 1239.0,
+      "high": 1239.0,
+      "low": 1223.5,
+      "close": 1225.0
+    },
+    {
+      "date": "24-12-2025",
+      "open": 1230.0,
+      "high": 1235.4,
+      "low": 1224.7,
+      "close": 1226.3
+    },
+    {
+      "date": "26-12-2025",
+      "open": 1225.0,
+      "high": 1229.9,
+      "low": 1222.0,
+      "close": 1228.2
+    },
+    {
+      "date": "29-12-2025",
+      "open": 1228.2,
+      "high": 1233.9,
+      "low": 1219.0,
+      "close": 1232.0
+    },
+    {
+      "date": "30-12-2025",
+      "open": 1233.0,
+      "high": 1252.1,
+      "low": 1232.0,
+      "close": 1246.0
+    },
+    {
+      "date": "31-12-2025",
+      "open": 1246.0,
+      "high": 1271.5,
+      "low": 1245.0,
+      "close": 1269.4
+    },
+    {
+      "date": "01-01-2026",
+      "open": 1270.0,
+      "high": 1279.2,
+      "low": 1263.8,
+      "close": 1274.4
+    },
+    {
+      "date": "02-01-2026",
+      "open": 1273.9,
+      "high": 1281.8,
+      "low": 1264.3,
+      "close": 1266.9
+    },
+    {
+      "date": "05-01-2026",
+      "open": 1274.2,
+      "high": 1289.7,
+      "low": 1270.0,
+      "close": 1285.8
+    },
+    {
+      "date": "06-01-2026",
+      "open": 1304.6,
+      "high": 1304.6,
+      "low": 1285.4,
+      "close": 1293.8
+    },
+    {
+      "date": "07-01-2026",
+      "open": 1293.0,
+      "high": 1299.0,
+      "low": 1284.0,
+      "close": 1295.5
+    },
+    {
+      "date": "08-01-2026",
+      "open": 1291.1,
+      "high": 1303.2,
+      "low": 1283.8,
+      "close": 1286.8
+    },
+    {
+      "date": "09-01-2026",
+      "open": 1286.8,
+      "high": 1295.3,
+      "low": 1270.1,
+      "close": 1272.0
+    },
+    {
+      "date": "12-01-2026",
+      "open": 1274.7,
+      "high": 1279.6,
+      "low": 1266.5,
+      "close": 1274.2
+    },
+    {
+      "date": "13-01-2026",
+      "open": 1274.0,
+      "high": 1284.0,
+      "low": 1258.7,
+      "close": 1262.0
+    },
+    {
+      "date": "14-01-2026",
+      "open": 1255.0,
+      "high": 1308.0,
+      "low": 1253.5,
+      "close": 1298.8
+    },
+    {
+      "date": "16-01-2026",
+      "open": 1298.8,
+      "high": 1309.0,
+      "low": 1286.5,
+      "close": 1294.2
+    },
+    {
+      "date": "19-01-2026",
+      "open": 1307.0,
+      "high": 1327.0,
+      "low": 1297.1,
+      "close": 1307.5
+    },
+    {
+      "date": "20-01-2026",
+      "open": 1306.1,
+      "high": 1310.9,
+      "low": 1290.0,
+      "close": 1293.5
+    }
+  ]
+}

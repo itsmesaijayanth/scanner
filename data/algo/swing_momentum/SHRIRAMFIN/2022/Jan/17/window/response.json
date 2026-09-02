@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SHRIRAMFIN",
+  "window": {
+    "start_date": "18-12-2021",
+    "end_date": "17-01-2022",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "05-01-2022",
+      "price": 1276.75,
+      "distance_to_current_trading_rows": 8
+    },
+    "monthly_low": {
+      "date": "22-12-2021",
+      "price": 1157.2,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "17-01-2022",
+      "open": 1242.0,
+      "high": 1254.9,
+      "low": 1236.9,
+      "close": 1239.05
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "21-12-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1225.0,
+        "high": 1225.0,
+        "low": 1166.05,
+        "close": 1173.75
+      },
+      {
+        "date": "24-12-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1220.0,
+        "high": 1220.0,
+        "low": 1165.8,
+        "close": 1177.55
+      },
+      {
+        "date": "06-01-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1249.0,
+        "high": 1249.0,
+        "low": 1209.0,
+        "close": 1216.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1157.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1276.75
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1276.75
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "20-12-2021",
+      "open": 1250.0,
+      "high": 1263.4,
+      "low": 1158.8,
+      "close": 1200.6
+    },
+    {
+      "date": "21-12-2021",
+      "open": 1225.0,
+      "high": 1225.0,
+      "low": 1166.05,
+      "close": 1173.75
+    },
+    {
+      "date": "22-12-2021",
+      "open": 1182.05,
+      "high": 1192.0,
+      "low": 1157.2,
+      "close": 1172.45
+    },
+    {
+      "date": "23-12-2021",
+      "open": 1182.0,
+      "high": 1219.9,
+      "low": 1178.65,
+      "close": 1210.3
+    },
+    {
+      "date": "24-12-2021",
+      "open": 1220.0,
+      "high": 1220.0,
+      "low": 1165.8,
+      "close": 1177.55
+    },
+    {
+      "date": "27-12-2021",
+      "open": 1177.55,
+      "high": 1228.0,
+      "low": 1171.15,
+      "close": 1218.7
+    },
+    {
+      "date": "28-12-2021",
+      "open": 1225.0,
+      "high": 1246.85,
+      "low": 1204.9,
+      "close": 1211.8
+    },
+    {
+      "date": "29-12-2021",
+      "open": 1216.25,
+      "high": 1224.95,
+      "low": 1202.25,
+      "close": 1211.65
+    },
+    {
+      "date": "30-12-2021",
+      "open": 1212.0,
+      "high": 1215.0,
+      "low": 1185.1,
+      "close": 1198.2
+    },
+    {
+      "date": "31-12-2021",
+      "open": 1204.7,
+      "high": 1231.5,
+      "low": 1201.9,
+      "close": 1217.0
+    },
+    {
+      "date": "03-01-2022",
+      "open": 1221.8,
+      "high": 1258.2,
+      "low": 1217.55,
+      "close": 1250.75
+    },
+    {
+      "date": "04-01-2022",
+      "open": 1257.0,
+      "high": 1276.2,
+      "low": 1231.25,
+      "close": 1252.95
+    },
+    {
+      "date": "05-01-2022",
+      "open": 1252.95,
+      "high": 1276.75,
+      "low": 1245.0,
+      "close": 1249.8
+    },
+    {
+      "date": "06-01-2022",
+      "open": 1249.0,
+      "high": 1249.0,
+      "low": 1209.0,
+      "close": 1216.3
+    },
+    {
+      "date": "07-01-2022",
+      "open": 1216.2,
+      "high": 1231.35,
+      "low": 1203.9,
+      "close": 1215.5
+    },
+    {
+      "date": "10-01-2022",
+      "open": 1220.1,
+      "high": 1243.0,
+      "low": 1208.2,
+      "close": 1222.9
+    },
+    {
+      "date": "11-01-2022",
+      "open": 1222.5,
+      "high": 1231.8,
+      "low": 1208.0,
+      "close": 1223.6
+    },
+    {
+      "date": "12-01-2022",
+      "open": 1226.1,
+      "high": 1249.0,
+      "low": 1224.0,
+      "close": 1245.25
+    },
+    {
+      "date": "13-01-2022",
+      "open": 1253.8,
+      "high": 1257.0,
+      "low": 1234.0,
+      "close": 1247.45
+    },
+    {
+      "date": "14-01-2022",
+      "open": 1240.5,
+      "high": 1264.8,
+      "low": 1229.1,
+      "close": 1240.3
+    },
+    {
+      "date": "17-01-2022",
+      "open": 1242.0,
+      "high": 1254.9,
+      "low": 1236.9,
+      "close": 1239.05
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "COALINDIA",
+  "window": {
+    "start_date": "07-08-2021",
+    "end_date": "06-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 2
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-09-2021",
+      "price": 147.85,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 141.75,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "06-09-2021",
+      "open": 147.8,
+      "high": 147.85,
+      "low": 144.3,
+      "close": 146.35
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 141.75
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 147.85
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 147.85
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 141.9,
+      "high": 147.15,
+      "low": 141.75,
+      "close": 146.35
+    },
+    {
+      "date": "06-09-2021",
+      "open": 147.8,
+      "high": 147.85,
+      "low": 144.3,
+      "close": 146.35
+    }
+  ]
+}

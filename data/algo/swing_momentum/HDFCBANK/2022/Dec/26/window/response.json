@@ -1,0 +1,228 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HDFCBANK",
+  "window": {
+    "start_date": "26-11-2022",
+    "end_date": "26-12-2022",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "15-12-2022",
+      "price": 1669.4,
+      "distance_to_current_trading_rows": 7
+    },
+    "monthly_low": {
+      "date": "23-12-2022",
+      "price": 1585.45,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "26-12-2022",
+      "open": 1599.5,
+      "high": 1639.0,
+      "low": 1590.0,
+      "close": 1629.45
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "30-11-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1597.1,
+        "high": 1612.9,
+        "low": 1597.1,
+        "close": 1608.45
+      },
+      {
+        "date": "20-12-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1620.2,
+        "high": 1636.4,
+        "low": 1620.2,
+        "close": 1633.4
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1669.4
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1585.45
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1585.45
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "28-11-2022",
+      "open": 1602.9,
+      "high": 1607.45,
+      "low": 1594.05,
+      "close": 1600.25
+    },
+    {
+      "date": "29-11-2022",
+      "open": 1597.25,
+      "high": 1612.35,
+      "low": 1592.85,
+      "close": 1597.85
+    },
+    {
+      "date": "30-11-2022",
+      "open": 1597.1,
+      "high": 1612.9,
+      "low": 1597.1,
+      "close": 1608.45
+    },
+    {
+      "date": "01-12-2022",
+      "open": 1622.0,
+      "high": 1637.0,
+      "low": 1615.0,
+      "close": 1619.5
+    },
+    {
+      "date": "02-12-2022",
+      "open": 1610.0,
+      "high": 1618.6,
+      "low": 1605.15,
+      "close": 1607.1
+    },
+    {
+      "date": "05-12-2022",
+      "open": 1609.95,
+      "high": 1614.6,
+      "low": 1596.2,
+      "close": 1612.95
+    },
+    {
+      "date": "06-12-2022",
+      "open": 1601.0,
+      "high": 1613.7,
+      "low": 1600.0,
+      "close": 1611.15
+    },
+    {
+      "date": "07-12-2022",
+      "open": 1614.15,
+      "high": 1618.6,
+      "low": 1604.45,
+      "close": 1610.45
+    },
+    {
+      "date": "08-12-2022",
+      "open": 1610.0,
+      "high": 1626.0,
+      "low": 1605.0,
+      "close": 1619.5
+    },
+    {
+      "date": "09-12-2022",
+      "open": 1626.0,
+      "high": 1634.85,
+      "low": 1620.0,
+      "close": 1631.05
+    },
+    {
+      "date": "12-12-2022",
+      "open": 1625.0,
+      "high": 1653.6,
+      "low": 1621.4,
+      "close": 1643.75
+    },
+    {
+      "date": "13-12-2022",
+      "open": 1650.0,
+      "high": 1657.0,
+      "low": 1645.0,
+      "close": 1648.3
+    },
+    {
+      "date": "14-12-2022",
+      "open": 1653.0,
+      "high": 1665.5,
+      "low": 1650.0,
+      "close": 1662.25
+    },
+    {
+      "date": "15-12-2022",
+      "open": 1657.05,
+      "high": 1669.4,
+      "low": 1627.05,
+      "close": 1631.8
+    },
+    {
+      "date": "16-12-2022",
+      "open": 1620.05,
+      "high": 1645.1,
+      "low": 1609.0,
+      "close": 1639.65
+    },
+    {
+      "date": "19-12-2022",
+      "open": 1644.0,
+      "high": 1646.65,
+      "low": 1626.2,
+      "close": 1644.75
+    },
+    {
+      "date": "20-12-2022",
+      "open": 1620.2,
+      "high": 1636.4,
+      "low": 1620.2,
+      "close": 1633.4
+    },
+    {
+      "date": "21-12-2022",
+      "open": 1641.0,
+      "high": 1644.8,
+      "low": 1606.55,
+      "close": 1617.6
+    },
+    {
+      "date": "22-12-2022",
+      "open": 1622.2,
+      "high": 1627.5,
+      "low": 1609.0,
+      "close": 1612.05
+    },
+    {
+      "date": "23-12-2022",
+      "open": 1587.0,
+      "high": 1604.15,
+      "low": 1585.45,
+      "close": 1597.65
+    },
+    {
+      "date": "26-12-2022",
+      "open": 1599.5,
+      "high": 1639.0,
+      "low": 1590.0,
+      "close": 1629.45
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "M&M",
+  "window": {
+    "start_date": "02-03-2025",
+    "end_date": "01-04-2025",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "21-03-2025",
+      "price": 2893.0,
+      "distance_to_current_trading_rows": 6
+    },
+    "monthly_low": {
+      "date": "04-03-2025",
+      "price": 2550.0,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "01-04-2025",
+      "open": 2652.8,
+      "high": 2728.0,
+      "low": 2623.15,
+      "close": 2637.9
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "17-03-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2635.0,
+        "high": 2727.05,
+        "low": 2635.0,
+        "close": 2705.15
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 2550.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2893.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2893.0
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-03-2025",
+      "open": 2613.8,
+      "high": 2695.95,
+      "low": 2595.0,
+      "close": 2611.9
+    },
+    {
+      "date": "04-03-2025",
+      "open": 2561.0,
+      "high": 2627.3,
+      "low": 2550.0,
+      "close": 2613.35
+    },
+    {
+      "date": "05-03-2025",
+      "open": 2661.95,
+      "high": 2736.9,
+      "low": 2642.65,
+      "close": 2726.6
+    },
+    {
+      "date": "06-03-2025",
+      "open": 2748.0,
+      "high": 2766.85,
+      "low": 2695.0,
+      "close": 2742.4
+    },
+    {
+      "date": "07-03-2025",
+      "open": 2721.3,
+      "high": 2765.95,
+      "low": 2708.1,
+      "close": 2727.85
+    },
+    {
+      "date": "10-03-2025",
+      "open": 2695.0,
+      "high": 2734.65,
+      "low": 2665.1,
+      "close": 2702.6
+    },
+    {
+      "date": "11-03-2025",
+      "open": 2684.75,
+      "high": 2685.0,
+      "low": 2613.15,
+      "close": 2645.6
+    },
+    {
+      "date": "12-03-2025",
+      "open": 2645.6,
+      "high": 2678.0,
+      "low": 2636.1,
+      "close": 2653.3
+    },
+    {
+      "date": "13-03-2025",
+      "open": 2677.1,
+      "high": 2686.35,
+      "low": 2618.3,
+      "close": 2643.5
+    },
+    {
+      "date": "17-03-2025",
+      "open": 2635.0,
+      "high": 2727.05,
+      "low": 2635.0,
+      "close": 2705.15
+    },
+    {
+      "date": "18-03-2025",
+      "open": 2732.3,
+      "high": 2798.0,
+      "low": 2715.05,
+      "close": 2791.4
+    },
+    {
+      "date": "19-03-2025",
+      "open": 2795.0,
+      "high": 2831.9,
+      "low": 2779.55,
+      "close": 2789.1
+    },
+    {
+      "date": "20-03-2025",
+      "open": 2803.75,
+      "high": 2847.0,
+      "low": 2801.0,
+      "close": 2828.1
+    },
+    {
+      "date": "21-03-2025",
+      "open": 2839.1,
+      "high": 2893.0,
+      "low": 2781.25,
+      "close": 2801.85
+    },
+    {
+      "date": "24-03-2025",
+      "open": 2815.3,
+      "high": 2822.15,
+      "low": 2709.4,
+      "close": 2774.7
+    },
+    {
+      "date": "25-03-2025",
+      "open": 2774.7,
+      "high": 2802.45,
+      "low": 2725.05,
+      "close": 2736.0
+    },
+    {
+      "date": "26-03-2025",
+      "open": 2751.3,
+      "high": 2795.0,
+      "low": 2737.05,
+      "close": 2742.25
+    },
+    {
+      "date": "27-03-2025",
+      "open": 2735.0,
+      "high": 2751.0,
+      "low": 2695.55,
+      "close": 2733.0
+    },
+    {
+      "date": "28-03-2025",
+      "open": 2735.8,
+      "high": 2739.7,
+      "low": 2635.0,
+      "close": 2665.8
+    },
+    {
+      "date": "01-04-2025",
+      "open": 2652.8,
+      "high": 2728.0,
+      "low": 2623.15,
+      "close": 2637.9
+    }
+  ]
+}

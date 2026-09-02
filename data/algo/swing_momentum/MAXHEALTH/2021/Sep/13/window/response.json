@@ -1,0 +1,114 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "MAXHEALTH",
+  "window": {
+    "start_date": "14-08-2021",
+    "end_date": "13-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 6
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "13-09-2021",
+      "price": 394.8,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 368.0,
+      "distance_to_current_trading_rows": 5
+    },
+    "current": {
+      "date": "13-09-2021",
+      "open": 383.7,
+      "high": 394.8,
+      "low": 383.7,
+      "close": 386.55
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "13-09-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 383.7,
+        "high": 394.8,
+        "low": 383.7,
+        "close": 386.55
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 368.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 394.8
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 394.8
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 371.35,
+      "high": 383.95,
+      "low": 368.0,
+      "close": 380.2
+    },
+    {
+      "date": "06-09-2021",
+      "open": 383.0,
+      "high": 387.0,
+      "low": 375.0,
+      "close": 380.95
+    },
+    {
+      "date": "07-09-2021",
+      "open": 382.4,
+      "high": 391.2,
+      "low": 376.5,
+      "close": 378.85
+    },
+    {
+      "date": "08-09-2021",
+      "open": 382.0,
+      "high": 386.6,
+      "low": 377.8,
+      "close": 384.95
+    },
+    {
+      "date": "09-09-2021",
+      "open": 386.9,
+      "high": 390.35,
+      "low": 378.0,
+      "close": 381.5
+    },
+    {
+      "date": "13-09-2021",
+      "open": 383.7,
+      "high": 394.8,
+      "low": 383.7,
+      "close": 386.55
+    }
+  ]
+}

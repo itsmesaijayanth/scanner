@@ -1,0 +1,253 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SHRIRAMFIN",
+  "window": {
+    "start_date": "03-09-2025",
+    "end_date": "03-10-2025",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-10-2025",
+      "price": 650.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "03-09-2025",
+      "price": 580.0,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "03-10-2025",
+      "open": 645.0,
+      "high": 650.0,
+      "low": 636.0,
+      "close": 645.8
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "04-09-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 596.0,
+        "high": 596.0,
+        "low": 583.9,
+        "close": 585.8
+      },
+      {
+        "date": "18-09-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 620.0,
+        "high": 631.0,
+        "low": 620.0,
+        "close": 626.9
+      },
+      {
+        "date": "22-09-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 638.0,
+        "high": 638.0,
+        "low": 625.45,
+        "close": 627.85
+      },
+      {
+        "date": "01-10-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 616.05,
+        "high": 649.95,
+        "low": 616.05,
+        "close": 648.7
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 580.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 650.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 650.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2025",
+      "open": 585.0,
+      "high": 588.9,
+      "low": 580.0,
+      "close": 586.3
+    },
+    {
+      "date": "04-09-2025",
+      "open": 596.0,
+      "high": 596.0,
+      "low": 583.9,
+      "close": 585.8
+    },
+    {
+      "date": "05-09-2025",
+      "open": 589.0,
+      "high": 596.0,
+      "low": 585.6,
+      "close": 592.5
+    },
+    {
+      "date": "08-09-2025",
+      "open": 596.0,
+      "high": 604.0,
+      "low": 592.85,
+      "close": 596.75
+    },
+    {
+      "date": "09-09-2025",
+      "open": 598.0,
+      "high": 598.95,
+      "low": 590.85,
+      "close": 595.0
+    },
+    {
+      "date": "10-09-2025",
+      "open": 598.6,
+      "high": 606.8,
+      "low": 596.7,
+      "close": 604.8
+    },
+    {
+      "date": "11-09-2025",
+      "open": 604.8,
+      "high": 622.9,
+      "low": 602.8,
+      "close": 620.05
+    },
+    {
+      "date": "12-09-2025",
+      "open": 623.2,
+      "high": 633.7,
+      "low": 619.25,
+      "close": 632.85
+    },
+    {
+      "date": "15-09-2025",
+      "open": 630.8,
+      "high": 631.6,
+      "low": 620.2,
+      "close": 623.65
+    },
+    {
+      "date": "16-09-2025",
+      "open": 623.65,
+      "high": 628.4,
+      "low": 614.1,
+      "close": 618.1
+    },
+    {
+      "date": "17-09-2025",
+      "open": 620.0,
+      "high": 626.0,
+      "low": 617.75,
+      "close": 623.25
+    },
+    {
+      "date": "18-09-2025",
+      "open": 620.0,
+      "high": 631.0,
+      "low": 620.0,
+      "close": 626.9
+    },
+    {
+      "date": "19-09-2025",
+      "open": 630.0,
+      "high": 637.3,
+      "low": 627.1,
+      "close": 633.2
+    },
+    {
+      "date": "22-09-2025",
+      "open": 638.0,
+      "high": 638.0,
+      "low": 625.45,
+      "close": 627.85
+    },
+    {
+      "date": "23-09-2025",
+      "open": 628.0,
+      "high": 634.4,
+      "low": 624.5,
+      "close": 628.8
+    },
+    {
+      "date": "24-09-2025",
+      "open": 628.2,
+      "high": 630.0,
+      "low": 620.3,
+      "close": 625.15
+    },
+    {
+      "date": "25-09-2025",
+      "open": 625.15,
+      "high": 626.0,
+      "low": 610.8,
+      "close": 612.7
+    },
+    {
+      "date": "26-09-2025",
+      "open": 610.0,
+      "high": 617.4,
+      "low": 603.75,
+      "close": 606.05
+    },
+    {
+      "date": "29-09-2025",
+      "open": 608.9,
+      "high": 615.5,
+      "low": 603.15,
+      "close": 611.8
+    },
+    {
+      "date": "30-09-2025",
+      "open": 611.8,
+      "high": 620.7,
+      "low": 611.15,
+      "close": 616.1
+    },
+    {
+      "date": "01-10-2025",
+      "open": 616.05,
+      "high": 649.95,
+      "low": 616.05,
+      "close": 648.7
+    },
+    {
+      "date": "03-10-2025",
+      "open": 645.0,
+      "high": 650.0,
+      "low": 636.0,
+      "close": 645.8
+    }
+  ]
+}

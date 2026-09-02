@@ -1,0 +1,246 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HDFCBANK",
+  "window": {
+    "start_date": "02-02-2025",
+    "end_date": "04-03-2025",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "07-02-2025",
+      "price": 1767.0,
+      "distance_to_current_trading_rows": 16
+    },
+    "monthly_low": {
+      "date": "24-02-2025",
+      "price": 1661.1,
+      "distance_to_current_trading_rows": 5
+    },
+    "current": {
+      "date": "04-03-2025",
+      "open": 1698.0,
+      "high": 1714.3,
+      "low": 1693.25,
+      "close": 1710.0
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "14-02-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1701.9,
+        "high": 1701.9,
+        "low": 1680.0,
+        "close": 1694.85
+      },
+      {
+        "date": "25-02-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1671.1,
+        "high": 1688.0,
+        "low": 1671.1,
+        "close": 1682.35
+      },
+      {
+        "date": "27-02-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1682.55,
+        "high": 1710.75,
+        "low": 1682.55,
+        "close": 1700.7
+      },
+      {
+        "date": "28-02-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1685.0,
+        "high": 1737.25,
+        "low": 1685.0,
+        "close": 1732.4
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1767.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1661.1
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1661.1
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-02-2025",
+      "open": 1670.0,
+      "high": 1686.8,
+      "low": 1663.45,
+      "close": 1678.0
+    },
+    {
+      "date": "04-02-2025",
+      "open": 1688.7,
+      "high": 1725.8,
+      "low": 1680.05,
+      "close": 1720.9
+    },
+    {
+      "date": "05-02-2025",
+      "open": 1733.0,
+      "high": 1744.2,
+      "low": 1718.9,
+      "close": 1737.8
+    },
+    {
+      "date": "06-02-2025",
+      "open": 1735.5,
+      "high": 1749.0,
+      "low": 1724.0,
+      "close": 1743.85
+    },
+    {
+      "date": "07-02-2025",
+      "open": 1750.0,
+      "high": 1767.0,
+      "low": 1725.0,
+      "close": 1732.75
+    },
+    {
+      "date": "10-02-2025",
+      "open": 1717.3,
+      "high": 1723.45,
+      "low": 1708.5,
+      "close": 1715.75
+    },
+    {
+      "date": "11-02-2025",
+      "open": 1703.0,
+      "high": 1711.0,
+      "low": 1688.7,
+      "close": 1701.4
+    },
+    {
+      "date": "12-02-2025",
+      "open": 1693.0,
+      "high": 1712.0,
+      "low": 1681.2,
+      "close": 1706.8
+    },
+    {
+      "date": "13-02-2025",
+      "open": 1699.0,
+      "high": 1714.25,
+      "low": 1693.55,
+      "close": 1697.7
+    },
+    {
+      "date": "14-02-2025",
+      "open": 1701.9,
+      "high": 1701.9,
+      "low": 1680.0,
+      "close": 1694.85
+    },
+    {
+      "date": "17-02-2025",
+      "open": 1685.2,
+      "high": 1720.0,
+      "low": 1681.25,
+      "close": 1717.35
+    },
+    {
+      "date": "18-02-2025",
+      "open": 1713.05,
+      "high": 1731.55,
+      "low": 1706.15,
+      "close": 1723.05
+    },
+    {
+      "date": "19-02-2025",
+      "open": 1717.0,
+      "high": 1737.9,
+      "low": 1712.45,
+      "close": 1727.2
+    },
+    {
+      "date": "20-02-2025",
+      "open": 1711.0,
+      "high": 1714.7,
+      "low": 1685.3,
+      "close": 1687.1
+    },
+    {
+      "date": "21-02-2025",
+      "open": 1680.9,
+      "high": 1694.95,
+      "low": 1677.25,
+      "close": 1692.5
+    },
+    {
+      "date": "24-02-2025",
+      "open": 1681.1,
+      "high": 1684.2,
+      "low": 1661.1,
+      "close": 1677.1
+    },
+    {
+      "date": "25-02-2025",
+      "open": 1671.1,
+      "high": 1688.0,
+      "low": 1671.1,
+      "close": 1682.35
+    },
+    {
+      "date": "27-02-2025",
+      "open": 1682.55,
+      "high": 1710.75,
+      "low": 1682.55,
+      "close": 1700.7
+    },
+    {
+      "date": "28-02-2025",
+      "open": 1685.0,
+      "high": 1737.25,
+      "low": 1685.0,
+      "close": 1732.4
+    },
+    {
+      "date": "03-03-2025",
+      "open": 1739.8,
+      "high": 1743.05,
+      "low": 1694.1,
+      "close": 1701.55
+    },
+    {
+      "date": "04-03-2025",
+      "open": 1698.0,
+      "high": 1714.3,
+      "low": 1693.25,
+      "close": 1710.0
+    }
+  ]
+}

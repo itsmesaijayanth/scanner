@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "KOTAKBANK",
+  "window": {
+    "start_date": "13-07-2024",
+    "end_date": "12-08-2024",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "15-07-2024",
+      "price": 1857.9,
+      "distance_to_current_trading_rows": 19
+    },
+    "monthly_low": {
+      "date": "24-07-2024",
+      "price": 1729.05,
+      "distance_to_current_trading_rows": 13
+    },
+    "current": {
+      "date": "12-08-2024",
+      "open": 1761.0,
+      "high": 1791.05,
+      "low": 1751.25,
+      "close": 1772.55
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "22-07-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1821.0,
+        "high": 1821.0,
+        "low": 1748.9,
+        "close": 1757.55
+      },
+      {
+        "date": "25-07-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1732.0,
+        "high": 1779.0,
+        "low": 1732.0,
+        "close": 1775.15
+      },
+      {
+        "date": "26-07-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1758.1,
+        "high": 1829.85,
+        "low": 1758.1,
+        "close": 1813.85
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1857.9
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1729.05
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1729.05
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "15-07-2024",
+      "open": 1839.0,
+      "high": 1857.9,
+      "low": 1826.65,
+      "close": 1843.55
+    },
+    {
+      "date": "16-07-2024",
+      "open": 1842.1,
+      "high": 1849.1,
+      "low": 1800.9,
+      "close": 1805.3
+    },
+    {
+      "date": "18-07-2024",
+      "open": 1805.0,
+      "high": 1831.2,
+      "low": 1793.15,
+      "close": 1826.75
+    },
+    {
+      "date": "19-07-2024",
+      "open": 1818.5,
+      "high": 1831.0,
+      "low": 1805.95,
+      "close": 1821.6
+    },
+    {
+      "date": "22-07-2024",
+      "open": 1821.0,
+      "high": 1821.0,
+      "low": 1748.9,
+      "close": 1757.55
+    },
+    {
+      "date": "23-07-2024",
+      "open": 1769.0,
+      "high": 1780.5,
+      "low": 1739.15,
+      "close": 1768.9
+    },
+    {
+      "date": "24-07-2024",
+      "open": 1767.95,
+      "high": 1780.9,
+      "low": 1729.05,
+      "close": 1746.2
+    },
+    {
+      "date": "25-07-2024",
+      "open": 1732.0,
+      "high": 1779.0,
+      "low": 1732.0,
+      "close": 1775.15
+    },
+    {
+      "date": "26-07-2024",
+      "open": 1758.1,
+      "high": 1829.85,
+      "low": 1758.1,
+      "close": 1813.85
+    },
+    {
+      "date": "29-07-2024",
+      "open": 1824.7,
+      "high": 1827.0,
+      "low": 1783.5,
+      "close": 1793.9
+    },
+    {
+      "date": "30-07-2024",
+      "open": 1793.9,
+      "high": 1806.65,
+      "low": 1781.3,
+      "close": 1786.1
+    },
+    {
+      "date": "31-07-2024",
+      "open": 1793.0,
+      "high": 1816.0,
+      "low": 1773.15,
+      "close": 1807.9
+    },
+    {
+      "date": "01-08-2024",
+      "open": 1807.1,
+      "high": 1818.25,
+      "low": 1786.25,
+      "close": 1792.65
+    },
+    {
+      "date": "02-08-2024",
+      "open": 1781.1,
+      "high": 1810.0,
+      "low": 1775.0,
+      "close": 1803.45
+    },
+    {
+      "date": "05-08-2024",
+      "open": 1770.2,
+      "high": 1805.6,
+      "low": 1768.55,
+      "close": 1773.65
+    },
+    {
+      "date": "06-08-2024",
+      "open": 1785.0,
+      "high": 1792.2,
+      "low": 1760.0,
+      "close": 1770.55
+    },
+    {
+      "date": "07-08-2024",
+      "open": 1785.0,
+      "high": 1786.6,
+      "low": 1760.05,
+      "close": 1776.55
+    },
+    {
+      "date": "08-08-2024",
+      "open": 1766.65,
+      "high": 1781.8,
+      "low": 1762.65,
+      "close": 1772.75
+    },
+    {
+      "date": "09-08-2024",
+      "open": 1785.05,
+      "high": 1785.45,
+      "low": 1765.0,
+      "close": 1769.65
+    },
+    {
+      "date": "12-08-2024",
+      "open": 1761.0,
+      "high": 1791.05,
+      "low": 1751.25,
+      "close": 1772.55
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ADANIENT",
+  "window": {
+    "start_date": "05-11-2024",
+    "end_date": "05-12-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-11-2024",
+      "price": 3070.0,
+      "distance_to_current_trading_rows": 19
+    },
+    "monthly_low": {
+      "date": "22-11-2024",
+      "price": 2025.0,
+      "distance_to_current_trading_rows": 9
+    },
+    "current": {
+      "date": "05-12-2024",
+      "open": 2505.0,
+      "high": 2538.15,
+      "low": 2470.25,
+      "close": 2522.55
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "06-11-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2918.0,
+        "high": 3070.0,
+        "low": 2918.0,
+        "close": 3046.25
+      },
+      {
+        "date": "07-11-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3045.0,
+        "high": 3045.0,
+        "low": 2943.05,
+        "close": 2970.1
+      },
+      {
+        "date": "21-11-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2539.35,
+        "high": 2539.35,
+        "low": 2155.05,
+        "close": 2183.65
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 3070.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 2025.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 2025.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "05-11-2024",
+      "open": 2897.4,
+      "high": 2924.0,
+      "low": 2870.0,
+      "close": 2915.55
+    },
+    {
+      "date": "06-11-2024",
+      "open": 2918.0,
+      "high": 3070.0,
+      "low": 2918.0,
+      "close": 3046.25
+    },
+    {
+      "date": "07-11-2024",
+      "open": 3045.0,
+      "high": 3045.0,
+      "low": 2943.05,
+      "close": 2970.1
+    },
+    {
+      "date": "08-11-2024",
+      "open": 2965.1,
+      "high": 2995.0,
+      "low": 2911.25,
+      "close": 2929.1
+    },
+    {
+      "date": "11-11-2024",
+      "open": 2928.0,
+      "high": 2946.8,
+      "low": 2888.0,
+      "close": 2903.65
+    },
+    {
+      "date": "12-11-2024",
+      "open": 2910.0,
+      "high": 2930.45,
+      "low": 2855.0,
+      "close": 2870.0
+    },
+    {
+      "date": "13-11-2024",
+      "open": 2860.0,
+      "high": 2889.0,
+      "low": 2808.0,
+      "close": 2816.7
+    },
+    {
+      "date": "14-11-2024",
+      "open": 2824.0,
+      "high": 2844.8,
+      "low": 2801.0,
+      "close": 2826.8
+    },
+    {
+      "date": "18-11-2024",
+      "open": 2826.8,
+      "high": 2858.65,
+      "low": 2793.3,
+      "close": 2818.7
+    },
+    {
+      "date": "19-11-2024",
+      "open": 2831.0,
+      "high": 2894.8,
+      "low": 2809.8,
+      "close": 2821.5
+    },
+    {
+      "date": "21-11-2024",
+      "open": 2539.35,
+      "high": 2539.35,
+      "low": 2155.05,
+      "close": 2183.65
+    },
+    {
+      "date": "22-11-2024",
+      "open": 2101.0,
+      "high": 2289.7,
+      "low": 2025.0,
+      "close": 2228.0
+    },
+    {
+      "date": "25-11-2024",
+      "open": 2315.0,
+      "high": 2333.65,
+      "low": 2238.0,
+      "close": 2257.5
+    },
+    {
+      "date": "26-11-2024",
+      "open": 2265.6,
+      "high": 2292.85,
+      "low": 2136.0,
+      "close": 2150.5
+    },
+    {
+      "date": "27-11-2024",
+      "open": 2180.0,
+      "high": 2418.0,
+      "low": 2142.15,
+      "close": 2397.8
+    },
+    {
+      "date": "28-11-2024",
+      "open": 2440.0,
+      "high": 2526.3,
+      "low": 2400.0,
+      "close": 2437.1
+    },
+    {
+      "date": "29-11-2024",
+      "open": 2464.05,
+      "high": 2520.0,
+      "low": 2400.0,
+      "close": 2463.15
+    },
+    {
+      "date": "02-12-2024",
+      "open": 2491.35,
+      "high": 2508.0,
+      "low": 2426.6,
+      "close": 2457.05
+    },
+    {
+      "date": "03-12-2024",
+      "open": 2464.0,
+      "high": 2558.0,
+      "low": 2462.05,
+      "close": 2514.2
+    },
+    {
+      "date": "04-12-2024",
+      "open": 2528.0,
+      "high": 2530.05,
+      "low": 2470.1,
+      "close": 2494.75
+    },
+    {
+      "date": "05-12-2024",
+      "open": 2505.0,
+      "high": 2538.15,
+      "low": 2470.25,
+      "close": 2522.55
+    }
+  ]
+}

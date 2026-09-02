@@ -1,0 +1,260 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HINDALCO",
+  "window": {
+    "start_date": "01-07-2026",
+    "end_date": "31-07-2026",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "14-07-2026",
+      "price": 998.0,
+      "distance_to_current_trading_rows": 13
+    },
+    "monthly_low": {
+      "date": "28-07-2026",
+      "price": 935.1,
+      "distance_to_current_trading_rows": 3
+    },
+    "current": {
+      "date": "31-07-2026",
+      "open": 979.8,
+      "high": 988.0,
+      "low": 971.05,
+      "close": 974.45
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "02-07-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 942.05,
+        "high": 962.5,
+        "low": 942.05,
+        "close": 949.2
+      },
+      {
+        "date": "08-07-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 962.05,
+        "high": 979.9,
+        "low": 962.05,
+        "close": 971.65
+      },
+      {
+        "date": "14-07-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 964.0,
+        "high": 998.0,
+        "low": 964.0,
+        "close": 974.3
+      },
+      {
+        "date": "16-07-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 972.4,
+        "high": 972.4,
+        "low": 957.2,
+        "close": 959.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 998.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 935.1
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 935.1
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "01-07-2026",
+      "open": 951.9,
+      "high": 960.25,
+      "low": 937.5,
+      "close": 939.7
+    },
+    {
+      "date": "02-07-2026",
+      "open": 942.05,
+      "high": 962.5,
+      "low": 942.05,
+      "close": 949.2
+    },
+    {
+      "date": "03-07-2026",
+      "open": 965.0,
+      "high": 978.9,
+      "low": 951.05,
+      "close": 953.2
+    },
+    {
+      "date": "06-07-2026",
+      "open": 960.85,
+      "high": 981.6,
+      "low": 954.0,
+      "close": 980.4
+    },
+    {
+      "date": "07-07-2026",
+      "open": 970.4,
+      "high": 978.95,
+      "low": 962.9,
+      "close": 969.5
+    },
+    {
+      "date": "08-07-2026",
+      "open": 962.05,
+      "high": 979.9,
+      "low": 962.05,
+      "close": 971.65
+    },
+    {
+      "date": "09-07-2026",
+      "open": 971.7,
+      "high": 973.95,
+      "low": 954.65,
+      "close": 963.45
+    },
+    {
+      "date": "10-07-2026",
+      "open": 976.0,
+      "high": 985.6,
+      "low": 964.7,
+      "close": 967.45
+    },
+    {
+      "date": "13-07-2026",
+      "open": 963.1,
+      "high": 971.7,
+      "low": 956.45,
+      "close": 966.85
+    },
+    {
+      "date": "14-07-2026",
+      "open": 964.0,
+      "high": 998.0,
+      "low": 964.0,
+      "close": 974.3
+    },
+    {
+      "date": "15-07-2026",
+      "open": 972.0,
+      "high": 976.0,
+      "low": 953.0,
+      "close": 955.8
+    },
+    {
+      "date": "16-07-2026",
+      "open": 972.4,
+      "high": 972.4,
+      "low": 957.2,
+      "close": 959.3
+    },
+    {
+      "date": "17-07-2026",
+      "open": 955.0,
+      "high": 959.1,
+      "low": 939.5,
+      "close": 944.15
+    },
+    {
+      "date": "20-07-2026",
+      "open": 944.35,
+      "high": 957.75,
+      "low": 944.15,
+      "close": 947.8
+    },
+    {
+      "date": "21-07-2026",
+      "open": 944.15,
+      "high": 956.3,
+      "low": 941.0,
+      "close": 951.4
+    },
+    {
+      "date": "22-07-2026",
+      "open": 955.0,
+      "high": 961.95,
+      "low": 945.2,
+      "close": 950.0
+    },
+    {
+      "date": "23-07-2026",
+      "open": 950.0,
+      "high": 964.0,
+      "low": 947.55,
+      "close": 955.65
+    },
+    {
+      "date": "24-07-2026",
+      "open": 947.6,
+      "high": 950.9,
+      "low": 939.7,
+      "close": 942.8
+    },
+    {
+      "date": "27-07-2026",
+      "open": 944.45,
+      "high": 951.25,
+      "low": 943.05,
+      "close": 945.25
+    },
+    {
+      "date": "28-07-2026",
+      "open": 945.0,
+      "high": 947.9,
+      "low": 935.1,
+      "close": 936.4
+    },
+    {
+      "date": "29-07-2026",
+      "open": 940.0,
+      "high": 964.8,
+      "low": 938.15,
+      "close": 962.45
+    },
+    {
+      "date": "30-07-2026",
+      "open": 968.0,
+      "high": 973.05,
+      "low": 960.6,
+      "close": 970.4
+    },
+    {
+      "date": "31-07-2026",
+      "open": 979.8,
+      "high": 988.0,
+      "low": 971.05,
+      "close": 974.45
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SBILIFE",
+  "window": {
+    "start_date": "19-02-2023",
+    "end_date": "21-03-2023",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "20-02-2023",
+      "price": 1170.65,
+      "distance_to_current_trading_rows": 20
+    },
+    "monthly_low": {
+      "date": "20-03-2023",
+      "price": 1054.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "21-03-2023",
+      "open": 1075.05,
+      "high": 1099.7,
+      "low": 1075.05,
+      "close": 1097.7
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "01-03-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1126.65,
+        "high": 1126.65,
+        "low": 1108.8,
+        "close": 1118.15
+      },
+      {
+        "date": "03-03-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1100.15,
+        "high": 1132.7,
+        "low": 1100.15,
+        "close": 1129.25
+      },
+      {
+        "date": "21-03-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1075.05,
+        "high": 1099.7,
+        "low": 1075.05,
+        "close": 1097.7
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1170.65
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1054.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1054.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "20-02-2023",
+      "open": 1144.0,
+      "high": 1170.65,
+      "low": 1141.15,
+      "close": 1158.4
+    },
+    {
+      "date": "21-02-2023",
+      "open": 1164.2,
+      "high": 1168.0,
+      "low": 1144.2,
+      "close": 1150.35
+    },
+    {
+      "date": "22-02-2023",
+      "open": 1148.9,
+      "high": 1148.95,
+      "low": 1125.15,
+      "close": 1131.15
+    },
+    {
+      "date": "23-02-2023",
+      "open": 1136.85,
+      "high": 1141.9,
+      "low": 1123.85,
+      "close": 1135.4
+    },
+    {
+      "date": "24-02-2023",
+      "open": 1136.1,
+      "high": 1142.35,
+      "low": 1119.2,
+      "close": 1122.05
+    },
+    {
+      "date": "27-02-2023",
+      "open": 1122.05,
+      "high": 1135.0,
+      "low": 1110.45,
+      "close": 1129.15
+    },
+    {
+      "date": "28-02-2023",
+      "open": 1131.4,
+      "high": 1134.9,
+      "low": 1109.05,
+      "close": 1121.0
+    },
+    {
+      "date": "01-03-2023",
+      "open": 1126.65,
+      "high": 1126.65,
+      "low": 1108.8,
+      "close": 1118.15
+    },
+    {
+      "date": "02-03-2023",
+      "open": 1121.7,
+      "high": 1123.0,
+      "low": 1098.1,
+      "close": 1100.15
+    },
+    {
+      "date": "03-03-2023",
+      "open": 1100.15,
+      "high": 1132.7,
+      "low": 1100.15,
+      "close": 1129.25
+    },
+    {
+      "date": "06-03-2023",
+      "open": 1132.0,
+      "high": 1145.95,
+      "low": 1125.0,
+      "close": 1128.7
+    },
+    {
+      "date": "08-03-2023",
+      "open": 1130.0,
+      "high": 1141.3,
+      "low": 1110.7,
+      "close": 1129.2
+    },
+    {
+      "date": "09-03-2023",
+      "open": 1129.2,
+      "high": 1134.7,
+      "low": 1092.0,
+      "close": 1096.7
+    },
+    {
+      "date": "10-03-2023",
+      "open": 1093.0,
+      "high": 1100.55,
+      "low": 1083.95,
+      "close": 1095.9
+    },
+    {
+      "date": "13-03-2023",
+      "open": 1092.0,
+      "high": 1101.4,
+      "low": 1066.15,
+      "close": 1072.5
+    },
+    {
+      "date": "14-03-2023",
+      "open": 1074.8,
+      "high": 1092.55,
+      "low": 1071.0,
+      "close": 1077.1
+    },
+    {
+      "date": "15-03-2023",
+      "open": 1080.0,
+      "high": 1081.4,
+      "low": 1062.0,
+      "close": 1067.05
+    },
+    {
+      "date": "16-03-2023",
+      "open": 1071.95,
+      "high": 1088.55,
+      "low": 1054.6,
+      "close": 1062.65
+    },
+    {
+      "date": "17-03-2023",
+      "open": 1068.0,
+      "high": 1091.1,
+      "low": 1066.15,
+      "close": 1071.6
+    },
+    {
+      "date": "20-03-2023",
+      "open": 1071.6,
+      "high": 1089.95,
+      "low": 1054.0,
+      "close": 1074.1
+    },
+    {
+      "date": "21-03-2023",
+      "open": 1075.05,
+      "high": 1099.7,
+      "low": 1075.05,
+      "close": 1097.7
+    }
+  ]
+}

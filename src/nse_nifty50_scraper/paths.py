@@ -31,3 +31,22 @@ def symbol_window_response_path(output_dir: Path, symbol: str, run_date: dt.date
 
 def run_summary_path(runs_dir: Path, run_date: dt.date) -> Path:
     return runs_dir / f"{format_nse_date(run_date)}.json"
+
+
+def algorithm_window_response_path(
+    output_dir: Path,
+    algorithm: str,
+    symbol: str,
+    window_end_date: dt.date,
+) -> Path:
+    year, month, day = date_path_parts(window_end_date)
+    return (
+        output_dir
+        / algorithm
+        / safe_symbol_path(symbol)
+        / year
+        / month
+        / day
+        / "window"
+        / "response.json"
+    )

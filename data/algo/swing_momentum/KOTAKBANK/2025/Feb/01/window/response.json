@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "KOTAKBANK",
+  "window": {
+    "start_date": "02-01-2025",
+    "end_date": "01-02-2025",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "30-01-2025",
+      "price": 1938.1,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "13-01-2025",
+      "price": 1723.75,
+      "distance_to_current_trading_rows": 15
+    },
+    "current": {
+      "date": "01-02-2025",
+      "open": 1899.0,
+      "high": 1917.15,
+      "low": 1871.6,
+      "close": 1903.1
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "09-01-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1774.0,
+        "high": 1808.7,
+        "low": 1774.0,
+        "close": 1790.2
+      },
+      {
+        "date": "15-01-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1760.1,
+        "high": 1795.0,
+        "low": 1760.1,
+        "close": 1789.6
+      },
+      {
+        "date": "21-01-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1920.95,
+        "high": 1920.95,
+        "low": 1891.0,
+        "close": 1893.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1723.75
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1938.1
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1938.1
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "02-01-2025",
+      "open": 1800.0,
+      "high": 1840.2,
+      "low": 1796.9,
+      "close": 1837.15
+    },
+    {
+      "date": "03-01-2025",
+      "open": 1851.0,
+      "high": 1853.0,
+      "low": 1817.1,
+      "close": 1838.65
+    },
+    {
+      "date": "06-01-2025",
+      "open": 1821.0,
+      "high": 1825.0,
+      "low": 1772.9,
+      "close": 1779.65
+    },
+    {
+      "date": "07-01-2025",
+      "open": 1787.0,
+      "high": 1797.45,
+      "low": 1769.9,
+      "close": 1772.05
+    },
+    {
+      "date": "08-01-2025",
+      "open": 1780.1,
+      "high": 1784.7,
+      "low": 1762.45,
+      "close": 1768.65
+    },
+    {
+      "date": "09-01-2025",
+      "open": 1774.0,
+      "high": 1808.7,
+      "low": 1774.0,
+      "close": 1790.2
+    },
+    {
+      "date": "10-01-2025",
+      "open": 1784.2,
+      "high": 1789.65,
+      "low": 1753.35,
+      "close": 1756.2
+    },
+    {
+      "date": "13-01-2025",
+      "open": 1732.9,
+      "high": 1744.55,
+      "low": 1723.75,
+      "close": 1738.4
+    },
+    {
+      "date": "14-01-2025",
+      "open": 1749.6,
+      "high": 1768.85,
+      "low": 1729.6,
+      "close": 1750.6
+    },
+    {
+      "date": "15-01-2025",
+      "open": 1760.1,
+      "high": 1795.0,
+      "low": 1760.1,
+      "close": 1789.6
+    },
+    {
+      "date": "16-01-2025",
+      "open": 1795.8,
+      "high": 1814.95,
+      "low": 1785.35,
+      "close": 1805.55
+    },
+    {
+      "date": "17-01-2025",
+      "open": 1797.0,
+      "high": 1805.5,
+      "low": 1748.3,
+      "close": 1758.6
+    },
+    {
+      "date": "20-01-2025",
+      "open": 1890.0,
+      "high": 1929.9,
+      "low": 1866.0,
+      "close": 1920.5
+    },
+    {
+      "date": "21-01-2025",
+      "open": 1920.95,
+      "high": 1920.95,
+      "low": 1891.0,
+      "close": 1893.3
+    },
+    {
+      "date": "22-01-2025",
+      "open": 1899.0,
+      "high": 1920.5,
+      "low": 1887.05,
+      "close": 1917.5
+    },
+    {
+      "date": "23-01-2025",
+      "open": 1907.1,
+      "high": 1923.95,
+      "low": 1892.1,
+      "close": 1894.85
+    },
+    {
+      "date": "24-01-2025",
+      "open": 1891.0,
+      "high": 1918.5,
+      "low": 1873.05,
+      "close": 1886.2
+    },
+    {
+      "date": "27-01-2025",
+      "open": 1875.0,
+      "high": 1898.8,
+      "low": 1862.75,
+      "close": 1881.4
+    },
+    {
+      "date": "28-01-2025",
+      "open": 1895.0,
+      "high": 1905.0,
+      "low": 1870.8,
+      "close": 1887.75
+    },
+    {
+      "date": "29-01-2025",
+      "open": 1887.8,
+      "high": 1924.7,
+      "low": 1885.0,
+      "close": 1920.35
+    },
+    {
+      "date": "30-01-2025",
+      "open": 1920.35,
+      "high": 1938.1,
+      "low": 1877.45,
+      "close": 1901.5
+    },
+    {
+      "date": "31-01-2025",
+      "open": 1903.05,
+      "high": 1908.95,
+      "low": 1889.6,
+      "close": 1901.3
+    },
+    {
+      "date": "01-02-2025",
+      "open": 1899.0,
+      "high": 1917.15,
+      "low": 1871.6,
+      "close": 1903.1
+    }
+  ]
+}

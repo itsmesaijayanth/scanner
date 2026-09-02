@@ -1,0 +1,223 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TATASTEEL",
+  "window": {
+    "start_date": "19-03-2024",
+    "end_date": "18-04-2024",
+    "calendar_days": 30,
+    "trading_rows": 19
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "09-04-2024",
+      "price": 169.8,
+      "distance_to_current_trading_rows": 5
+    },
+    "monthly_low": {
+      "date": "20-03-2024",
+      "price": 143.85,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "18-04-2024",
+      "open": 160.9,
+      "high": 164.0,
+      "low": 159.15,
+      "close": 160.05
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "28-03-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 152.7,
+        "high": 157.0,
+        "low": 152.7,
+        "close": 155.85
+      },
+      {
+        "date": "08-04-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 166.95,
+        "high": 166.95,
+        "low": 164.2,
+        "close": 165.2
+      },
+      {
+        "date": "12-04-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 166.0,
+        "high": 166.0,
+        "low": 163.0,
+        "close": 163.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 143.85
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 169.8
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 169.8
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "19-03-2024",
+      "open": 149.0,
+      "high": 152.45,
+      "low": 147.6,
+      "close": 148.75
+    },
+    {
+      "date": "20-03-2024",
+      "open": 149.6,
+      "high": 150.65,
+      "low": 143.85,
+      "close": 145.65
+    },
+    {
+      "date": "21-03-2024",
+      "open": 148.0,
+      "high": 151.2,
+      "low": 147.8,
+      "close": 150.1
+    },
+    {
+      "date": "22-03-2024",
+      "open": 149.0,
+      "high": 152.75,
+      "low": 148.35,
+      "close": 151.8
+    },
+    {
+      "date": "26-03-2024",
+      "open": 151.15,
+      "high": 153.4,
+      "low": 150.5,
+      "close": 152.4
+    },
+    {
+      "date": "27-03-2024",
+      "open": 152.45,
+      "high": 154.1,
+      "low": 152.0,
+      "close": 152.7
+    },
+    {
+      "date": "28-03-2024",
+      "open": 152.7,
+      "high": 157.0,
+      "low": 152.7,
+      "close": 155.85
+    },
+    {
+      "date": "01-04-2024",
+      "open": 156.8,
+      "high": 163.9,
+      "low": 156.5,
+      "close": 163.15
+    },
+    {
+      "date": "02-04-2024",
+      "open": 162.95,
+      "high": 165.5,
+      "low": 161.8,
+      "close": 164.65
+    },
+    {
+      "date": "03-04-2024",
+      "open": 164.65,
+      "high": 166.25,
+      "low": 163.1,
+      "close": 163.65
+    },
+    {
+      "date": "04-04-2024",
+      "open": 165.55,
+      "high": 165.95,
+      "low": 161.0,
+      "close": 163.4
+    },
+    {
+      "date": "05-04-2024",
+      "open": 163.9,
+      "high": 164.15,
+      "low": 160.8,
+      "close": 163.35
+    },
+    {
+      "date": "08-04-2024",
+      "open": 166.95,
+      "high": 166.95,
+      "low": 164.2,
+      "close": 165.2
+    },
+    {
+      "date": "09-04-2024",
+      "open": 166.0,
+      "high": 169.8,
+      "low": 165.2,
+      "close": 166.0
+    },
+    {
+      "date": "10-04-2024",
+      "open": 167.3,
+      "high": 169.2,
+      "low": 164.5,
+      "close": 165.05
+    },
+    {
+      "date": "12-04-2024",
+      "open": 166.0,
+      "high": 166.0,
+      "low": 163.0,
+      "close": 163.5
+    },
+    {
+      "date": "15-04-2024",
+      "open": 161.8,
+      "high": 164.7,
+      "low": 158.6,
+      "close": 160.85
+    },
+    {
+      "date": "16-04-2024",
+      "open": 160.85,
+      "high": 162.45,
+      "low": 159.0,
+      "close": 160.05
+    },
+    {
+      "date": "18-04-2024",
+      "open": 160.9,
+      "high": 164.0,
+      "low": 159.15,
+      "close": 160.05
+    }
+  ]
+}

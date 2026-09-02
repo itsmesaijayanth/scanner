@@ -1,0 +1,93 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "NTPC",
+  "window": {
+    "start_date": "08-08-2021",
+    "end_date": "07-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 3
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-09-2021",
+      "price": 117.9,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "07-09-2021",
+      "price": 115.25,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "07-09-2021",
+      "open": 116.7,
+      "high": 116.9,
+      "low": 115.25,
+      "close": 115.85
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "06-09-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 117.65,
+        "high": 117.65,
+        "low": 115.9,
+        "close": 116.45
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 117.9
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 115.25
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 115.25
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 117.0,
+      "high": 117.9,
+      "low": 116.5,
+      "close": 117.0
+    },
+    {
+      "date": "06-09-2021",
+      "open": 117.65,
+      "high": 117.65,
+      "low": 115.9,
+      "close": 116.45
+    },
+    {
+      "date": "07-09-2021",
+      "open": 116.7,
+      "high": 116.9,
+      "low": 115.25,
+      "close": 115.85
+    }
+  ]
+}

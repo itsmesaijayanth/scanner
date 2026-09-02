@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "EICHERMOT",
+  "window": {
+    "start_date": "17-06-2025",
+    "end_date": "17-07-2025",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-07-2025",
+      "price": 5774.5,
+      "distance_to_current_trading_rows": 10
+    },
+    "monthly_low": {
+      "date": "18-06-2025",
+      "price": 5307.5,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "17-07-2025",
+      "open": 5668.0,
+      "high": 5683.0,
+      "low": 5628.0,
+      "close": 5650.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "02-07-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 5687.0,
+        "high": 5745.0,
+        "low": 5687.0,
+        "close": 5722.5
+      },
+      {
+        "date": "04-07-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 5715.5,
+        "high": 5715.5,
+        "low": 5620.0,
+        "close": 5629.0
+      },
+      {
+        "date": "08-07-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 5705.0,
+        "high": 5705.0,
+        "low": 5648.5,
+        "close": 5679.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 5307.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 5774.5
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 5774.5
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "17-06-2025",
+      "open": 5381.0,
+      "high": 5391.0,
+      "low": 5311.0,
+      "close": 5341.0
+    },
+    {
+      "date": "18-06-2025",
+      "open": 5334.0,
+      "high": 5463.0,
+      "low": 5307.5,
+      "close": 5393.0
+    },
+    {
+      "date": "19-06-2025",
+      "open": 5410.0,
+      "high": 5506.5,
+      "low": 5405.0,
+      "close": 5493.5
+    },
+    {
+      "date": "20-06-2025",
+      "open": 5530.0,
+      "high": 5542.0,
+      "low": 5495.0,
+      "close": 5525.0
+    },
+    {
+      "date": "23-06-2025",
+      "open": 5495.0,
+      "high": 5560.0,
+      "low": 5479.5,
+      "close": 5552.5
+    },
+    {
+      "date": "24-06-2025",
+      "open": 5589.0,
+      "high": 5639.5,
+      "low": 5560.0,
+      "close": 5629.0
+    },
+    {
+      "date": "25-06-2025",
+      "open": 5632.0,
+      "high": 5652.5,
+      "low": 5567.5,
+      "close": 5576.0
+    },
+    {
+      "date": "26-06-2025",
+      "open": 5576.5,
+      "high": 5622.5,
+      "low": 5512.0,
+      "close": 5611.5
+    },
+    {
+      "date": "27-06-2025",
+      "open": 5615.0,
+      "high": 5685.0,
+      "low": 5595.0,
+      "close": 5660.0
+    },
+    {
+      "date": "30-06-2025",
+      "open": 5660.0,
+      "high": 5683.5,
+      "low": 5613.0,
+      "close": 5656.5
+    },
+    {
+      "date": "01-07-2025",
+      "open": 5656.5,
+      "high": 5749.0,
+      "low": 5632.5,
+      "close": 5715.5
+    },
+    {
+      "date": "02-07-2025",
+      "open": 5687.0,
+      "high": 5745.0,
+      "low": 5687.0,
+      "close": 5722.5
+    },
+    {
+      "date": "03-07-2025",
+      "open": 5710.0,
+      "high": 5774.5,
+      "low": 5700.0,
+      "close": 5716.0
+    },
+    {
+      "date": "04-07-2025",
+      "open": 5715.5,
+      "high": 5715.5,
+      "low": 5620.0,
+      "close": 5629.0
+    },
+    {
+      "date": "07-07-2025",
+      "open": 5630.0,
+      "high": 5700.0,
+      "low": 5625.0,
+      "close": 5682.5
+    },
+    {
+      "date": "08-07-2025",
+      "open": 5705.0,
+      "high": 5705.0,
+      "low": 5648.5,
+      "close": 5679.5
+    },
+    {
+      "date": "09-07-2025",
+      "open": 5671.0,
+      "high": 5718.5,
+      "low": 5669.5,
+      "close": 5695.0
+    },
+    {
+      "date": "10-07-2025",
+      "open": 5692.0,
+      "high": 5705.0,
+      "low": 5635.0,
+      "close": 5652.0
+    },
+    {
+      "date": "11-07-2025",
+      "open": 5632.0,
+      "high": 5683.5,
+      "low": 5589.0,
+      "close": 5612.5
+    },
+    {
+      "date": "14-07-2025",
+      "open": 5606.5,
+      "high": 5615.5,
+      "low": 5520.5,
+      "close": 5540.5
+    },
+    {
+      "date": "15-07-2025",
+      "open": 5590.0,
+      "high": 5642.5,
+      "low": 5568.5,
+      "close": 5591.0
+    },
+    {
+      "date": "16-07-2025",
+      "open": 5600.0,
+      "high": 5633.5,
+      "low": 5540.0,
+      "close": 5626.5
+    },
+    {
+      "date": "17-07-2025",
+      "open": 5668.0,
+      "high": 5683.0,
+      "low": 5628.0,
+      "close": 5650.0
+    }
+  ]
+}

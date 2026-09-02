@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "M&M",
+  "window": {
+    "start_date": "21-09-2021",
+    "end_date": "21-10-2021",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "13-10-2021",
+      "price": 971.15,
+      "distance_to_current_trading_rows": 5
+    },
+    "monthly_low": {
+      "date": "21-09-2021",
+      "price": 729.55,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "21-10-2021",
+      "open": 908.3,
+      "high": 911.1,
+      "low": 893.4,
+      "close": 897.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "11-10-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 879.0,
+        "high": 902.5,
+        "low": 879.0,
+        "close": 895.6
+      },
+      {
+        "date": "13-10-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 893.0,
+        "high": 971.15,
+        "low": 893.0,
+        "close": 935.35
+      },
+      {
+        "date": "18-10-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 958.0,
+        "high": 958.0,
+        "low": 908.3,
+        "close": 910.95
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 729.55
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 971.15
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 971.15
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "21-09-2021",
+      "open": 740.1,
+      "high": 740.9,
+      "low": 729.55,
+      "close": 738.45
+    },
+    {
+      "date": "22-09-2021",
+      "open": 738.9,
+      "high": 759.0,
+      "low": 738.45,
+      "close": 752.5
+    },
+    {
+      "date": "23-09-2021",
+      "open": 756.5,
+      "high": 762.0,
+      "low": 752.75,
+      "close": 758.45
+    },
+    {
+      "date": "24-09-2021",
+      "open": 759.5,
+      "high": 782.05,
+      "low": 752.55,
+      "close": 779.45
+    },
+    {
+      "date": "27-09-2021",
+      "open": 789.5,
+      "high": 813.75,
+      "low": 783.05,
+      "close": 811.35
+    },
+    {
+      "date": "28-09-2021",
+      "open": 820.0,
+      "high": 822.0,
+      "low": 796.25,
+      "close": 806.05
+    },
+    {
+      "date": "29-09-2021",
+      "open": 800.0,
+      "high": 815.7,
+      "low": 799.0,
+      "close": 812.1
+    },
+    {
+      "date": "30-09-2021",
+      "open": 808.05,
+      "high": 817.4,
+      "low": 801.3,
+      "close": 803.05
+    },
+    {
+      "date": "01-10-2021",
+      "open": 800.0,
+      "high": 831.0,
+      "low": 787.0,
+      "close": 827.85
+    },
+    {
+      "date": "04-10-2021",
+      "open": 832.5,
+      "high": 852.0,
+      "low": 828.1,
+      "close": 841.15
+    },
+    {
+      "date": "05-10-2021",
+      "open": 841.15,
+      "high": 846.0,
+      "low": 835.05,
+      "close": 843.05
+    },
+    {
+      "date": "06-10-2021",
+      "open": 846.0,
+      "high": 854.9,
+      "low": 829.0,
+      "close": 834.1
+    },
+    {
+      "date": "07-10-2021",
+      "open": 839.7,
+      "high": 887.8,
+      "low": 837.15,
+      "close": 878.25
+    },
+    {
+      "date": "08-10-2021",
+      "open": 893.7,
+      "high": 895.0,
+      "low": 872.55,
+      "close": 877.8
+    },
+    {
+      "date": "11-10-2021",
+      "open": 879.0,
+      "high": 902.5,
+      "low": 879.0,
+      "close": 895.6
+    },
+    {
+      "date": "12-10-2021",
+      "open": 888.0,
+      "high": 894.65,
+      "low": 877.0,
+      "close": 890.1
+    },
+    {
+      "date": "13-10-2021",
+      "open": 893.0,
+      "high": 971.15,
+      "low": 893.0,
+      "close": 935.35
+    },
+    {
+      "date": "14-10-2021",
+      "open": 938.5,
+      "high": 946.25,
+      "low": 922.2,
+      "close": 931.4
+    },
+    {
+      "date": "18-10-2021",
+      "open": 958.0,
+      "high": 958.0,
+      "low": 908.3,
+      "close": 910.95
+    },
+    {
+      "date": "19-10-2021",
+      "open": 911.0,
+      "high": 927.6,
+      "low": 901.2,
+      "close": 917.5
+    },
+    {
+      "date": "20-10-2021",
+      "open": 913.0,
+      "high": 924.9,
+      "low": 894.65,
+      "close": 899.35
+    },
+    {
+      "date": "21-10-2021",
+      "open": 908.3,
+      "high": 911.1,
+      "low": 893.4,
+      "close": 897.0
+    }
+  ]
+}

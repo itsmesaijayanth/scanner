@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "EICHERMOT",
+  "window": {
+    "start_date": "15-12-2025",
+    "end_date": "14-01-2026",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "09-01-2026",
+      "price": 7613.5,
+      "distance_to_current_trading_rows": 3
+    },
+    "monthly_low": {
+      "date": "18-12-2025",
+      "price": 7013.5,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "14-01-2026",
+      "open": 7390.0,
+      "high": 7390.0,
+      "low": 7236.0,
+      "close": 7358.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "19-12-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 7075.0,
+        "high": 7242.0,
+        "low": 7075.0,
+        "close": 7217.0
+      },
+      {
+        "date": "23-12-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7338.0,
+        "high": 7338.0,
+        "low": 7280.0,
+        "close": 7303.0
+      },
+      {
+        "date": "14-01-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7390.0,
+        "high": 7390.0,
+        "low": 7236.0,
+        "close": 7358.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 7013.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 7613.5
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 7613.5
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "15-12-2025",
+      "open": 7200.0,
+      "high": 7210.5,
+      "low": 7094.5,
+      "close": 7121.5
+    },
+    {
+      "date": "16-12-2025",
+      "open": 7120.0,
+      "high": 7121.5,
+      "low": 7035.5,
+      "close": 7061.5
+    },
+    {
+      "date": "17-12-2025",
+      "open": 7104.0,
+      "high": 7176.5,
+      "low": 7080.5,
+      "close": 7134.5
+    },
+    {
+      "date": "18-12-2025",
+      "open": 7135.0,
+      "high": 7144.0,
+      "low": 7013.5,
+      "close": 7106.5
+    },
+    {
+      "date": "19-12-2025",
+      "open": 7075.0,
+      "high": 7242.0,
+      "low": 7075.0,
+      "close": 7217.0
+    },
+    {
+      "date": "22-12-2025",
+      "open": 7238.0,
+      "high": 7310.0,
+      "low": 7213.0,
+      "close": 7291.5
+    },
+    {
+      "date": "23-12-2025",
+      "open": 7338.0,
+      "high": 7338.0,
+      "low": 7280.0,
+      "close": 7303.0
+    },
+    {
+      "date": "24-12-2025",
+      "open": 7300.0,
+      "high": 7349.5,
+      "low": 7240.5,
+      "close": 7312.5
+    },
+    {
+      "date": "26-12-2025",
+      "open": 7300.0,
+      "high": 7360.0,
+      "low": 7274.0,
+      "close": 7324.0
+    },
+    {
+      "date": "29-12-2025",
+      "open": 7324.0,
+      "high": 7374.5,
+      "low": 7232.5,
+      "close": 7272.0
+    },
+    {
+      "date": "30-12-2025",
+      "open": 7272.0,
+      "high": 7312.0,
+      "low": 7132.5,
+      "close": 7192.5
+    },
+    {
+      "date": "31-12-2025",
+      "open": 7189.0,
+      "high": 7322.5,
+      "low": 7140.0,
+      "close": 7312.5
+    },
+    {
+      "date": "01-01-2026",
+      "open": 7317.0,
+      "high": 7363.0,
+      "low": 7271.5,
+      "close": 7348.0
+    },
+    {
+      "date": "02-01-2026",
+      "open": 7348.0,
+      "high": 7382.5,
+      "low": 7298.0,
+      "close": 7334.5
+    },
+    {
+      "date": "05-01-2026",
+      "open": 7344.0,
+      "high": 7514.5,
+      "low": 7328.0,
+      "close": 7482.5
+    },
+    {
+      "date": "06-01-2026",
+      "open": 7514.0,
+      "high": 7569.0,
+      "low": 7484.5,
+      "close": 7522.5
+    },
+    {
+      "date": "07-01-2026",
+      "open": 7523.0,
+      "high": 7597.0,
+      "low": 7490.0,
+      "close": 7582.5
+    },
+    {
+      "date": "08-01-2026",
+      "open": 7590.0,
+      "high": 7601.0,
+      "low": 7539.0,
+      "close": 7551.0
+    },
+    {
+      "date": "09-01-2026",
+      "open": 7582.0,
+      "high": 7613.5,
+      "low": 7486.0,
+      "close": 7507.0
+    },
+    {
+      "date": "12-01-2026",
+      "open": 7477.0,
+      "high": 7507.0,
+      "low": 7322.0,
+      "close": 7436.0
+    },
+    {
+      "date": "13-01-2026",
+      "open": 7488.0,
+      "high": 7514.5,
+      "low": 7348.0,
+      "close": 7404.0
+    },
+    {
+      "date": "14-01-2026",
+      "open": 7390.0,
+      "high": 7390.0,
+      "low": 7236.0,
+      "close": 7358.0
+    }
+  ]
+}

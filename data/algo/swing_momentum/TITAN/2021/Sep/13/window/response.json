@@ -1,0 +1,114 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TITAN",
+  "window": {
+    "start_date": "14-08-2021",
+    "end_date": "13-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 6
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "08-09-2021",
+      "price": 2067.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 1970.1,
+      "distance_to_current_trading_rows": 5
+    },
+    "current": {
+      "date": "13-09-2021",
+      "open": 2037.0,
+      "high": 2043.45,
+      "low": 2021.15,
+      "close": 2030.65
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "03-09-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1970.1,
+        "high": 2024.4,
+        "low": 1970.1,
+        "close": 2019.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1970.1
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2067.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2067.0
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 1970.1,
+      "high": 2024.4,
+      "low": 1970.1,
+      "close": 2019.3
+    },
+    {
+      "date": "06-09-2021",
+      "open": 2025.0,
+      "high": 2032.85,
+      "low": 2006.15,
+      "close": 2020.65
+    },
+    {
+      "date": "07-09-2021",
+      "open": 2014.0,
+      "high": 2039.9,
+      "low": 2012.7,
+      "close": 2033.9
+    },
+    {
+      "date": "08-09-2021",
+      "open": 2033.95,
+      "high": 2067.0,
+      "low": 2015.05,
+      "close": 2055.95
+    },
+    {
+      "date": "09-09-2021",
+      "open": 2052.0,
+      "high": 2060.0,
+      "low": 2021.05,
+      "close": 2034.3
+    },
+    {
+      "date": "13-09-2021",
+      "open": 2037.0,
+      "high": 2043.45,
+      "low": 2021.15,
+      "close": 2030.65
+    }
+  ]
+}
