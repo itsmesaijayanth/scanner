@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "WIPRO",
+  "window": {
+    "start_date": "06-06-2026",
+    "end_date": "06-07-2026",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "08-06-2026",
+      "price": 193.89,
+      "distance_to_current_trading_rows": 19
+    },
+    "monthly_low": {
+      "date": "02-07-2026",
+      "price": 169.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "current": {
+      "date": "06-07-2026",
+      "open": 176.08,
+      "high": 176.3,
+      "low": 173.57,
+      "close": 174.32
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "15-06-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 183.0,
+        "high": 183.0,
+        "low": 180.91,
+        "close": 181.38
+      },
+      {
+        "date": "23-06-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 179.5,
+        "high": 179.5,
+        "low": 174.0,
+        "close": 174.49
+      },
+      {
+        "date": "24-06-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 171.5,
+        "high": 175.49,
+        "low": 171.49,
+        "close": 174.48
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 193.89
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 169.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 169.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "08-06-2026",
+      "open": 193.39,
+      "high": 193.89,
+      "low": 181.0,
+      "close": 181.76
+    },
+    {
+      "date": "09-06-2026",
+      "open": 183.97,
+      "high": 184.35,
+      "low": 180.6,
+      "close": 181.67
+    },
+    {
+      "date": "10-06-2026",
+      "open": 182.1,
+      "high": 182.29,
+      "low": 178.5,
+      "close": 178.93
+    },
+    {
+      "date": "11-06-2026",
+      "open": 176.97,
+      "high": 178.2,
+      "low": 175.83,
+      "close": 177.37
+    },
+    {
+      "date": "12-06-2026",
+      "open": 178.65,
+      "high": 180.45,
+      "low": 177.57,
+      "close": 180.14
+    },
+    {
+      "date": "15-06-2026",
+      "open": 183.0,
+      "high": 183.0,
+      "low": 180.91,
+      "close": 181.38
+    },
+    {
+      "date": "16-06-2026",
+      "open": 182.39,
+      "high": 183.38,
+      "low": 181.63,
+      "close": 182.67
+    },
+    {
+      "date": "17-06-2026",
+      "open": 184.0,
+      "high": 185.25,
+      "low": 183.58,
+      "close": 184.47
+    },
+    {
+      "date": "18-06-2026",
+      "open": 184.47,
+      "high": 184.76,
+      "low": 181.71,
+      "close": 182.84
+    },
+    {
+      "date": "19-06-2026",
+      "open": 176.76,
+      "high": 181.48,
+      "low": 174.89,
+      "close": 180.8
+    },
+    {
+      "date": "22-06-2026",
+      "open": 180.84,
+      "high": 182.4,
+      "low": 180.0,
+      "close": 180.18
+    },
+    {
+      "date": "23-06-2026",
+      "open": 179.5,
+      "high": 179.5,
+      "low": 174.0,
+      "close": 174.49
+    },
+    {
+      "date": "24-06-2026",
+      "open": 171.5,
+      "high": 175.49,
+      "low": 171.49,
+      "close": 174.48
+    },
+    {
+      "date": "25-06-2026",
+      "open": 176.0,
+      "high": 176.39,
+      "low": 172.69,
+      "close": 175.0
+    },
+    {
+      "date": "29-06-2026",
+      "open": 176.28,
+      "high": 176.69,
+      "low": 174.6,
+      "close": 175.48
+    },
+    {
+      "date": "30-06-2026",
+      "open": 175.0,
+      "high": 175.4,
+      "low": 170.05,
+      "close": 170.39
+    },
+    {
+      "date": "01-07-2026",
+      "open": 171.0,
+      "high": 172.15,
+      "low": 169.25,
+      "close": 170.13
+    },
+    {
+      "date": "02-07-2026",
+      "open": 169.49,
+      "high": 174.97,
+      "low": 169.0,
+      "close": 174.0
+    },
+    {
+      "date": "03-07-2026",
+      "open": 176.2,
+      "high": 178.14,
+      "low": 174.59,
+      "close": 176.08
+    },
+    {
+      "date": "06-07-2026",
+      "open": 176.08,
+      "high": 176.3,
+      "low": 173.57,
+      "close": 174.32
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "INDIGO",
+  "window": {
+    "start_date": "29-11-2021",
+    "end_date": "29-12-2021",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "28-12-2021",
+      "price": 2066.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "monthly_low": {
+      "date": "21-12-2021",
+      "price": 1771.0,
+      "distance_to_current_trading_rows": 6
+    },
+    "current": {
+      "date": "29-12-2021",
+      "open": 1990.0,
+      "high": 2017.9,
+      "low": 1970.1,
+      "close": 2008.15
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "02-12-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1861.35,
+        "high": 1935.0,
+        "low": 1861.35,
+        "close": 1912.05
+      },
+      {
+        "date": "20-12-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1941.75,
+        "high": 1941.75,
+        "low": 1795.15,
+        "close": 1818.4
+      },
+      {
+        "date": "22-12-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1840.0,
+        "high": 1929.8,
+        "low": 1840.0,
+        "close": 1915.55
+      },
+      {
+        "date": "23-12-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1922.0,
+        "high": 1980.0,
+        "low": 1922.0,
+        "close": 1969.65
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1771.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2066.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2066.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "29-11-2021",
+      "open": 1870.0,
+      "high": 1945.0,
+      "low": 1812.25,
+      "close": 1894.5
+    },
+    {
+      "date": "30-11-2021",
+      "open": 1901.0,
+      "high": 1968.0,
+      "low": 1891.15,
+      "close": 1905.05
+    },
+    {
+      "date": "01-12-2021",
+      "open": 1907.9,
+      "high": 1960.95,
+      "low": 1853.5,
+      "close": 1902.8
+    },
+    {
+      "date": "02-12-2021",
+      "open": 1861.35,
+      "high": 1935.0,
+      "low": 1861.35,
+      "close": 1912.05
+    },
+    {
+      "date": "03-12-2021",
+      "open": 1913.0,
+      "high": 1979.0,
+      "low": 1871.0,
+      "close": 1875.65
+    },
+    {
+      "date": "06-12-2021",
+      "open": 1878.1,
+      "high": 1911.9,
+      "low": 1848.0,
+      "close": 1859.05
+    },
+    {
+      "date": "07-12-2021",
+      "open": 1899.05,
+      "high": 1964.0,
+      "low": 1895.2,
+      "close": 1945.25
+    },
+    {
+      "date": "08-12-2021",
+      "open": 1972.0,
+      "high": 1997.45,
+      "low": 1951.25,
+      "close": 1986.8
+    },
+    {
+      "date": "09-12-2021",
+      "open": 1997.3,
+      "high": 2028.95,
+      "low": 1974.0,
+      "close": 2019.5
+    },
+    {
+      "date": "10-12-2021",
+      "open": 1992.0,
+      "high": 2026.5,
+      "low": 1982.15,
+      "close": 1997.6
+    },
+    {
+      "date": "13-12-2021",
+      "open": 2018.0,
+      "high": 2020.0,
+      "low": 1991.95,
+      "close": 2010.3
+    },
+    {
+      "date": "14-12-2021",
+      "open": 1990.0,
+      "high": 2025.0,
+      "low": 1961.05,
+      "close": 1977.5
+    },
+    {
+      "date": "15-12-2021",
+      "open": 1971.0,
+      "high": 2018.95,
+      "low": 1956.55,
+      "close": 1962.8
+    },
+    {
+      "date": "16-12-2021",
+      "open": 1985.9,
+      "high": 1994.35,
+      "low": 1948.55,
+      "close": 1965.6
+    },
+    {
+      "date": "17-12-2021",
+      "open": 1957.0,
+      "high": 1993.95,
+      "low": 1942.0,
+      "close": 1955.4
+    },
+    {
+      "date": "20-12-2021",
+      "open": 1941.75,
+      "high": 1941.75,
+      "low": 1795.15,
+      "close": 1818.4
+    },
+    {
+      "date": "21-12-2021",
+      "open": 1837.0,
+      "high": 1858.15,
+      "low": 1771.0,
+      "close": 1838.45
+    },
+    {
+      "date": "22-12-2021",
+      "open": 1840.0,
+      "high": 1929.8,
+      "low": 1840.0,
+      "close": 1915.55
+    },
+    {
+      "date": "23-12-2021",
+      "open": 1922.0,
+      "high": 1980.0,
+      "low": 1922.0,
+      "close": 1969.65
+    },
+    {
+      "date": "24-12-2021",
+      "open": 1989.0,
+      "high": 1990.0,
+      "low": 1947.1,
+      "close": 1967.6
+    },
+    {
+      "date": "27-12-2021",
+      "open": 1942.0,
+      "high": 2011.95,
+      "low": 1925.05,
+      "close": 2002.75
+    },
+    {
+      "date": "28-12-2021",
+      "open": 2009.8,
+      "high": 2066.0,
+      "low": 1990.0,
+      "close": 2000.95
+    },
+    {
+      "date": "29-12-2021",
+      "open": 1990.0,
+      "high": 2017.9,
+      "low": 1970.1,
+      "close": 2008.15
+    }
+  ]
+}

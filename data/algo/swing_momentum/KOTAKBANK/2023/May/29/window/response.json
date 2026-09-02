@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "KOTAKBANK",
+  "window": {
+    "start_date": "29-04-2023",
+    "end_date": "29-05-2023",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "11-05-2023",
+      "price": 1980.0,
+      "distance_to_current_trading_rows": 12
+    },
+    "monthly_low": {
+      "date": "02-05-2023",
+      "price": 1890.0,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "29-05-2023",
+      "open": 1963.1,
+      "high": 1973.3,
+      "low": 1948.25,
+      "close": 1953.2
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "16-05-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1978.0,
+        "high": 1978.0,
+        "low": 1938.0,
+        "close": 1947.05
+      },
+      {
+        "date": "23-05-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1940.2,
+        "high": 1940.2,
+        "low": 1915.0,
+        "close": 1921.5
+      },
+      {
+        "date": "26-05-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1949.95,
+        "high": 1949.95,
+        "low": 1923.5,
+        "close": 1945.05
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1890.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1980.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1980.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "02-05-2023",
+      "open": 1918.0,
+      "high": 1937.45,
+      "low": 1890.0,
+      "close": 1921.15
+    },
+    {
+      "date": "03-05-2023",
+      "open": 1919.0,
+      "high": 1933.85,
+      "low": 1912.7,
+      "close": 1930.95
+    },
+    {
+      "date": "04-05-2023",
+      "open": 1929.95,
+      "high": 1951.1,
+      "low": 1921.75,
+      "close": 1947.6
+    },
+    {
+      "date": "05-05-2023",
+      "open": 1952.15,
+      "high": 1974.0,
+      "low": 1915.5,
+      "close": 1928.7
+    },
+    {
+      "date": "08-05-2023",
+      "open": 1935.9,
+      "high": 1968.5,
+      "low": 1921.0,
+      "close": 1958.85
+    },
+    {
+      "date": "09-05-2023",
+      "open": 1964.85,
+      "high": 1970.0,
+      "low": 1948.15,
+      "close": 1954.3
+    },
+    {
+      "date": "10-05-2023",
+      "open": 1960.0,
+      "high": 1964.0,
+      "low": 1931.65,
+      "close": 1958.7
+    },
+    {
+      "date": "11-05-2023",
+      "open": 1970.0,
+      "high": 1980.0,
+      "low": 1951.85,
+      "close": 1957.95
+    },
+    {
+      "date": "12-05-2023",
+      "open": 1954.0,
+      "high": 1968.0,
+      "low": 1943.65,
+      "close": 1960.6
+    },
+    {
+      "date": "15-05-2023",
+      "open": 1957.05,
+      "high": 1977.0,
+      "low": 1952.4,
+      "close": 1973.0
+    },
+    {
+      "date": "16-05-2023",
+      "open": 1978.0,
+      "high": 1978.0,
+      "low": 1938.0,
+      "close": 1947.05
+    },
+    {
+      "date": "17-05-2023",
+      "open": 1949.8,
+      "high": 1950.9,
+      "low": 1895.55,
+      "close": 1909.15
+    },
+    {
+      "date": "18-05-2023",
+      "open": 1924.0,
+      "high": 1933.65,
+      "low": 1911.2,
+      "close": 1927.4
+    },
+    {
+      "date": "19-05-2023",
+      "open": 1930.0,
+      "high": 1946.85,
+      "low": 1923.5,
+      "close": 1941.65
+    },
+    {
+      "date": "22-05-2023",
+      "open": 1945.0,
+      "high": 1952.5,
+      "low": 1923.65,
+      "close": 1940.2
+    },
+    {
+      "date": "23-05-2023",
+      "open": 1940.2,
+      "high": 1940.2,
+      "low": 1915.0,
+      "close": 1921.5
+    },
+    {
+      "date": "24-05-2023",
+      "open": 1921.95,
+      "high": 1940.0,
+      "low": 1897.4,
+      "close": 1910.35
+    },
+    {
+      "date": "25-05-2023",
+      "open": 1918.0,
+      "high": 1933.55,
+      "low": 1907.55,
+      "close": 1929.95
+    },
+    {
+      "date": "26-05-2023",
+      "open": 1949.95,
+      "high": 1949.95,
+      "low": 1923.5,
+      "close": 1945.05
+    },
+    {
+      "date": "29-05-2023",
+      "open": 1963.1,
+      "high": 1973.3,
+      "low": 1948.25,
+      "close": 1953.2
+    }
+  ]
+}

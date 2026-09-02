@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TATASTEEL",
+  "window": {
+    "start_date": "24-02-2025",
+    "end_date": "26-03-2025",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "20-03-2025",
+      "price": 160.1,
+      "distance_to_current_trading_rows": 4
+    },
+    "monthly_low": {
+      "date": "28-02-2025",
+      "price": 134.06,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "26-03-2025",
+      "open": 156.2,
+      "high": 157.54,
+      "low": 155.01,
+      "close": 155.81
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "28-02-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 137.8,
+        "high": 137.8,
+        "low": 134.06,
+        "close": 137.2
+      },
+      {
+        "date": "05-03-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 139.0,
+        "high": 146.49,
+        "low": 139.0,
+        "close": 146.1
+      },
+      {
+        "date": "25-03-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 159.0,
+        "high": 159.0,
+        "low": 156.05,
+        "close": 156.73
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 134.06
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 160.1
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 160.1
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "24-02-2025",
+      "open": 138.81,
+      "high": 140.66,
+      "low": 136.66,
+      "close": 137.65
+    },
+    {
+      "date": "25-02-2025",
+      "open": 138.49,
+      "high": 139.35,
+      "low": 136.7,
+      "close": 137.07
+    },
+    {
+      "date": "27-02-2025",
+      "open": 137.21,
+      "high": 138.99,
+      "low": 135.88,
+      "close": 138.69
+    },
+    {
+      "date": "28-02-2025",
+      "open": 137.8,
+      "high": 137.8,
+      "low": 134.06,
+      "close": 137.2
+    },
+    {
+      "date": "03-03-2025",
+      "open": 137.0,
+      "high": 139.05,
+      "low": 134.31,
+      "close": 138.57
+    },
+    {
+      "date": "04-03-2025",
+      "open": 136.15,
+      "high": 140.94,
+      "low": 135.81,
+      "close": 139.34
+    },
+    {
+      "date": "05-03-2025",
+      "open": 139.0,
+      "high": 146.49,
+      "low": 139.0,
+      "close": 146.1
+    },
+    {
+      "date": "06-03-2025",
+      "open": 146.79,
+      "high": 152.2,
+      "low": 146.2,
+      "close": 150.44
+    },
+    {
+      "date": "07-03-2025",
+      "open": 149.74,
+      "high": 152.45,
+      "low": 149.27,
+      "close": 151.56
+    },
+    {
+      "date": "10-03-2025",
+      "open": 151.56,
+      "high": 154.24,
+      "low": 150.41,
+      "close": 151.05
+    },
+    {
+      "date": "11-03-2025",
+      "open": 148.1,
+      "high": 151.7,
+      "low": 148.0,
+      "close": 150.75
+    },
+    {
+      "date": "12-03-2025",
+      "open": 151.0,
+      "high": 152.28,
+      "low": 147.7,
+      "close": 150.3
+    },
+    {
+      "date": "13-03-2025",
+      "open": 152.0,
+      "high": 153.56,
+      "low": 150.02,
+      "close": 150.88
+    },
+    {
+      "date": "17-03-2025",
+      "open": 151.99,
+      "high": 152.64,
+      "low": 150.9,
+      "close": 151.81
+    },
+    {
+      "date": "18-03-2025",
+      "open": 153.0,
+      "high": 154.83,
+      "low": 152.22,
+      "close": 154.66
+    },
+    {
+      "date": "19-03-2025",
+      "open": 156.8,
+      "high": 159.2,
+      "low": 156.5,
+      "close": 158.6
+    },
+    {
+      "date": "20-03-2025",
+      "open": 160.0,
+      "high": 160.1,
+      "low": 156.65,
+      "close": 159.04
+    },
+    {
+      "date": "21-03-2025",
+      "open": 159.03,
+      "high": 159.75,
+      "low": 156.82,
+      "close": 157.28
+    },
+    {
+      "date": "24-03-2025",
+      "open": 158.0,
+      "high": 159.0,
+      "low": 157.11,
+      "close": 158.42
+    },
+    {
+      "date": "25-03-2025",
+      "open": 159.0,
+      "high": 159.0,
+      "low": 156.05,
+      "close": 156.73
+    },
+    {
+      "date": "26-03-2025",
+      "open": 156.2,
+      "high": 157.54,
+      "low": 155.01,
+      "close": 155.81
+    }
+  ]
+}

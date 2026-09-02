@@ -1,0 +1,226 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TATACONSUM",
+  "window": {
+    "start_date": "16-12-2024",
+    "end_date": "15-01-2025",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "09-01-2025",
+      "price": 982.8,
+      "distance_to_current_trading_rows": 4
+    },
+    "monthly_low": {
+      "date": "20-12-2024",
+      "price": 882.9,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "15-01-2025",
+      "open": 963.15,
+      "high": 963.15,
+      "low": 944.6,
+      "close": 955.55
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "15-01-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 963.15,
+        "high": 963.15,
+        "low": 944.6,
+        "close": 955.55
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 882.9
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 982.8
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 982.8
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "16-12-2024",
+      "open": 929.7,
+      "high": 934.65,
+      "low": 917.0,
+      "close": 920.35
+    },
+    {
+      "date": "17-12-2024",
+      "open": 920.35,
+      "high": 922.0,
+      "low": 900.0,
+      "close": 904.9
+    },
+    {
+      "date": "18-12-2024",
+      "open": 905.0,
+      "high": 916.9,
+      "low": 904.45,
+      "close": 909.35
+    },
+    {
+      "date": "19-12-2024",
+      "open": 908.0,
+      "high": 918.0,
+      "low": 901.1,
+      "close": 907.1
+    },
+    {
+      "date": "20-12-2024",
+      "open": 907.0,
+      "high": 916.5,
+      "low": 882.9,
+      "close": 889.45
+    },
+    {
+      "date": "23-12-2024",
+      "open": 894.95,
+      "high": 906.0,
+      "low": 890.0,
+      "close": 902.75
+    },
+    {
+      "date": "24-12-2024",
+      "open": 904.95,
+      "high": 912.95,
+      "low": 896.8,
+      "close": 907.3
+    },
+    {
+      "date": "26-12-2024",
+      "open": 908.0,
+      "high": 911.35,
+      "low": 898.6,
+      "close": 900.95
+    },
+    {
+      "date": "27-12-2024",
+      "open": 902.0,
+      "high": 911.4,
+      "low": 899.0,
+      "close": 907.95
+    },
+    {
+      "date": "30-12-2024",
+      "open": 907.95,
+      "high": 912.0,
+      "low": 898.7,
+      "close": 903.5
+    },
+    {
+      "date": "31-12-2024",
+      "open": 899.0,
+      "high": 917.15,
+      "low": 893.1,
+      "close": 914.7
+    },
+    {
+      "date": "01-01-2025",
+      "open": 913.0,
+      "high": 922.5,
+      "low": 911.0,
+      "close": 920.3
+    },
+    {
+      "date": "02-01-2025",
+      "open": 921.0,
+      "high": 931.25,
+      "low": 913.05,
+      "close": 929.65
+    },
+    {
+      "date": "03-01-2025",
+      "open": 932.7,
+      "high": 941.9,
+      "low": 926.0,
+      "close": 939.45
+    },
+    {
+      "date": "06-01-2025",
+      "open": 935.0,
+      "high": 955.0,
+      "low": 929.1,
+      "close": 946.9
+    },
+    {
+      "date": "07-01-2025",
+      "open": 952.0,
+      "high": 972.0,
+      "low": 949.75,
+      "close": 955.0
+    },
+    {
+      "date": "08-01-2025",
+      "open": 955.0,
+      "high": 963.85,
+      "low": 945.45,
+      "close": 961.6
+    },
+    {
+      "date": "09-01-2025",
+      "open": 957.45,
+      "high": 982.8,
+      "low": 954.5,
+      "close": 970.1
+    },
+    {
+      "date": "10-01-2025",
+      "open": 965.2,
+      "high": 980.0,
+      "low": 959.0,
+      "close": 972.8
+    },
+    {
+      "date": "13-01-2025",
+      "open": 945.2,
+      "high": 969.05,
+      "low": 945.0,
+      "close": 965.45
+    },
+    {
+      "date": "14-01-2025",
+      "open": 965.7,
+      "high": 977.0,
+      "low": 958.6,
+      "close": 963.15
+    },
+    {
+      "date": "15-01-2025",
+      "open": 963.15,
+      "high": 963.15,
+      "low": 944.6,
+      "close": 955.55
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "WIPRO",
+  "window": {
+    "start_date": "14-01-2024",
+    "end_date": "13-02-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "15-01-2024",
+      "price": 529.0,
+      "distance_to_current_trading_rows": 20
+    },
+    "monthly_low": {
+      "date": "23-01-2024",
+      "price": 467.05,
+      "distance_to_current_trading_rows": 14
+    },
+    "current": {
+      "date": "13-02-2024",
+      "open": 503.1,
+      "high": 513.0,
+      "low": 491.7,
+      "close": 511.6
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "16-01-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 495.0,
+        "high": 495.0,
+        "low": 480.5,
+        "close": 485.0
+      },
+      {
+        "date": "29-01-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 470.0,
+        "high": 477.0,
+        "low": 470.0,
+        "close": 473.0
+      },
+      {
+        "date": "02-02-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 475.0,
+        "high": 486.5,
+        "low": 475.0,
+        "close": 483.15
+      },
+      {
+        "date": "12-02-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 491.0,
+        "high": 510.8,
+        "low": 491.0,
+        "close": 501.45
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 529.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 467.05
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 467.05
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "15-01-2024",
+      "open": 511.95,
+      "high": 529.0,
+      "low": 489.15,
+      "close": 494.6
+    },
+    {
+      "date": "16-01-2024",
+      "open": 495.0,
+      "high": 495.0,
+      "low": 480.5,
+      "close": 485.0
+    },
+    {
+      "date": "17-01-2024",
+      "open": 475.15,
+      "high": 491.5,
+      "low": 472.0,
+      "close": 482.4
+    },
+    {
+      "date": "18-01-2024",
+      "open": 482.4,
+      "high": 489.0,
+      "low": 468.4,
+      "close": 482.65
+    },
+    {
+      "date": "19-01-2024",
+      "open": 488.0,
+      "high": 493.35,
+      "low": 483.6,
+      "close": 485.05
+    },
+    {
+      "date": "20-01-2024",
+      "open": 486.4,
+      "high": 488.9,
+      "low": 469.05,
+      "close": 477.95
+    },
+    {
+      "date": "23-01-2024",
+      "open": 478.05,
+      "high": 486.0,
+      "low": 467.05,
+      "close": 469.9
+    },
+    {
+      "date": "24-01-2024",
+      "open": 471.0,
+      "high": 479.0,
+      "low": 468.05,
+      "close": 478.05
+    },
+    {
+      "date": "25-01-2024",
+      "open": 478.05,
+      "high": 479.35,
+      "low": 468.55,
+      "close": 470.0
+    },
+    {
+      "date": "29-01-2024",
+      "open": 470.0,
+      "high": 477.0,
+      "low": 470.0,
+      "close": 473.0
+    },
+    {
+      "date": "30-01-2024",
+      "open": 474.4,
+      "high": 482.9,
+      "low": 471.5,
+      "close": 472.5
+    },
+    {
+      "date": "31-01-2024",
+      "open": 472.5,
+      "high": 479.9,
+      "low": 469.0,
+      "close": 478.15
+    },
+    {
+      "date": "01-02-2024",
+      "open": 477.55,
+      "high": 477.7,
+      "low": 470.6,
+      "close": 471.35
+    },
+    {
+      "date": "02-02-2024",
+      "open": 475.0,
+      "high": 486.5,
+      "low": 475.0,
+      "close": 483.15
+    },
+    {
+      "date": "05-02-2024",
+      "open": 483.0,
+      "high": 489.5,
+      "low": 479.15,
+      "close": 482.35
+    },
+    {
+      "date": "06-02-2024",
+      "open": 484.7,
+      "high": 501.8,
+      "low": 483.1,
+      "close": 499.65
+    },
+    {
+      "date": "07-02-2024",
+      "open": 500.95,
+      "high": 501.7,
+      "low": 492.55,
+      "close": 495.2
+    },
+    {
+      "date": "08-02-2024",
+      "open": 495.9,
+      "high": 500.1,
+      "low": 485.1,
+      "close": 488.85
+    },
+    {
+      "date": "09-02-2024",
+      "open": 490.9,
+      "high": 494.75,
+      "low": 482.75,
+      "close": 490.45
+    },
+    {
+      "date": "12-02-2024",
+      "open": 491.0,
+      "high": 510.8,
+      "low": 491.0,
+      "close": 501.45
+    },
+    {
+      "date": "13-02-2024",
+      "open": 503.1,
+      "high": 513.0,
+      "low": 491.7,
+      "close": 511.6
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SBILIFE",
+  "window": {
+    "start_date": "19-08-2024",
+    "end_date": "18-09-2024",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-09-2024",
+      "price": 1936.0,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "19-08-2024",
+      "price": 1666.0,
+      "distance_to_current_trading_rows": 22
+    },
+    "current": {
+      "date": "18-09-2024",
+      "open": 1818.2,
+      "high": 1848.95,
+      "low": 1815.05,
+      "close": 1842.45
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "19-08-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1696.8,
+        "high": 1696.8,
+        "low": 1666.0,
+        "close": 1671.55
+      },
+      {
+        "date": "05-09-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1919.0,
+        "high": 1919.0,
+        "low": 1900.2,
+        "close": 1907.85
+      },
+      {
+        "date": "10-09-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1890.0,
+        "high": 1890.0,
+        "low": 1838.75,
+        "close": 1853.45
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1666.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1936.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1936.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "19-08-2024",
+      "open": 1696.8,
+      "high": 1696.8,
+      "low": 1666.0,
+      "close": 1671.55
+    },
+    {
+      "date": "20-08-2024",
+      "open": 1672.8,
+      "high": 1770.8,
+      "low": 1672.75,
+      "close": 1761.3
+    },
+    {
+      "date": "21-08-2024",
+      "open": 1761.3,
+      "high": 1804.45,
+      "low": 1750.9,
+      "close": 1800.6
+    },
+    {
+      "date": "22-08-2024",
+      "open": 1801.0,
+      "high": 1812.4,
+      "low": 1789.85,
+      "close": 1795.25
+    },
+    {
+      "date": "23-08-2024",
+      "open": 1789.5,
+      "high": 1798.4,
+      "low": 1782.0,
+      "close": 1789.3
+    },
+    {
+      "date": "26-08-2024",
+      "open": 1791.0,
+      "high": 1801.45,
+      "low": 1769.35,
+      "close": 1796.25
+    },
+    {
+      "date": "27-08-2024",
+      "open": 1788.4,
+      "high": 1848.6,
+      "low": 1784.1,
+      "close": 1838.95
+    },
+    {
+      "date": "28-08-2024",
+      "open": 1838.75,
+      "high": 1854.25,
+      "low": 1826.0,
+      "close": 1843.7
+    },
+    {
+      "date": "29-08-2024",
+      "open": 1840.0,
+      "high": 1867.75,
+      "low": 1835.5,
+      "close": 1843.7
+    },
+    {
+      "date": "30-08-2024",
+      "open": 1839.95,
+      "high": 1869.8,
+      "low": 1837.0,
+      "close": 1850.3
+    },
+    {
+      "date": "02-09-2024",
+      "open": 1850.3,
+      "high": 1894.65,
+      "low": 1849.05,
+      "close": 1888.75
+    },
+    {
+      "date": "03-09-2024",
+      "open": 1890.0,
+      "high": 1936.0,
+      "low": 1881.75,
+      "close": 1928.65
+    },
+    {
+      "date": "04-09-2024",
+      "open": 1910.0,
+      "high": 1920.0,
+      "low": 1902.35,
+      "close": 1912.2
+    },
+    {
+      "date": "05-09-2024",
+      "open": 1919.0,
+      "high": 1919.0,
+      "low": 1900.2,
+      "close": 1907.85
+    },
+    {
+      "date": "06-09-2024",
+      "open": 1898.1,
+      "high": 1916.85,
+      "low": 1889.45,
+      "close": 1896.3
+    },
+    {
+      "date": "09-09-2024",
+      "open": 1900.85,
+      "high": 1932.85,
+      "low": 1894.5,
+      "close": 1901.75
+    },
+    {
+      "date": "10-09-2024",
+      "open": 1890.0,
+      "high": 1890.0,
+      "low": 1838.75,
+      "close": 1853.45
+    },
+    {
+      "date": "11-09-2024",
+      "open": 1845.1,
+      "high": 1871.05,
+      "low": 1844.55,
+      "close": 1859.15
+    },
+    {
+      "date": "12-09-2024",
+      "open": 1863.0,
+      "high": 1880.0,
+      "low": 1840.6,
+      "close": 1875.95
+    },
+    {
+      "date": "13-09-2024",
+      "open": 1869.0,
+      "high": 1871.75,
+      "low": 1841.75,
+      "close": 1846.5
+    },
+    {
+      "date": "16-09-2024",
+      "open": 1851.0,
+      "high": 1864.8,
+      "low": 1816.1,
+      "close": 1821.25
+    },
+    {
+      "date": "17-09-2024",
+      "open": 1823.5,
+      "high": 1844.3,
+      "low": 1808.45,
+      "close": 1819.15
+    },
+    {
+      "date": "18-09-2024",
+      "open": 1818.2,
+      "high": 1848.95,
+      "low": 1815.05,
+      "close": 1842.45
+    }
+  ]
+}

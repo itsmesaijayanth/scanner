@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "MARUTI",
+  "window": {
+    "start_date": "11-10-2021",
+    "end_date": "10-11-2021",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "02-11-2021",
+      "price": 7910.0,
+      "distance_to_current_trading_rows": 5
+    },
+    "monthly_low": {
+      "date": "26-10-2021",
+      "price": 7210.2,
+      "distance_to_current_trading_rows": 10
+    },
+    "current": {
+      "date": "10-11-2021",
+      "open": 7570.0,
+      "high": 7580.0,
+      "low": 7460.0,
+      "close": 7511.65
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "18-10-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 7405.0,
+        "high": 7705.3,
+        "low": 7405.0,
+        "close": 7657.0
+      },
+      {
+        "date": "21-10-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7650.0,
+        "high": 7650.0,
+        "low": 7485.0,
+        "close": 7575.25
+      },
+      {
+        "date": "01-11-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 7401.0,
+        "high": 7666.0,
+        "low": 7401.0,
+        "close": 7615.55
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 7210.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 7910.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 7910.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "11-10-2021",
+      "open": 7420.2,
+      "high": 7814.8,
+      "low": 7419.8,
+      "close": 7700.8
+    },
+    {
+      "date": "12-10-2021",
+      "open": 7687.9,
+      "high": 7750.0,
+      "low": 7630.05,
+      "close": 7693.8
+    },
+    {
+      "date": "13-10-2021",
+      "open": 7740.0,
+      "high": 7749.95,
+      "low": 7436.55,
+      "close": 7482.15
+    },
+    {
+      "date": "14-10-2021",
+      "open": 7540.0,
+      "high": 7560.0,
+      "low": 7445.0,
+      "close": 7496.9
+    },
+    {
+      "date": "18-10-2021",
+      "open": 7405.0,
+      "high": 7705.3,
+      "low": 7405.0,
+      "close": 7657.0
+    },
+    {
+      "date": "19-10-2021",
+      "open": 7670.2,
+      "high": 7768.6,
+      "low": 7585.0,
+      "close": 7655.65
+    },
+    {
+      "date": "20-10-2021",
+      "open": 7615.0,
+      "high": 7667.35,
+      "low": 7515.0,
+      "close": 7590.75
+    },
+    {
+      "date": "21-10-2021",
+      "open": 7650.0,
+      "high": 7650.0,
+      "low": 7485.0,
+      "close": 7575.25
+    },
+    {
+      "date": "22-10-2021",
+      "open": 7600.0,
+      "high": 7625.0,
+      "low": 7386.55,
+      "close": 7408.9
+    },
+    {
+      "date": "25-10-2021",
+      "open": 7355.0,
+      "high": 7396.05,
+      "low": 7219.65,
+      "close": 7260.6
+    },
+    {
+      "date": "26-10-2021",
+      "open": 7265.0,
+      "high": 7337.95,
+      "low": 7210.2,
+      "close": 7297.35
+    },
+    {
+      "date": "27-10-2021",
+      "open": 7285.0,
+      "high": 7461.25,
+      "low": 7244.0,
+      "close": 7356.25
+    },
+    {
+      "date": "28-10-2021",
+      "open": 7250.0,
+      "high": 7529.7,
+      "low": 7235.05,
+      "close": 7369.7
+    },
+    {
+      "date": "29-10-2021",
+      "open": 7350.0,
+      "high": 7550.0,
+      "low": 7294.85,
+      "close": 7482.4
+    },
+    {
+      "date": "01-11-2021",
+      "open": 7401.0,
+      "high": 7666.0,
+      "low": 7401.0,
+      "close": 7615.55
+    },
+    {
+      "date": "02-11-2021",
+      "open": 7647.95,
+      "high": 7910.0,
+      "low": 7630.8,
+      "close": 7791.75
+    },
+    {
+      "date": "03-11-2021",
+      "open": 7791.75,
+      "high": 7842.25,
+      "low": 7711.6,
+      "close": 7734.25
+    },
+    {
+      "date": "04-11-2021",
+      "open": 7774.7,
+      "high": 7819.95,
+      "low": 7735.5,
+      "close": 7747.4
+    },
+    {
+      "date": "08-11-2021",
+      "open": 7759.95,
+      "high": 7882.6,
+      "low": 7672.0,
+      "close": 7684.6
+    },
+    {
+      "date": "09-11-2021",
+      "open": 7709.0,
+      "high": 7764.5,
+      "low": 7538.7,
+      "close": 7577.55
+    },
+    {
+      "date": "10-11-2021",
+      "open": 7570.0,
+      "high": 7580.0,
+      "low": 7460.0,
+      "close": 7511.65
+    }
+  ]
+}

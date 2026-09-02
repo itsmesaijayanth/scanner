@@ -1,0 +1,83 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ONGC",
+  "window": {
+    "start_date": "08-08-2021",
+    "end_date": "07-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 3
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-09-2021",
+      "price": 124.35,
+      "distance_to_current_trading_rows": 1
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 118.8,
+      "distance_to_current_trading_rows": 2
+    },
+    "current": {
+      "date": "07-09-2021",
+      "open": 122.5,
+      "high": 122.75,
+      "low": 119.55,
+      "close": 119.95
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 118.8
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 124.35
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 124.35
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 119.95,
+      "high": 123.5,
+      "low": 118.8,
+      "close": 123.1
+    },
+    {
+      "date": "06-09-2021",
+      "open": 123.8,
+      "high": 124.35,
+      "low": 121.15,
+      "close": 121.65
+    },
+    {
+      "date": "07-09-2021",
+      "open": 122.5,
+      "high": 122.75,
+      "low": 119.55,
+      "close": 119.95
+    }
+  ]
+}

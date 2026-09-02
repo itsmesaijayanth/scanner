@@ -1,0 +1,83 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJFINANCE",
+  "window": {
+    "start_date": "08-08-2021",
+    "end_date": "07-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 3
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-09-2021",
+      "price": 7615.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "monthly_low": {
+      "date": "07-09-2021",
+      "price": 7407.2,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "07-09-2021",
+      "open": 7528.9,
+      "high": 7566.25,
+      "low": 7407.2,
+      "close": 7457.3
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 7615.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 7407.2
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 7407.2
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 7500.0,
+      "high": 7555.0,
+      "low": 7461.75,
+      "close": 7523.4
+    },
+    {
+      "date": "06-09-2021",
+      "open": 7550.0,
+      "high": 7615.0,
+      "low": 7485.1,
+      "close": 7506.35
+    },
+    {
+      "date": "07-09-2021",
+      "open": 7528.9,
+      "high": 7566.25,
+      "low": 7407.2,
+      "close": 7457.3
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJFINANCE",
+  "window": {
+    "start_date": "26-07-2023",
+    "end_date": "25-08-2023",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "26-07-2023",
+      "price": 7734.0,
+      "distance_to_current_trading_rows": 21
+    },
+    "monthly_low": {
+      "date": "21-08-2023",
+      "price": 6801.0,
+      "distance_to_current_trading_rows": 4
+    },
+    "current": {
+      "date": "25-08-2023",
+      "open": 7115.0,
+      "high": 7278.1,
+      "low": 7101.0,
+      "close": 7211.5
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "27-07-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7577.9,
+        "high": 7577.9,
+        "low": 7267.7,
+        "close": 7284.1
+      },
+      {
+        "date": "02-08-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7290.0,
+        "high": 7290.0,
+        "low": 7145.0,
+        "close": 7203.45
+      },
+      {
+        "date": "16-08-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 6994.0,
+        "high": 6994.0,
+        "low": 6920.0,
+        "close": 6981.5
+      },
+      {
+        "date": "17-08-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7020.0,
+        "high": 7020.0,
+        "low": 6903.0,
+        "close": 6923.25
+      },
+      {
+        "date": "21-08-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 6801.0,
+        "high": 7063.0,
+        "low": 6801.0,
+        "close": 7048.2
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 7734.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 6801.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 6801.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "26-07-2023",
+      "open": 7635.0,
+      "high": 7734.0,
+      "low": 7331.0,
+      "close": 7433.15
+    },
+    {
+      "date": "27-07-2023",
+      "open": 7577.9,
+      "high": 7577.9,
+      "low": 7267.7,
+      "close": 7284.1
+    },
+    {
+      "date": "28-07-2023",
+      "open": 7319.0,
+      "high": 7394.6,
+      "low": 7210.0,
+      "close": 7381.6
+    },
+    {
+      "date": "31-07-2023",
+      "open": 7345.0,
+      "high": 7369.9,
+      "low": 7281.05,
+      "close": 7300.3
+    },
+    {
+      "date": "01-08-2023",
+      "open": 7300.3,
+      "high": 7330.0,
+      "low": 7244.0,
+      "close": 7269.7
+    },
+    {
+      "date": "02-08-2023",
+      "open": 7290.0,
+      "high": 7290.0,
+      "low": 7145.0,
+      "close": 7203.45
+    },
+    {
+      "date": "03-08-2023",
+      "open": 7175.0,
+      "high": 7224.3,
+      "low": 7018.05,
+      "close": 7108.35
+    },
+    {
+      "date": "04-08-2023",
+      "open": 7139.0,
+      "high": 7205.0,
+      "low": 7071.3,
+      "close": 7148.7
+    },
+    {
+      "date": "07-08-2023",
+      "open": 7162.0,
+      "high": 7182.75,
+      "low": 7071.6,
+      "close": 7122.15
+    },
+    {
+      "date": "08-08-2023",
+      "open": 7135.0,
+      "high": 7205.0,
+      "low": 7085.15,
+      "close": 7173.6
+    },
+    {
+      "date": "09-08-2023",
+      "open": 7200.0,
+      "high": 7214.0,
+      "low": 7090.0,
+      "close": 7125.35
+    },
+    {
+      "date": "10-08-2023",
+      "open": 7100.05,
+      "high": 7174.0,
+      "low": 7092.0,
+      "close": 7143.85
+    },
+    {
+      "date": "11-08-2023",
+      "open": 7143.85,
+      "high": 7159.0,
+      "low": 7031.05,
+      "close": 7060.6
+    },
+    {
+      "date": "14-08-2023",
+      "open": 7040.0,
+      "high": 7058.9,
+      "low": 6940.55,
+      "close": 7018.05
+    },
+    {
+      "date": "16-08-2023",
+      "open": 6994.0,
+      "high": 6994.0,
+      "low": 6920.0,
+      "close": 6981.5
+    },
+    {
+      "date": "17-08-2023",
+      "open": 7020.0,
+      "high": 7020.0,
+      "low": 6903.0,
+      "close": 6923.25
+    },
+    {
+      "date": "18-08-2023",
+      "open": 6893.5,
+      "high": 6915.8,
+      "low": 6845.0,
+      "close": 6862.1
+    },
+    {
+      "date": "21-08-2023",
+      "open": 6801.0,
+      "high": 7063.0,
+      "low": 6801.0,
+      "close": 7048.2
+    },
+    {
+      "date": "22-08-2023",
+      "open": 7051.05,
+      "high": 7153.5,
+      "low": 7050.0,
+      "close": 7069.95
+    },
+    {
+      "date": "23-08-2023",
+      "open": 7100.0,
+      "high": 7149.0,
+      "low": 7003.0,
+      "close": 7116.45
+    },
+    {
+      "date": "24-08-2023",
+      "open": 7150.0,
+      "high": 7185.95,
+      "low": 7121.0,
+      "close": 7137.45
+    },
+    {
+      "date": "25-08-2023",
+      "open": 7115.0,
+      "high": 7278.1,
+      "low": 7101.0,
+      "close": 7211.5
+    }
+  ]
+}

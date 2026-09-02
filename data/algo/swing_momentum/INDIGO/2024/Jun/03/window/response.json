@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "INDIGO",
+  "window": {
+    "start_date": "04-05-2024",
+    "end_date": "03-06-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "24-05-2024",
+      "price": 4529.0,
+      "distance_to_current_trading_rows": 6
+    },
+    "monthly_low": {
+      "date": "07-05-2024",
+      "price": 3915.55,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "03-06-2024",
+      "open": 4324.0,
+      "high": 4324.0,
+      "low": 4230.1,
+      "close": 4298.05
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "29-05-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 4185.0,
+        "high": 4185.0,
+        "low": 4005.3,
+        "close": 4027.55
+      },
+      {
+        "date": "30-05-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 4040.05,
+        "high": 4197.9,
+        "low": 4040.05,
+        "close": 4162.2
+      },
+      {
+        "date": "03-06-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 4324.0,
+        "high": 4324.0,
+        "low": 4230.1,
+        "close": 4298.05
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 3915.55
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 4529.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 4529.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "06-05-2024",
+      "open": 4050.95,
+      "high": 4055.0,
+      "low": 3938.0,
+      "close": 3998.25
+    },
+    {
+      "date": "07-05-2024",
+      "open": 3998.3,
+      "high": 4039.95,
+      "low": 3915.55,
+      "close": 3948.65
+    },
+    {
+      "date": "08-05-2024",
+      "open": 3964.0,
+      "high": 4094.4,
+      "low": 3929.05,
+      "close": 4075.65
+    },
+    {
+      "date": "09-05-2024",
+      "open": 4094.95,
+      "high": 4124.35,
+      "low": 4028.9,
+      "close": 4045.35
+    },
+    {
+      "date": "10-05-2024",
+      "open": 4045.0,
+      "high": 4045.35,
+      "low": 3990.75,
+      "close": 4019.2
+    },
+    {
+      "date": "13-05-2024",
+      "open": 4006.1,
+      "high": 4090.0,
+      "low": 3980.05,
+      "close": 4082.0
+    },
+    {
+      "date": "14-05-2024",
+      "open": 4117.85,
+      "high": 4174.0,
+      "low": 4082.7,
+      "close": 4147.35
+    },
+    {
+      "date": "15-05-2024",
+      "open": 4163.65,
+      "high": 4314.4,
+      "low": 4134.6,
+      "close": 4295.5
+    },
+    {
+      "date": "16-05-2024",
+      "open": 4290.0,
+      "high": 4333.95,
+      "low": 4262.0,
+      "close": 4290.4
+    },
+    {
+      "date": "17-05-2024",
+      "open": 4302.55,
+      "high": 4391.85,
+      "low": 4296.55,
+      "close": 4366.3
+    },
+    {
+      "date": "18-05-2024",
+      "open": 4353.05,
+      "high": 4384.9,
+      "low": 4336.85,
+      "close": 4366.65
+    },
+    {
+      "date": "21-05-2024",
+      "open": 4342.45,
+      "high": 4365.05,
+      "low": 4279.15,
+      "close": 4315.5
+    },
+    {
+      "date": "22-05-2024",
+      "open": 4337.45,
+      "high": 4407.5,
+      "low": 4284.0,
+      "close": 4355.75
+    },
+    {
+      "date": "23-05-2024",
+      "open": 4388.0,
+      "high": 4438.9,
+      "low": 4320.0,
+      "close": 4400.5
+    },
+    {
+      "date": "24-05-2024",
+      "open": 4520.0,
+      "high": 4529.0,
+      "low": 4242.0,
+      "close": 4256.5
+    },
+    {
+      "date": "27-05-2024",
+      "open": 4260.0,
+      "high": 4298.0,
+      "low": 4206.3,
+      "close": 4252.95
+    },
+    {
+      "date": "28-05-2024",
+      "open": 4252.05,
+      "high": 4266.15,
+      "low": 4156.0,
+      "close": 4197.05
+    },
+    {
+      "date": "29-05-2024",
+      "open": 4185.0,
+      "high": 4185.0,
+      "low": 4005.3,
+      "close": 4027.55
+    },
+    {
+      "date": "30-05-2024",
+      "open": 4040.05,
+      "high": 4197.9,
+      "low": 4040.05,
+      "close": 4162.2
+    },
+    {
+      "date": "31-05-2024",
+      "open": 4189.95,
+      "high": 4217.8,
+      "low": 4106.4,
+      "close": 4189.05
+    },
+    {
+      "date": "03-06-2024",
+      "open": 4324.0,
+      "high": 4324.0,
+      "low": 4230.1,
+      "close": 4298.05
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJAJ-AUTO",
+  "window": {
+    "start_date": "12-11-2025",
+    "end_date": "12-12-2025",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "27-11-2025",
+      "price": 9254.5,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "14-11-2025",
+      "price": 8781.5,
+      "distance_to_current_trading_rows": 20
+    },
+    "current": {
+      "date": "12-12-2025",
+      "open": 9065.0,
+      "high": 9089.5,
+      "low": 8960.0,
+      "close": 9015.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "12-11-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 8935.0,
+        "high": 8935.0,
+        "low": 8800.0,
+        "close": 8868.0
+      },
+      {
+        "date": "14-11-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 8867.5,
+        "high": 8867.5,
+        "low": 8781.5,
+        "close": 8843.0
+      },
+      {
+        "date": "17-11-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 8850.0,
+        "high": 9025.0,
+        "low": 8850.0,
+        "close": 8945.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 8781.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 9254.5
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 9254.5
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "12-11-2025",
+      "open": 8935.0,
+      "high": 8935.0,
+      "low": 8800.0,
+      "close": 8868.0
+    },
+    {
+      "date": "13-11-2025",
+      "open": 8888.0,
+      "high": 8895.5,
+      "low": 8842.0,
+      "close": 8867.5
+    },
+    {
+      "date": "14-11-2025",
+      "open": 8867.5,
+      "high": 8867.5,
+      "low": 8781.5,
+      "close": 8843.0
+    },
+    {
+      "date": "17-11-2025",
+      "open": 8850.0,
+      "high": 9025.0,
+      "low": 8850.0,
+      "close": 8945.5
+    },
+    {
+      "date": "18-11-2025",
+      "open": 8975.5,
+      "high": 8999.0,
+      "low": 8900.0,
+      "close": 8921.0
+    },
+    {
+      "date": "19-11-2025",
+      "open": 8950.0,
+      "high": 8975.0,
+      "low": 8863.5,
+      "close": 8884.5
+    },
+    {
+      "date": "20-11-2025",
+      "open": 8924.0,
+      "high": 9005.0,
+      "low": 8890.0,
+      "close": 8979.5
+    },
+    {
+      "date": "21-11-2025",
+      "open": 8950.0,
+      "high": 8957.5,
+      "low": 8862.0,
+      "close": 8892.0
+    },
+    {
+      "date": "24-11-2025",
+      "open": 8905.0,
+      "high": 9049.0,
+      "low": 8857.5,
+      "close": 9007.5
+    },
+    {
+      "date": "25-11-2025",
+      "open": 9025.0,
+      "high": 9145.0,
+      "low": 9001.0,
+      "close": 9048.0
+    },
+    {
+      "date": "26-11-2025",
+      "open": 9054.0,
+      "high": 9180.0,
+      "low": 9028.0,
+      "close": 9164.0
+    },
+    {
+      "date": "27-11-2025",
+      "open": 9194.0,
+      "high": 9254.5,
+      "low": 8996.0,
+      "close": 9022.5
+    },
+    {
+      "date": "28-11-2025",
+      "open": 9031.0,
+      "high": 9106.0,
+      "low": 8922.0,
+      "close": 9073.5
+    },
+    {
+      "date": "01-12-2025",
+      "open": 9129.0,
+      "high": 9189.5,
+      "low": 9055.5,
+      "close": 9096.0
+    },
+    {
+      "date": "02-12-2025",
+      "open": 9100.0,
+      "high": 9142.0,
+      "low": 8988.0,
+      "close": 9085.5
+    },
+    {
+      "date": "03-12-2025",
+      "open": 9085.5,
+      "high": 9105.0,
+      "low": 8950.0,
+      "close": 9000.5
+    },
+    {
+      "date": "04-12-2025",
+      "open": 9005.0,
+      "high": 9095.0,
+      "low": 8988.0,
+      "close": 9085.0
+    },
+    {
+      "date": "05-12-2025",
+      "open": 9054.0,
+      "high": 9130.0,
+      "low": 9045.5,
+      "close": 9109.0
+    },
+    {
+      "date": "08-12-2025",
+      "open": 9115.0,
+      "high": 9124.5,
+      "low": 8956.5,
+      "close": 9026.0
+    },
+    {
+      "date": "09-12-2025",
+      "open": 8990.0,
+      "high": 9034.5,
+      "low": 8880.0,
+      "close": 8961.0
+    },
+    {
+      "date": "10-12-2025",
+      "open": 8961.0,
+      "high": 9001.5,
+      "low": 8904.0,
+      "close": 8991.0
+    },
+    {
+      "date": "11-12-2025",
+      "open": 8991.0,
+      "high": 9084.0,
+      "low": 8961.0,
+      "close": 9053.5
+    },
+    {
+      "date": "12-12-2025",
+      "open": 9065.0,
+      "high": 9089.5,
+      "low": 8960.0,
+      "close": 9015.0
+    }
+  ]
+}

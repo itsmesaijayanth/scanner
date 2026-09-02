@@ -1,0 +1,90 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "JIOFIN",
+  "window": {
+    "start_date": "08-08-2023",
+    "end_date": "07-09-2023",
+    "calendar_days": 30,
+    "trading_rows": 4
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "04-09-2023",
+      "price": 266.95,
+      "distance_to_current_trading_rows": 3
+    },
+    "monthly_low": {
+      "date": "06-09-2023",
+      "price": 246.05,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "07-09-2023",
+      "open": 252.0,
+      "high": 257.3,
+      "low": 251.25,
+      "close": 251.8
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 266.95
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 246.05
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 246.05
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "04-09-2023",
+      "open": 255.3,
+      "high": 266.95,
+      "low": 249.0,
+      "close": 253.45
+    },
+    {
+      "date": "05-09-2023",
+      "open": 257.0,
+      "high": 260.0,
+      "low": 253.0,
+      "close": 255.05
+    },
+    {
+      "date": "06-09-2023",
+      "open": 247.0,
+      "high": 259.8,
+      "low": 246.05,
+      "close": 252.85
+    },
+    {
+      "date": "07-09-2023",
+      "open": 252.0,
+      "high": 257.3,
+      "low": 251.25,
+      "close": 251.8
+    }
+  ]
+}

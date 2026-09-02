@@ -1,0 +1,223 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "CIPLA",
+  "window": {
+    "start_date": "30-07-2022",
+    "end_date": "29-08-2022",
+    "calendar_days": 30,
+    "trading_rows": 19
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "24-08-2022",
+      "price": 1053.85,
+      "distance_to_current_trading_rows": 3
+    },
+    "monthly_low": {
+      "date": "01-08-2022",
+      "price": 988.3,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "29-08-2022",
+      "open": 1000.0,
+      "high": 1024.0,
+      "low": 991.3,
+      "close": 1017.3
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "12-08-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1043.6,
+        "high": 1043.6,
+        "low": 1022.35,
+        "close": 1027.15
+      },
+      {
+        "date": "23-08-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1010.2,
+        "high": 1046.8,
+        "low": 1010.2,
+        "close": 1040.65
+      },
+      {
+        "date": "25-08-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1043.95,
+        "high": 1043.95,
+        "low": 1020.55,
+        "close": 1025.75
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 988.3
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1053.85
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1053.85
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "01-08-2022",
+      "open": 990.0,
+      "high": 1031.0,
+      "low": 988.3,
+      "close": 1004.55
+    },
+    {
+      "date": "02-08-2022",
+      "open": 1003.65,
+      "high": 1006.1,
+      "low": 992.0,
+      "close": 1004.2
+    },
+    {
+      "date": "03-08-2022",
+      "open": 1010.0,
+      "high": 1028.75,
+      "low": 1004.5,
+      "close": 1011.85
+    },
+    {
+      "date": "04-08-2022",
+      "open": 1017.8,
+      "high": 1046.9,
+      "low": 1015.0,
+      "close": 1044.5
+    },
+    {
+      "date": "05-08-2022",
+      "open": 1040.0,
+      "high": 1045.95,
+      "low": 1032.0,
+      "close": 1034.2
+    },
+    {
+      "date": "08-08-2022",
+      "open": 1036.2,
+      "high": 1039.5,
+      "low": 1024.1,
+      "close": 1029.55
+    },
+    {
+      "date": "10-08-2022",
+      "open": 1035.55,
+      "high": 1046.3,
+      "low": 1029.05,
+      "close": 1038.35
+    },
+    {
+      "date": "11-08-2022",
+      "open": 1040.5,
+      "high": 1049.0,
+      "low": 1035.0,
+      "close": 1038.4
+    },
+    {
+      "date": "12-08-2022",
+      "open": 1043.6,
+      "high": 1043.6,
+      "low": 1022.35,
+      "close": 1027.15
+    },
+    {
+      "date": "16-08-2022",
+      "open": 1027.15,
+      "high": 1036.0,
+      "low": 1025.25,
+      "close": 1034.55
+    },
+    {
+      "date": "17-08-2022",
+      "open": 1039.75,
+      "high": 1042.95,
+      "low": 1024.2,
+      "close": 1025.75
+    },
+    {
+      "date": "18-08-2022",
+      "open": 1028.5,
+      "high": 1034.05,
+      "low": 1007.35,
+      "close": 1032.2
+    },
+    {
+      "date": "19-08-2022",
+      "open": 1029.05,
+      "high": 1036.6,
+      "low": 1020.1,
+      "close": 1030.1
+    },
+    {
+      "date": "22-08-2022",
+      "open": 1016.0,
+      "high": 1029.85,
+      "low": 1015.5,
+      "close": 1022.55
+    },
+    {
+      "date": "23-08-2022",
+      "open": 1010.2,
+      "high": 1046.8,
+      "low": 1010.2,
+      "close": 1040.65
+    },
+    {
+      "date": "24-08-2022",
+      "open": 1041.0,
+      "high": 1053.85,
+      "low": 1026.05,
+      "close": 1037.35
+    },
+    {
+      "date": "25-08-2022",
+      "open": 1043.95,
+      "high": 1043.95,
+      "low": 1020.55,
+      "close": 1025.75
+    },
+    {
+      "date": "26-08-2022",
+      "open": 1030.9,
+      "high": 1035.7,
+      "low": 1018.5,
+      "close": 1020.8
+    },
+    {
+      "date": "29-08-2022",
+      "open": 1000.0,
+      "high": 1024.0,
+      "low": 991.3,
+      "close": 1017.3
+    }
+  ]
+}

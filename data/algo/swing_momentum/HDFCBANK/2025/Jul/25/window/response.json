@@ -1,0 +1,269 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HDFCBANK",
+  "window": {
+    "start_date": "25-06-2025",
+    "end_date": "25-07-2025",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "24-07-2025",
+      "price": 2037.7,
+      "distance_to_current_trading_rows": 1
+    },
+    "monthly_low": {
+      "date": "18-07-2025",
+      "price": 1953.0,
+      "distance_to_current_trading_rows": 5
+    },
+    "current": {
+      "date": "25-07-2025",
+      "open": 2015.0,
+      "high": 2015.0,
+      "low": 1999.0,
+      "close": 2004.6
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "02-07-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2019.9,
+        "high": 2019.9,
+        "low": 1977.9,
+        "close": 1986.0
+      },
+      {
+        "date": "08-07-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1977.0,
+        "high": 2005.0,
+        "low": 1977.0,
+        "close": 2001.4
+      },
+      {
+        "date": "15-07-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1973.0,
+        "high": 2003.6,
+        "low": 1973.0,
+        "close": 1995.5
+      },
+      {
+        "date": "24-07-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2037.7,
+        "high": 2037.7,
+        "low": 2008.4,
+        "close": 2014.2
+      },
+      {
+        "date": "25-07-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2015.0,
+        "high": 2015.0,
+        "low": 1999.0,
+        "close": 2004.6
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1953.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2037.7
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2037.7
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "25-06-2025",
+      "open": 1966.0,
+      "high": 1982.0,
+      "low": 1963.9,
+      "close": 1980.2
+    },
+    {
+      "date": "26-06-2025",
+      "open": 1981.4,
+      "high": 2027.1,
+      "low": 1980.0,
+      "close": 2021.8
+    },
+    {
+      "date": "27-06-2025",
+      "open": 2013.0,
+      "high": 2019.8,
+      "low": 1993.4,
+      "close": 2014.9
+    },
+    {
+      "date": "30-06-2025",
+      "open": 2011.5,
+      "high": 2013.8,
+      "low": 1995.5,
+      "close": 2001.5
+    },
+    {
+      "date": "01-07-2025",
+      "open": 2005.0,
+      "high": 2016.0,
+      "low": 2004.0,
+      "close": 2012.1
+    },
+    {
+      "date": "02-07-2025",
+      "open": 2019.9,
+      "high": 2019.9,
+      "low": 1977.9,
+      "close": 1986.0
+    },
+    {
+      "date": "03-07-2025",
+      "open": 1994.9,
+      "high": 2008.0,
+      "low": 1984.3,
+      "close": 1987.1
+    },
+    {
+      "date": "04-07-2025",
+      "open": 1987.1,
+      "high": 2003.5,
+      "low": 1980.0,
+      "close": 1989.3
+    },
+    {
+      "date": "07-07-2025",
+      "open": 1989.0,
+      "high": 1998.4,
+      "low": 1983.8,
+      "close": 1987.4
+    },
+    {
+      "date": "08-07-2025",
+      "open": 1977.0,
+      "high": 2005.0,
+      "low": 1977.0,
+      "close": 2001.4
+    },
+    {
+      "date": "09-07-2025",
+      "open": 2007.0,
+      "high": 2013.8,
+      "low": 1998.1,
+      "close": 2011.2
+    },
+    {
+      "date": "10-07-2025",
+      "open": 2016.0,
+      "high": 2017.0,
+      "low": 2000.0,
+      "close": 2006.2
+    },
+    {
+      "date": "11-07-2025",
+      "open": 1998.0,
+      "high": 2004.8,
+      "low": 1980.9,
+      "close": 1983.7
+    },
+    {
+      "date": "14-07-2025",
+      "open": 1983.0,
+      "high": 1988.7,
+      "low": 1970.6,
+      "close": 1983.0
+    },
+    {
+      "date": "15-07-2025",
+      "open": 1973.0,
+      "high": 2003.6,
+      "low": 1973.0,
+      "close": 1995.5
+    },
+    {
+      "date": "16-07-2025",
+      "open": 2018.0,
+      "high": 2022.7,
+      "low": 1992.6,
+      "close": 1996.3
+    },
+    {
+      "date": "17-07-2025",
+      "open": 2004.0,
+      "high": 2004.8,
+      "low": 1982.7,
+      "close": 1986.9
+    },
+    {
+      "date": "18-07-2025",
+      "open": 1986.9,
+      "high": 1997.0,
+      "low": 1953.0,
+      "close": 1957.4
+    },
+    {
+      "date": "21-07-2025",
+      "open": 1978.2,
+      "high": 2002.0,
+      "low": 1976.5,
+      "close": 2000.5
+    },
+    {
+      "date": "22-07-2025",
+      "open": 2013.1,
+      "high": 2018.0,
+      "low": 2003.0,
+      "close": 2007.1
+    },
+    {
+      "date": "23-07-2025",
+      "open": 2011.0,
+      "high": 2029.8,
+      "low": 2003.0,
+      "close": 2024.3
+    },
+    {
+      "date": "24-07-2025",
+      "open": 2037.7,
+      "high": 2037.7,
+      "low": 2008.4,
+      "close": 2014.2
+    },
+    {
+      "date": "25-07-2025",
+      "open": 2015.0,
+      "high": 2015.0,
+      "low": 1999.0,
+      "close": 2004.6
+    }
+  ]
+}

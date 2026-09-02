@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "NTPC",
+  "window": {
+    "start_date": "21-12-2023",
+    "end_date": "20-01-2024",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "05-01-2024",
+      "price": 325.65,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "21-12-2023",
+      "price": 293.2,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "20-01-2024",
+      "open": 309.95,
+      "high": 314.85,
+      "low": 306.25,
+      "close": 308.2
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "29-12-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 314.35,
+        "high": 314.35,
+        "low": 308.15,
+        "close": 311.15
+      },
+      {
+        "date": "02-01-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 310.8,
+        "high": 310.8,
+        "low": 302.05,
+        "close": 306.0
+      },
+      {
+        "date": "16-01-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 317.25,
+        "high": 317.25,
+        "low": 310.15,
+        "close": 311.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 293.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 325.65
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 325.65
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "21-12-2023",
+      "open": 295.8,
+      "high": 303.15,
+      "low": 293.2,
+      "close": 301.95
+    },
+    {
+      "date": "22-12-2023",
+      "open": 304.0,
+      "high": 308.95,
+      "low": 299.6,
+      "close": 302.8
+    },
+    {
+      "date": "26-12-2023",
+      "open": 306.45,
+      "high": 310.7,
+      "low": 304.6,
+      "close": 309.6
+    },
+    {
+      "date": "27-12-2023",
+      "open": 311.6,
+      "high": 312.25,
+      "low": 303.55,
+      "close": 306.05
+    },
+    {
+      "date": "28-12-2023",
+      "open": 309.1,
+      "high": 315.5,
+      "low": 307.75,
+      "close": 313.9
+    },
+    {
+      "date": "29-12-2023",
+      "open": 314.35,
+      "high": 314.35,
+      "low": 308.15,
+      "close": 311.15
+    },
+    {
+      "date": "01-01-2024",
+      "open": 312.0,
+      "high": 313.3,
+      "low": 307.8,
+      "close": 309.75
+    },
+    {
+      "date": "02-01-2024",
+      "open": 310.8,
+      "high": 310.8,
+      "low": 302.05,
+      "close": 306.0
+    },
+    {
+      "date": "03-01-2024",
+      "open": 307.2,
+      "high": 308.0,
+      "low": 303.3,
+      "close": 306.2
+    },
+    {
+      "date": "04-01-2024",
+      "open": 310.9,
+      "high": 321.75,
+      "low": 308.6,
+      "close": 317.1
+    },
+    {
+      "date": "05-01-2024",
+      "open": 322.9,
+      "high": 325.65,
+      "low": 312.7,
+      "close": 314.95
+    },
+    {
+      "date": "08-01-2024",
+      "open": 316.45,
+      "high": 318.35,
+      "low": 312.6,
+      "close": 316.45
+    },
+    {
+      "date": "09-01-2024",
+      "open": 317.85,
+      "high": 321.45,
+      "low": 316.05,
+      "close": 319.75
+    },
+    {
+      "date": "10-01-2024",
+      "open": 319.65,
+      "high": 319.75,
+      "low": 308.0,
+      "close": 313.35
+    },
+    {
+      "date": "11-01-2024",
+      "open": 314.95,
+      "high": 317.3,
+      "low": 312.35,
+      "close": 312.9
+    },
+    {
+      "date": "12-01-2024",
+      "open": 315.2,
+      "high": 315.3,
+      "low": 309.7,
+      "close": 312.65
+    },
+    {
+      "date": "15-01-2024",
+      "open": 314.9,
+      "high": 318.0,
+      "low": 309.6,
+      "close": 317.3
+    },
+    {
+      "date": "16-01-2024",
+      "open": 317.25,
+      "high": 317.25,
+      "low": 310.15,
+      "close": 311.5
+    },
+    {
+      "date": "17-01-2024",
+      "open": 309.75,
+      "high": 314.1,
+      "low": 307.1,
+      "close": 309.3
+    },
+    {
+      "date": "18-01-2024",
+      "open": 308.95,
+      "high": 311.3,
+      "low": 296.55,
+      "close": 299.3
+    },
+    {
+      "date": "19-01-2024",
+      "open": 303.8,
+      "high": 309.45,
+      "low": 301.7,
+      "close": 308.45
+    },
+    {
+      "date": "20-01-2024",
+      "open": 309.95,
+      "high": 314.85,
+      "low": 306.25,
+      "close": 308.2
+    }
+  ]
+}

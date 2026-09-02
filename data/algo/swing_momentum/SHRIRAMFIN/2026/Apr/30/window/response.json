@@ -1,0 +1,221 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SHRIRAMFIN",
+  "window": {
+    "start_date": "31-03-2026",
+    "end_date": "30-04-2026",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "21-04-2026",
+      "price": 1062.7,
+      "distance_to_current_trading_rows": 7
+    },
+    "monthly_low": {
+      "date": "02-04-2026",
+      "price": 863.45,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "30-04-2026",
+      "open": 945.2,
+      "high": 950.0,
+      "low": 921.0,
+      "close": 937.35
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "08-04-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 975.0,
+        "high": 1035.45,
+        "low": 975.0,
+        "close": 1023.2
+      },
+      {
+        "date": "23-04-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1044.9,
+        "high": 1044.9,
+        "low": 1006.35,
+        "close": 1009.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 863.45
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1062.7
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1062.7
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "01-04-2026",
+      "open": 915.6,
+      "high": 926.3,
+      "low": 895.75,
+      "close": 900.55
+    },
+    {
+      "date": "02-04-2026",
+      "open": 876.0,
+      "high": 895.0,
+      "low": 863.45,
+      "close": 891.6
+    },
+    {
+      "date": "06-04-2026",
+      "open": 895.0,
+      "high": 931.0,
+      "low": 885.65,
+      "close": 928.0
+    },
+    {
+      "date": "07-04-2026",
+      "open": 920.0,
+      "high": 932.4,
+      "low": 910.05,
+      "close": 930.65
+    },
+    {
+      "date": "08-04-2026",
+      "open": 975.0,
+      "high": 1035.45,
+      "low": 975.0,
+      "close": 1023.2
+    },
+    {
+      "date": "09-04-2026",
+      "open": 1010.1,
+      "high": 1015.0,
+      "low": 990.45,
+      "close": 996.3
+    },
+    {
+      "date": "10-04-2026",
+      "open": 1016.1,
+      "high": 1031.0,
+      "low": 1011.25,
+      "close": 1027.55
+    },
+    {
+      "date": "13-04-2026",
+      "open": 1000.15,
+      "high": 1015.5,
+      "low": 988.8,
+      "close": 1004.1
+    },
+    {
+      "date": "15-04-2026",
+      "open": 1030.0,
+      "high": 1043.5,
+      "low": 1016.45,
+      "close": 1020.95
+    },
+    {
+      "date": "16-04-2026",
+      "open": 1026.1,
+      "high": 1034.35,
+      "low": 1015.35,
+      "close": 1022.75
+    },
+    {
+      "date": "17-04-2026",
+      "open": 1022.0,
+      "high": 1039.5,
+      "low": 1013.15,
+      "close": 1036.95
+    },
+    {
+      "date": "20-04-2026",
+      "open": 1040.0,
+      "high": 1049.95,
+      "low": 1026.0,
+      "close": 1045.15
+    },
+    {
+      "date": "21-04-2026",
+      "open": 1054.0,
+      "high": 1062.7,
+      "low": 1039.25,
+      "close": 1045.3
+    },
+    {
+      "date": "22-04-2026",
+      "open": 1050.0,
+      "high": 1053.7,
+      "low": 1029.4,
+      "close": 1044.55
+    },
+    {
+      "date": "23-04-2026",
+      "open": 1044.9,
+      "high": 1044.9,
+      "low": 1006.35,
+      "close": 1009.3
+    },
+    {
+      "date": "24-04-2026",
+      "open": 1006.95,
+      "high": 1030.4,
+      "low": 983.55,
+      "close": 1011.3
+    },
+    {
+      "date": "27-04-2026",
+      "open": 1011.3,
+      "high": 1012.0,
+      "low": 963.75,
+      "close": 974.65
+    },
+    {
+      "date": "28-04-2026",
+      "open": 974.5,
+      "high": 979.75,
+      "low": 949.3,
+      "close": 953.25
+    },
+    {
+      "date": "29-04-2026",
+      "open": 965.0,
+      "high": 975.3,
+      "low": 954.9,
+      "close": 956.85
+    },
+    {
+      "date": "30-04-2026",
+      "open": 945.2,
+      "high": 950.0,
+      "low": 921.0,
+      "close": 937.35
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BHARTIARTL",
+  "window": {
+    "start_date": "09-08-2021",
+    "end_date": "08-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 4
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "08-09-2021",
+      "price": 683.8,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "07-09-2021",
+      "price": 648.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "08-09-2021",
+      "open": 678.0,
+      "high": 683.8,
+      "low": 665.0,
+      "close": 667.85
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 648.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 683.8
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 683.8
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 668.0,
+      "high": 669.6,
+      "low": 654.0,
+      "close": 658.45
+    },
+    {
+      "date": "06-09-2021",
+      "open": 664.4,
+      "high": 665.75,
+      "low": 653.4,
+      "close": 654.6
+    },
+    {
+      "date": "07-09-2021",
+      "open": 657.95,
+      "high": 680.5,
+      "low": 648.0,
+      "close": 670.55
+    },
+    {
+      "date": "08-09-2021",
+      "open": 678.0,
+      "high": 683.8,
+      "low": 665.0,
+      "close": 667.85
+    }
+  ]
+}

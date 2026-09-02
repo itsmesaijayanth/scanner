@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "INDIGO",
+  "window": {
+    "start_date": "18-09-2021",
+    "end_date": "18-10-2021",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "22-09-2021",
+      "price": 2307.15,
+      "distance_to_current_trading_rows": 17
+    },
+    "monthly_low": {
+      "date": "08-10-2021",
+      "price": 1917.85,
+      "distance_to_current_trading_rows": 5
+    },
+    "current": {
+      "date": "18-10-2021",
+      "open": 2093.0,
+      "high": 2098.9,
+      "low": 2045.0,
+      "close": 2052.85
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "28-09-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2065.0,
+        "high": 2065.0,
+        "low": 1985.4,
+        "close": 2023.05
+      },
+      {
+        "date": "07-10-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1936.35,
+        "high": 1988.6,
+        "low": 1936.35,
+        "close": 1947.7
+      },
+      {
+        "date": "13-10-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2140.0,
+        "high": 2140.0,
+        "low": 2010.35,
+        "close": 2017.55
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 2307.15
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1917.85
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1917.85
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "20-09-2021",
+      "open": 2196.05,
+      "high": 2204.5,
+      "low": 2141.25,
+      "close": 2169.5
+    },
+    {
+      "date": "21-09-2021",
+      "open": 2175.0,
+      "high": 2249.55,
+      "low": 2140.2,
+      "close": 2236.25
+    },
+    {
+      "date": "22-09-2021",
+      "open": 2255.0,
+      "high": 2307.15,
+      "low": 2180.1,
+      "close": 2188.3
+    },
+    {
+      "date": "23-09-2021",
+      "open": 2204.0,
+      "high": 2246.0,
+      "low": 2195.7,
+      "close": 2216.5
+    },
+    {
+      "date": "24-09-2021",
+      "open": 2217.0,
+      "high": 2221.9,
+      "low": 2114.5,
+      "close": 2138.7
+    },
+    {
+      "date": "27-09-2021",
+      "open": 2157.0,
+      "high": 2170.2,
+      "low": 2057.9,
+      "close": 2082.1
+    },
+    {
+      "date": "28-09-2021",
+      "open": 2065.0,
+      "high": 2065.0,
+      "low": 1985.4,
+      "close": 2023.05
+    },
+    {
+      "date": "29-09-2021",
+      "open": 2023.05,
+      "high": 2057.9,
+      "low": 2000.05,
+      "close": 2009.3
+    },
+    {
+      "date": "30-09-2021",
+      "open": 2027.25,
+      "high": 2040.45,
+      "low": 1983.85,
+      "close": 2021.7
+    },
+    {
+      "date": "01-10-2021",
+      "open": 2010.0,
+      "high": 2030.0,
+      "low": 1958.2,
+      "close": 1976.05
+    },
+    {
+      "date": "04-10-2021",
+      "open": 1980.0,
+      "high": 2012.8,
+      "low": 1954.1,
+      "close": 1993.15
+    },
+    {
+      "date": "05-10-2021",
+      "open": 1977.0,
+      "high": 2010.8,
+      "low": 1962.0,
+      "close": 1971.05
+    },
+    {
+      "date": "06-10-2021",
+      "open": 1985.55,
+      "high": 1987.45,
+      "low": 1920.0,
+      "close": 1929.3
+    },
+    {
+      "date": "07-10-2021",
+      "open": 1936.35,
+      "high": 1988.6,
+      "low": 1936.35,
+      "close": 1947.7
+    },
+    {
+      "date": "08-10-2021",
+      "open": 1967.0,
+      "high": 1988.5,
+      "low": 1917.85,
+      "close": 1962.5
+    },
+    {
+      "date": "11-10-2021",
+      "open": 1948.9,
+      "high": 2136.0,
+      "low": 1930.0,
+      "close": 2048.2
+    },
+    {
+      "date": "12-10-2021",
+      "open": 2065.2,
+      "high": 2084.6,
+      "low": 2010.6,
+      "close": 2040.3
+    },
+    {
+      "date": "13-10-2021",
+      "open": 2140.0,
+      "high": 2140.0,
+      "low": 2010.35,
+      "close": 2017.55
+    },
+    {
+      "date": "14-10-2021",
+      "open": 2020.0,
+      "high": 2087.0,
+      "low": 2015.55,
+      "close": 2073.2
+    },
+    {
+      "date": "18-10-2021",
+      "open": 2093.0,
+      "high": 2098.9,
+      "low": 2045.0,
+      "close": 2052.85
+    }
+  ]
+}

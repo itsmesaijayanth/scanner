@@ -1,0 +1,242 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SHRIRAMFIN",
+  "window": {
+    "start_date": "07-07-2026",
+    "end_date": "06-08-2026",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-08-2026",
+      "price": 1153.7,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "24-07-2026",
+      "price": 992.9,
+      "distance_to_current_trading_rows": 9
+    },
+    "current": {
+      "date": "06-08-2026",
+      "open": 1130.0,
+      "high": 1153.7,
+      "low": 1120.0,
+      "close": 1141.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "08-07-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1058.0,
+        "high": 1058.0,
+        "low": 1005.0,
+        "close": 1014.4
+      },
+      {
+        "date": "20-07-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1040.0,
+        "high": 1040.0,
+        "low": 1018.0,
+        "close": 1035.4
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 992.9
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1153.7
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1153.7
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "07-07-2026",
+      "open": 1070.0,
+      "high": 1087.3,
+      "low": 1058.7,
+      "close": 1066.8
+    },
+    {
+      "date": "08-07-2026",
+      "open": 1058.0,
+      "high": 1058.0,
+      "low": 1005.0,
+      "close": 1014.4
+    },
+    {
+      "date": "09-07-2026",
+      "open": 1019.4,
+      "high": 1039.8,
+      "low": 1015.0,
+      "close": 1031.7
+    },
+    {
+      "date": "10-07-2026",
+      "open": 1049.0,
+      "high": 1052.0,
+      "low": 1039.0,
+      "close": 1044.1
+    },
+    {
+      "date": "13-07-2026",
+      "open": 1019.9,
+      "high": 1053.1,
+      "low": 1017.0,
+      "close": 1048.1
+    },
+    {
+      "date": "14-07-2026",
+      "open": 1040.0,
+      "high": 1042.3,
+      "low": 1007.0,
+      "close": 1013.9
+    },
+    {
+      "date": "15-07-2026",
+      "open": 1028.0,
+      "high": 1049.0,
+      "low": 1025.2,
+      "close": 1033.8
+    },
+    {
+      "date": "16-07-2026",
+      "open": 1035.8,
+      "high": 1040.0,
+      "low": 1020.1,
+      "close": 1024.4
+    },
+    {
+      "date": "17-07-2026",
+      "open": 1025.4,
+      "high": 1038.9,
+      "low": 1022.0,
+      "close": 1034.9
+    },
+    {
+      "date": "20-07-2026",
+      "open": 1040.0,
+      "high": 1040.0,
+      "low": 1018.0,
+      "close": 1035.4
+    },
+    {
+      "date": "21-07-2026",
+      "open": 1036.0,
+      "high": 1067.4,
+      "low": 1031.0,
+      "close": 1061.5
+    },
+    {
+      "date": "22-07-2026",
+      "open": 1058.0,
+      "high": 1065.0,
+      "low": 1046.8,
+      "close": 1058.8
+    },
+    {
+      "date": "23-07-2026",
+      "open": 1057.8,
+      "high": 1079.0,
+      "low": 1022.3,
+      "close": 1025.8
+    },
+    {
+      "date": "24-07-2026",
+      "open": 1018.1,
+      "high": 1051.0,
+      "low": 992.9,
+      "close": 1005.1
+    },
+    {
+      "date": "27-07-2026",
+      "open": 1020.0,
+      "high": 1040.0,
+      "low": 1002.2,
+      "close": 1038.2
+    },
+    {
+      "date": "28-07-2026",
+      "open": 1045.0,
+      "high": 1049.9,
+      "low": 1036.4,
+      "close": 1040.9
+    },
+    {
+      "date": "29-07-2026",
+      "open": 1050.0,
+      "high": 1052.8,
+      "low": 1034.1,
+      "close": 1044.7
+    },
+    {
+      "date": "30-07-2026",
+      "open": 1038.0,
+      "high": 1051.0,
+      "low": 1019.5,
+      "close": 1027.2
+    },
+    {
+      "date": "31-07-2026",
+      "open": 1029.2,
+      "high": 1054.6,
+      "low": 1029.1,
+      "close": 1046.7
+    },
+    {
+      "date": "03-08-2026",
+      "open": 1058.0,
+      "high": 1095.0,
+      "low": 1051.6,
+      "close": 1090.2
+    },
+    {
+      "date": "04-08-2026",
+      "open": 1080.0,
+      "high": 1091.7,
+      "low": 1075.1,
+      "close": 1087.3
+    },
+    {
+      "date": "05-08-2026",
+      "open": 1097.7,
+      "high": 1122.4,
+      "low": 1092.7,
+      "close": 1122.4
+    },
+    {
+      "date": "06-08-2026",
+      "open": 1130.0,
+      "high": 1153.7,
+      "low": 1120.0,
+      "close": 1141.0
+    }
+  ]
+}

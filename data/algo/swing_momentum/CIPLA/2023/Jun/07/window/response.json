@@ -1,0 +1,242 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "CIPLA",
+  "window": {
+    "start_date": "08-05-2023",
+    "end_date": "07-06-2023",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "07-06-2023",
+      "price": 977.9,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "15-05-2023",
+      "price": 896.85,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "07-06-2023",
+      "open": 972.95,
+      "high": 977.9,
+      "low": 958.5,
+      "close": 960.45
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "15-05-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 940.0,
+        "high": 940.0,
+        "low": 896.85,
+        "close": 922.8
+      },
+      {
+        "date": "24-05-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 923.5,
+        "high": 939.9,
+        "low": 923.5,
+        "close": 938.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 896.85
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 977.9
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 977.9
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "08-05-2023",
+      "open": 927.2,
+      "high": 934.9,
+      "low": 919.65,
+      "close": 933.3
+    },
+    {
+      "date": "09-05-2023",
+      "open": 935.0,
+      "high": 943.0,
+      "low": 929.1,
+      "close": 939.2
+    },
+    {
+      "date": "10-05-2023",
+      "open": 943.5,
+      "high": 946.7,
+      "low": 933.2,
+      "close": 944.4
+    },
+    {
+      "date": "11-05-2023",
+      "open": 946.45,
+      "high": 947.0,
+      "low": 935.0,
+      "close": 943.6
+    },
+    {
+      "date": "12-05-2023",
+      "open": 948.85,
+      "high": 953.0,
+      "low": 913.0,
+      "close": 937.45
+    },
+    {
+      "date": "15-05-2023",
+      "open": 940.0,
+      "high": 940.0,
+      "low": 896.85,
+      "close": 922.8
+    },
+    {
+      "date": "16-05-2023",
+      "open": 927.4,
+      "high": 942.65,
+      "low": 918.4,
+      "close": 922.1
+    },
+    {
+      "date": "17-05-2023",
+      "open": 924.95,
+      "high": 932.0,
+      "low": 917.0,
+      "close": 923.95
+    },
+    {
+      "date": "18-05-2023",
+      "open": 929.0,
+      "high": 929.65,
+      "low": 911.55,
+      "close": 914.5
+    },
+    {
+      "date": "19-05-2023",
+      "open": 917.0,
+      "high": 922.0,
+      "low": 913.0,
+      "close": 916.25
+    },
+    {
+      "date": "22-05-2023",
+      "open": 916.25,
+      "high": 931.05,
+      "low": 915.45,
+      "close": 924.95
+    },
+    {
+      "date": "23-05-2023",
+      "open": 926.4,
+      "high": 932.3,
+      "low": 919.5,
+      "close": 930.4
+    },
+    {
+      "date": "24-05-2023",
+      "open": 923.5,
+      "high": 939.9,
+      "low": 923.5,
+      "close": 938.0
+    },
+    {
+      "date": "25-05-2023",
+      "open": 941.45,
+      "high": 947.0,
+      "low": 935.0,
+      "close": 945.45
+    },
+    {
+      "date": "26-05-2023",
+      "open": 945.9,
+      "high": 952.75,
+      "low": 940.5,
+      "close": 951.35
+    },
+    {
+      "date": "29-05-2023",
+      "open": 952.0,
+      "high": 959.2,
+      "low": 945.1,
+      "close": 956.25
+    },
+    {
+      "date": "30-05-2023",
+      "open": 957.6,
+      "high": 961.5,
+      "low": 951.0,
+      "close": 959.85
+    },
+    {
+      "date": "31-05-2023",
+      "open": 960.2,
+      "high": 965.0,
+      "low": 942.3,
+      "close": 953.05
+    },
+    {
+      "date": "01-06-2023",
+      "open": 950.0,
+      "high": 966.5,
+      "low": 946.75,
+      "close": 964.75
+    },
+    {
+      "date": "02-06-2023",
+      "open": 965.9,
+      "high": 969.65,
+      "low": 954.65,
+      "close": 965.85
+    },
+    {
+      "date": "05-06-2023",
+      "open": 970.0,
+      "high": 976.9,
+      "low": 959.15,
+      "close": 974.8
+    },
+    {
+      "date": "06-06-2023",
+      "open": 972.9,
+      "high": 974.95,
+      "low": 964.05,
+      "close": 972.05
+    },
+    {
+      "date": "07-06-2023",
+      "open": 972.95,
+      "high": 977.9,
+      "low": 958.5,
+      "close": 960.45
+    }
+  ]
+}

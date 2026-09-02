@@ -1,0 +1,271 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BEL",
+  "window": {
+    "start_date": "12-05-2024",
+    "end_date": "11-06-2024",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-06-2024",
+      "price": 323.0,
+      "distance_to_current_trading_rows": 6
+    },
+    "monthly_low": {
+      "date": "13-05-2024",
+      "price": 221.0,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "11-06-2024",
+      "open": 287.0,
+      "high": 290.5,
+      "low": 285.35,
+      "close": 286.2
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "14-05-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 225.75,
+        "high": 231.9,
+        "low": 225.75,
+        "close": 230.95
+      },
+      {
+        "date": "21-05-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 283.0,
+        "high": 283.0,
+        "low": 271.05,
+        "close": 274.15
+      },
+      {
+        "date": "03-06-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 323.0,
+        "high": 323.0,
+        "low": 309.3,
+        "close": 318.65
+      },
+      {
+        "date": "04-06-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 312.0,
+        "high": 312.0,
+        "low": 230.05,
+        "close": 255.55
+      },
+      {
+        "date": "05-06-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 264.5,
+        "high": 264.5,
+        "low": 230.0,
+        "close": 260.35
+      },
+      {
+        "date": "06-06-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 267.0,
+        "high": 281.5,
+        "low": 267.0,
+        "close": 273.65
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 221.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 323.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 323.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "13-05-2024",
+      "open": 228.4,
+      "high": 228.7,
+      "low": 221.0,
+      "close": 224.75
+    },
+    {
+      "date": "14-05-2024",
+      "open": 225.75,
+      "high": 231.9,
+      "low": 225.75,
+      "close": 230.95
+    },
+    {
+      "date": "15-05-2024",
+      "open": 231.8,
+      "high": 234.5,
+      "low": 229.55,
+      "close": 232.85
+    },
+    {
+      "date": "16-05-2024",
+      "open": 234.75,
+      "high": 240.0,
+      "low": 227.5,
+      "close": 237.9
+    },
+    {
+      "date": "17-05-2024",
+      "open": 241.0,
+      "high": 249.65,
+      "low": 237.85,
+      "close": 248.2
+    },
+    {
+      "date": "18-05-2024",
+      "open": 251.5,
+      "high": 260.6,
+      "low": 250.05,
+      "close": 258.8
+    },
+    {
+      "date": "21-05-2024",
+      "open": 283.0,
+      "high": 283.0,
+      "low": 271.05,
+      "close": 274.15
+    },
+    {
+      "date": "22-05-2024",
+      "open": 277.0,
+      "high": 284.5,
+      "low": 264.3,
+      "close": 283.6
+    },
+    {
+      "date": "23-05-2024",
+      "open": 286.3,
+      "high": 293.3,
+      "low": 283.2,
+      "close": 288.5
+    },
+    {
+      "date": "24-05-2024",
+      "open": 288.0,
+      "high": 299.9,
+      "low": 286.0,
+      "close": 297.2
+    },
+    {
+      "date": "27-05-2024",
+      "open": 301.75,
+      "high": 303.2,
+      "low": 289.65,
+      "close": 294.45
+    },
+    {
+      "date": "28-05-2024",
+      "open": 295.7,
+      "high": 295.75,
+      "low": 285.05,
+      "close": 289.1
+    },
+    {
+      "date": "29-05-2024",
+      "open": 285.4,
+      "high": 293.95,
+      "low": 285.0,
+      "close": 292.15
+    },
+    {
+      "date": "30-05-2024",
+      "open": 293.0,
+      "high": 296.3,
+      "low": 289.65,
+      "close": 290.65
+    },
+    {
+      "date": "31-05-2024",
+      "open": 294.2,
+      "high": 297.2,
+      "low": 286.3,
+      "close": 295.95
+    },
+    {
+      "date": "03-06-2024",
+      "open": 323.0,
+      "high": 323.0,
+      "low": 309.3,
+      "close": 318.65
+    },
+    {
+      "date": "04-06-2024",
+      "open": 312.0,
+      "high": 312.0,
+      "low": 230.05,
+      "close": 255.55
+    },
+    {
+      "date": "05-06-2024",
+      "open": 264.5,
+      "high": 264.5,
+      "low": 230.0,
+      "close": 260.35
+    },
+    {
+      "date": "06-06-2024",
+      "open": 267.0,
+      "high": 281.5,
+      "low": 267.0,
+      "close": 273.65
+    },
+    {
+      "date": "07-06-2024",
+      "open": 274.0,
+      "high": 284.55,
+      "low": 268.7,
+      "close": 283.2
+    },
+    {
+      "date": "10-06-2024",
+      "open": 288.9,
+      "high": 292.0,
+      "low": 281.1,
+      "close": 283.4
+    },
+    {
+      "date": "11-06-2024",
+      "open": 287.0,
+      "high": 290.5,
+      "low": 285.35,
+      "close": 286.2
+    }
+  ]
+}

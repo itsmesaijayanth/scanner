@@ -1,0 +1,223 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ASIANPAINT",
+  "window": {
+    "start_date": "23-03-2026",
+    "end_date": "22-04-2026",
+    "calendar_days": 30,
+    "trading_rows": 19
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "21-04-2026",
+      "price": 2582.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "monthly_low": {
+      "date": "23-03-2026",
+      "price": 2115.0,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "22-04-2026",
+      "open": 2500.0,
+      "high": 2572.0,
+      "low": 2500.0,
+      "close": 2562.9
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "23-03-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2180.0,
+        "high": 2180.0,
+        "low": 2115.0,
+        "close": 2121.3
+      },
+      {
+        "date": "10-04-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2267.7,
+        "high": 2376.9,
+        "low": 2267.7,
+        "close": 2360.7
+      },
+      {
+        "date": "22-04-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2500.0,
+        "high": 2572.0,
+        "low": 2500.0,
+        "close": 2562.9
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 2115.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2582.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2582.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "23-03-2026",
+      "open": 2180.0,
+      "high": 2180.0,
+      "low": 2115.0,
+      "close": 2121.3
+    },
+    {
+      "date": "24-03-2026",
+      "open": 2184.0,
+      "high": 2224.5,
+      "low": 2153.3,
+      "close": 2217.3
+    },
+    {
+      "date": "25-03-2026",
+      "open": 2225.1,
+      "high": 2289.7,
+      "low": 2222.0,
+      "close": 2270.2
+    },
+    {
+      "date": "27-03-2026",
+      "open": 2246.3,
+      "high": 2269.0,
+      "low": 2201.1,
+      "close": 2207.4
+    },
+    {
+      "date": "30-03-2026",
+      "open": 2185.3,
+      "high": 2202.9,
+      "low": 2151.0,
+      "close": 2165.2
+    },
+    {
+      "date": "01-04-2026",
+      "open": 2224.8,
+      "high": 2246.6,
+      "low": 2198.4,
+      "close": 2225.8
+    },
+    {
+      "date": "02-04-2026",
+      "open": 2185.0,
+      "high": 2185.1,
+      "low": 2142.4,
+      "close": 2169.0
+    },
+    {
+      "date": "06-04-2026",
+      "open": 2169.0,
+      "high": 2193.2,
+      "low": 2145.9,
+      "close": 2184.3
+    },
+    {
+      "date": "07-04-2026",
+      "open": 2167.7,
+      "high": 2198.7,
+      "low": 2145.0,
+      "close": 2186.2
+    },
+    {
+      "date": "08-04-2026",
+      "open": 2284.5,
+      "high": 2336.9,
+      "low": 2245.2,
+      "close": 2282.4
+    },
+    {
+      "date": "09-04-2026",
+      "open": 2275.0,
+      "high": 2289.6,
+      "low": 2252.0,
+      "close": 2269.6
+    },
+    {
+      "date": "10-04-2026",
+      "open": 2267.7,
+      "high": 2376.9,
+      "low": 2267.7,
+      "close": 2360.7
+    },
+    {
+      "date": "13-04-2026",
+      "open": 2279.9,
+      "high": 2362.5,
+      "low": 2262.0,
+      "close": 2352.4
+    },
+    {
+      "date": "15-04-2026",
+      "open": 2400.5,
+      "high": 2426.0,
+      "low": 2381.0,
+      "close": 2423.1
+    },
+    {
+      "date": "16-04-2026",
+      "open": 2435.0,
+      "high": 2446.6,
+      "low": 2411.6,
+      "close": 2440.3
+    },
+    {
+      "date": "17-04-2026",
+      "open": 2425.0,
+      "high": 2486.1,
+      "low": 2417.5,
+      "close": 2464.0
+    },
+    {
+      "date": "20-04-2026",
+      "open": 2470.0,
+      "high": 2523.8,
+      "low": 2456.5,
+      "close": 2516.8
+    },
+    {
+      "date": "21-04-2026",
+      "open": 2516.3,
+      "high": 2582.0,
+      "low": 2513.7,
+      "close": 2543.6
+    },
+    {
+      "date": "22-04-2026",
+      "open": 2500.0,
+      "high": 2572.0,
+      "low": 2500.0,
+      "close": 2562.9
+    }
+  ]
+}

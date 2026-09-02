@@ -1,0 +1,90 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TMPV",
+  "window": {
+    "start_date": "09-08-2021",
+    "end_date": "08-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 4
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-09-2021",
+      "price": 298.95,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "07-09-2021",
+      "price": 290.9,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "08-09-2021",
+      "open": 293.5,
+      "high": 298.8,
+      "low": 291.6,
+      "close": 295.25
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 298.95
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 290.9
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 290.9
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 292.5,
+      "high": 296.45,
+      "low": 292.0,
+      "close": 295.55
+    },
+    {
+      "date": "06-09-2021",
+      "open": 297.5,
+      "high": 298.95,
+      "low": 296.0,
+      "close": 297.45
+    },
+    {
+      "date": "07-09-2021",
+      "open": 297.35,
+      "high": 297.8,
+      "low": 290.9,
+      "close": 294.6
+    },
+    {
+      "date": "08-09-2021",
+      "open": 293.5,
+      "high": 298.8,
+      "low": 291.6,
+      "close": 295.25
+    }
+  ]
+}

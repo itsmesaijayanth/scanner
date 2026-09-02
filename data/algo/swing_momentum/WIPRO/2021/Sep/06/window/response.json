@@ -1,0 +1,86 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "WIPRO",
+  "window": {
+    "start_date": "07-08-2021",
+    "end_date": "06-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 2
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-09-2021",
+      "price": 688.7,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 649.5,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "06-09-2021",
+      "open": 656.65,
+      "high": 688.7,
+      "low": 656.65,
+      "close": 686.45
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "06-09-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 656.65,
+        "high": 688.7,
+        "low": 656.65,
+        "close": 686.45
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 649.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 688.7
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 688.7
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 653.0,
+      "high": 656.7,
+      "low": 649.5,
+      "close": 655.1
+    },
+    {
+      "date": "06-09-2021",
+      "open": 656.65,
+      "high": 688.7,
+      "low": 656.65,
+      "close": 686.45
+    }
+  ]
+}

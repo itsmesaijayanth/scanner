@@ -1,0 +1,225 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HDFCBANK",
+  "window": {
+    "start_date": "06-04-2024",
+    "end_date": "06-05-2024",
+    "calendar_days": 30,
+    "trading_rows": 18
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "22-04-2024",
+      "price": 1557.4,
+      "distance_to_current_trading_rows": 9
+    },
+    "monthly_low": {
+      "date": "19-04-2024",
+      "price": 1480.25,
+      "distance_to_current_trading_rows": 10
+    },
+    "current": {
+      "date": "06-05-2024",
+      "open": 1522.0,
+      "high": 1534.5,
+      "low": 1517.15,
+      "close": 1522.65
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "09-04-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1554.85,
+        "high": 1554.85,
+        "low": 1540.3,
+        "close": 1548.55
+      },
+      {
+        "date": "10-04-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1549.9,
+        "high": 1549.9,
+        "low": 1532.95,
+        "close": 1536.35
+      },
+      {
+        "date": "22-04-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1557.4,
+        "high": 1557.4,
+        "low": 1508.3,
+        "close": 1512.2
+      },
+      {
+        "date": "25-04-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1506.25,
+        "high": 1519.7,
+        "low": 1506.25,
+        "close": 1510.75
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1480.25
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1557.4
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1557.4
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "08-04-2024",
+      "open": 1554.95,
+      "high": 1557.25,
+      "low": 1541.55,
+      "close": 1546.6
+    },
+    {
+      "date": "09-04-2024",
+      "open": 1554.85,
+      "high": 1554.85,
+      "low": 1540.3,
+      "close": 1548.55
+    },
+    {
+      "date": "10-04-2024",
+      "open": 1549.9,
+      "high": 1549.9,
+      "low": 1532.95,
+      "close": 1536.35
+    },
+    {
+      "date": "12-04-2024",
+      "open": 1521.0,
+      "high": 1529.85,
+      "low": 1513.45,
+      "close": 1518.95
+    },
+    {
+      "date": "15-04-2024",
+      "open": 1497.55,
+      "high": 1510.0,
+      "low": 1492.05,
+      "close": 1494.7
+    },
+    {
+      "date": "16-04-2024",
+      "open": 1487.0,
+      "high": 1512.9,
+      "low": 1482.25,
+      "close": 1509.25
+    },
+    {
+      "date": "18-04-2024",
+      "open": 1509.8,
+      "high": 1518.85,
+      "low": 1491.05,
+      "close": 1494.7
+    },
+    {
+      "date": "19-04-2024",
+      "open": 1486.55,
+      "high": 1534.95,
+      "low": 1480.25,
+      "close": 1531.3
+    },
+    {
+      "date": "22-04-2024",
+      "open": 1557.4,
+      "high": 1557.4,
+      "low": 1508.3,
+      "close": 1512.2
+    },
+    {
+      "date": "23-04-2024",
+      "open": 1526.3,
+      "high": 1526.5,
+      "low": 1503.25,
+      "close": 1507.6
+    },
+    {
+      "date": "24-04-2024",
+      "open": 1515.0,
+      "high": 1521.75,
+      "low": 1509.05,
+      "close": 1511.7
+    },
+    {
+      "date": "25-04-2024",
+      "open": 1506.25,
+      "high": 1519.7,
+      "low": 1506.25,
+      "close": 1510.75
+    },
+    {
+      "date": "26-04-2024",
+      "open": 1519.8,
+      "high": 1528.0,
+      "low": 1505.55,
+      "close": 1509.8
+    },
+    {
+      "date": "29-04-2024",
+      "open": 1515.0,
+      "high": 1534.45,
+      "low": 1506.55,
+      "close": 1529.5
+    },
+    {
+      "date": "30-04-2024",
+      "open": 1529.2,
+      "high": 1539.5,
+      "low": 1514.9,
+      "close": 1520.1
+    },
+    {
+      "date": "02-05-2024",
+      "open": 1522.0,
+      "high": 1537.0,
+      "low": 1520.35,
+      "close": 1532.25
+    },
+    {
+      "date": "03-05-2024",
+      "open": 1533.25,
+      "high": 1540.6,
+      "low": 1507.2,
+      "close": 1519.6
+    },
+    {
+      "date": "06-05-2024",
+      "open": 1522.0,
+      "high": 1534.5,
+      "low": 1517.15,
+      "close": 1522.65
+    }
+  ]
+}

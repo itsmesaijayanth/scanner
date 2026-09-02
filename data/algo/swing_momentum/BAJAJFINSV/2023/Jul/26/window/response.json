@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJAJFINSV",
+  "window": {
+    "start_date": "26-06-2023",
+    "end_date": "26-07-2023",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "26-07-2023",
+      "price": 1664.9,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "26-06-2023",
+      "price": 1487.2,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "26-07-2023",
+      "open": 1649.4,
+      "high": 1664.9,
+      "low": 1618.05,
+      "close": 1626.45
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "04-07-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1565.1,
+        "high": 1634.95,
+        "low": 1565.1,
+        "close": 1629.5
+      },
+      {
+        "date": "13-07-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1595.0,
+        "high": 1625.0,
+        "low": 1595.0,
+        "close": 1615.1
+      },
+      {
+        "date": "25-07-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1664.9,
+        "high": 1664.9,
+        "low": 1635.05,
+        "close": 1648.85
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1487.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1664.9
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1664.9
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "26-06-2023",
+      "open": 1504.45,
+      "high": 1510.85,
+      "low": 1487.2,
+      "close": 1507.55
+    },
+    {
+      "date": "27-06-2023",
+      "open": 1512.0,
+      "high": 1527.35,
+      "low": 1503.0,
+      "close": 1522.95
+    },
+    {
+      "date": "28-06-2023",
+      "open": 1530.0,
+      "high": 1535.0,
+      "low": 1515.8,
+      "close": 1518.85
+    },
+    {
+      "date": "30-06-2023",
+      "open": 1521.0,
+      "high": 1536.6,
+      "low": 1519.0,
+      "close": 1528.0
+    },
+    {
+      "date": "03-07-2023",
+      "open": 1528.0,
+      "high": 1544.5,
+      "low": 1526.6,
+      "close": 1540.1
+    },
+    {
+      "date": "04-07-2023",
+      "open": 1565.1,
+      "high": 1634.95,
+      "low": 1565.1,
+      "close": 1629.5
+    },
+    {
+      "date": "05-07-2023",
+      "open": 1631.0,
+      "high": 1642.0,
+      "low": 1607.55,
+      "close": 1613.7
+    },
+    {
+      "date": "06-07-2023",
+      "open": 1615.05,
+      "high": 1624.0,
+      "low": 1607.0,
+      "close": 1619.9
+    },
+    {
+      "date": "07-07-2023",
+      "open": 1611.85,
+      "high": 1626.65,
+      "low": 1605.4,
+      "close": 1614.9
+    },
+    {
+      "date": "10-07-2023",
+      "open": 1611.95,
+      "high": 1622.0,
+      "low": 1579.75,
+      "close": 1597.8
+    },
+    {
+      "date": "11-07-2023",
+      "open": 1598.0,
+      "high": 1632.0,
+      "low": 1587.9,
+      "close": 1592.4
+    },
+    {
+      "date": "12-07-2023",
+      "open": 1595.65,
+      "high": 1605.1,
+      "low": 1581.25,
+      "close": 1593.2
+    },
+    {
+      "date": "13-07-2023",
+      "open": 1595.0,
+      "high": 1625.0,
+      "low": 1595.0,
+      "close": 1615.1
+    },
+    {
+      "date": "14-07-2023",
+      "open": 1623.15,
+      "high": 1635.0,
+      "low": 1604.25,
+      "close": 1614.2
+    },
+    {
+      "date": "17-07-2023",
+      "open": 1620.0,
+      "high": 1621.95,
+      "low": 1603.0,
+      "close": 1610.25
+    },
+    {
+      "date": "18-07-2023",
+      "open": 1618.35,
+      "high": 1625.0,
+      "low": 1602.0,
+      "close": 1618.3
+    },
+    {
+      "date": "19-07-2023",
+      "open": 1618.3,
+      "high": 1649.8,
+      "low": 1614.0,
+      "close": 1644.1
+    },
+    {
+      "date": "20-07-2023",
+      "open": 1650.9,
+      "high": 1658.25,
+      "low": 1625.0,
+      "close": 1635.8
+    },
+    {
+      "date": "21-07-2023",
+      "open": 1633.0,
+      "high": 1645.0,
+      "low": 1620.3,
+      "close": 1632.85
+    },
+    {
+      "date": "24-07-2023",
+      "open": 1630.0,
+      "high": 1660.0,
+      "low": 1622.0,
+      "close": 1657.5
+    },
+    {
+      "date": "25-07-2023",
+      "open": 1664.9,
+      "high": 1664.9,
+      "low": 1635.05,
+      "close": 1648.85
+    },
+    {
+      "date": "26-07-2023",
+      "open": 1649.4,
+      "high": 1664.9,
+      "low": 1618.05,
+      "close": 1626.45
+    }
+  ]
+}

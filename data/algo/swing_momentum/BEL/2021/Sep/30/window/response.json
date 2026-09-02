@@ -1,0 +1,205 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BEL",
+  "window": {
+    "start_date": "31-08-2021",
+    "end_date": "30-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 19
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "28-09-2021",
+      "price": 212.45,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "03-09-2021",
+      "price": 190.55,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "30-09-2021",
+      "open": 206.0,
+      "high": 207.55,
+      "low": 201.7,
+      "close": 202.95
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "21-09-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 201.6,
+        "high": 207.25,
+        "low": 201.6,
+        "close": 204.45
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 190.55
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 212.45
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 212.45
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 192.0,
+      "high": 199.55,
+      "low": 190.55,
+      "close": 198.6
+    },
+    {
+      "date": "06-09-2021",
+      "open": 201.25,
+      "high": 202.9,
+      "low": 194.75,
+      "close": 195.45
+    },
+    {
+      "date": "07-09-2021",
+      "open": 195.45,
+      "high": 198.0,
+      "low": 193.35,
+      "close": 194.3
+    },
+    {
+      "date": "08-09-2021",
+      "open": 196.0,
+      "high": 199.4,
+      "low": 194.25,
+      "close": 197.1
+    },
+    {
+      "date": "09-09-2021",
+      "open": 196.75,
+      "high": 199.25,
+      "low": 195.5,
+      "close": 197.05
+    },
+    {
+      "date": "13-09-2021",
+      "open": 197.5,
+      "high": 198.65,
+      "low": 195.65,
+      "close": 196.5
+    },
+    {
+      "date": "14-09-2021",
+      "open": 195.45,
+      "high": 204.0,
+      "low": 194.7,
+      "close": 202.4
+    },
+    {
+      "date": "15-09-2021",
+      "open": 203.85,
+      "high": 208.8,
+      "low": 202.7,
+      "close": 207.8
+    },
+    {
+      "date": "16-09-2021",
+      "open": 207.9,
+      "high": 209.0,
+      "low": 204.75,
+      "close": 205.55
+    },
+    {
+      "date": "17-09-2021",
+      "open": 205.85,
+      "high": 207.35,
+      "low": 200.7,
+      "close": 205.3
+    },
+    {
+      "date": "20-09-2021",
+      "open": 202.5,
+      "high": 205.95,
+      "low": 201.05,
+      "close": 201.6
+    },
+    {
+      "date": "21-09-2021",
+      "open": 201.6,
+      "high": 207.25,
+      "low": 201.6,
+      "close": 204.45
+    },
+    {
+      "date": "22-09-2021",
+      "open": 204.4,
+      "high": 206.85,
+      "low": 203.8,
+      "close": 205.95
+    },
+    {
+      "date": "23-09-2021",
+      "open": 207.0,
+      "high": 210.7,
+      "low": 206.55,
+      "close": 207.45
+    },
+    {
+      "date": "24-09-2021",
+      "open": 208.0,
+      "high": 210.5,
+      "low": 203.6,
+      "close": 205.5
+    },
+    {
+      "date": "27-09-2021",
+      "open": 206.1,
+      "high": 209.7,
+      "low": 202.75,
+      "close": 204.0
+    },
+    {
+      "date": "28-09-2021",
+      "open": 205.0,
+      "high": 212.45,
+      "low": 204.15,
+      "close": 210.35
+    },
+    {
+      "date": "29-09-2021",
+      "open": 210.9,
+      "high": 212.4,
+      "low": 203.7,
+      "close": 205.15
+    },
+    {
+      "date": "30-09-2021",
+      "open": 206.0,
+      "high": 207.55,
+      "low": 201.7,
+      "close": 202.95
+    }
+  ]
+}

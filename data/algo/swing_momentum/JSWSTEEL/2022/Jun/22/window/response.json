@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "JSWSTEEL",
+  "window": {
+    "start_date": "23-05-2022",
+    "end_date": "22-06-2022",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "23-05-2022",
+      "price": 594.0,
+      "distance_to_current_trading_rows": 22
+    },
+    "monthly_low": {
+      "date": "26-05-2022",
+      "price": 520.05,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "22-06-2022",
+      "open": 567.25,
+      "high": 569.9,
+      "low": 542.5,
+      "close": 550.4
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "23-05-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 594.0,
+        "high": 594.0,
+        "low": 537.5,
+        "close": 547.55
+      },
+      {
+        "date": "06-06-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 553.0,
+        "high": 583.25,
+        "low": 553.0,
+        "close": 579.0
+      },
+      {
+        "date": "16-06-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 571.5,
+        "high": 571.5,
+        "low": 544.45,
+        "close": 545.85
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 594.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 520.05
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 520.05
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "23-05-2022",
+      "open": 594.0,
+      "high": 594.0,
+      "low": 537.5,
+      "close": 547.55
+    },
+    {
+      "date": "24-05-2022",
+      "open": 548.95,
+      "high": 556.4,
+      "low": 537.25,
+      "close": 539.7
+    },
+    {
+      "date": "25-05-2022",
+      "open": 541.9,
+      "high": 545.0,
+      "low": 521.0,
+      "close": 528.45
+    },
+    {
+      "date": "26-05-2022",
+      "open": 530.5,
+      "high": 555.7,
+      "low": 520.05,
+      "close": 551.7
+    },
+    {
+      "date": "27-05-2022",
+      "open": 558.0,
+      "high": 561.3,
+      "low": 539.4,
+      "close": 548.4
+    },
+    {
+      "date": "30-05-2022",
+      "open": 530.0,
+      "high": 544.75,
+      "low": 525.6,
+      "close": 538.85
+    },
+    {
+      "date": "31-05-2022",
+      "open": 537.6,
+      "high": 558.3,
+      "low": 532.2,
+      "close": 551.25
+    },
+    {
+      "date": "01-06-2022",
+      "open": 554.05,
+      "high": 572.35,
+      "low": 549.2,
+      "close": 569.5
+    },
+    {
+      "date": "02-06-2022",
+      "open": 570.9,
+      "high": 575.0,
+      "low": 557.65,
+      "close": 573.4
+    },
+    {
+      "date": "03-06-2022",
+      "open": 576.0,
+      "high": 581.95,
+      "low": 559.55,
+      "close": 562.45
+    },
+    {
+      "date": "06-06-2022",
+      "open": 553.0,
+      "high": 583.25,
+      "low": 553.0,
+      "close": 579.0
+    },
+    {
+      "date": "07-06-2022",
+      "open": 575.0,
+      "high": 579.45,
+      "low": 567.1,
+      "close": 572.1
+    },
+    {
+      "date": "08-06-2022",
+      "open": 573.6,
+      "high": 583.0,
+      "low": 572.2,
+      "close": 576.15
+    },
+    {
+      "date": "09-06-2022",
+      "open": 570.0,
+      "high": 575.7,
+      "low": 564.0,
+      "close": 572.2
+    },
+    {
+      "date": "10-06-2022",
+      "open": 565.0,
+      "high": 574.0,
+      "low": 561.35,
+      "close": 572.5
+    },
+    {
+      "date": "13-06-2022",
+      "open": 563.1,
+      "high": 567.95,
+      "low": 555.0,
+      "close": 564.0
+    },
+    {
+      "date": "14-06-2022",
+      "open": 562.8,
+      "high": 576.8,
+      "low": 560.15,
+      "close": 561.9
+    },
+    {
+      "date": "15-06-2022",
+      "open": 562.1,
+      "high": 569.0,
+      "low": 557.05,
+      "close": 563.0
+    },
+    {
+      "date": "16-06-2022",
+      "open": 571.5,
+      "high": 571.5,
+      "low": 544.45,
+      "close": 545.85
+    },
+    {
+      "date": "17-06-2022",
+      "open": 540.1,
+      "high": 561.7,
+      "low": 539.7,
+      "close": 554.6
+    },
+    {
+      "date": "20-06-2022",
+      "open": 550.6,
+      "high": 554.6,
+      "low": 536.1,
+      "close": 550.35
+    },
+    {
+      "date": "21-06-2022",
+      "open": 556.0,
+      "high": 580.8,
+      "low": 552.7,
+      "close": 576.2
+    },
+    {
+      "date": "22-06-2022",
+      "open": 567.25,
+      "high": 569.9,
+      "low": 542.5,
+      "close": 550.4
+    }
+  ]
+}

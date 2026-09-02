@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "GRASIM",
+  "window": {
+    "start_date": "29-11-2025",
+    "end_date": "29-12-2025",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "24-12-2025",
+      "price": 2862.9,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "01-12-2025",
+      "price": 2700.0,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "29-12-2025",
+      "open": 2821.0,
+      "high": 2850.0,
+      "low": 2812.5,
+      "close": 2842.4
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "02-12-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2717.1,
+        "high": 2741.1,
+        "low": 2717.1,
+        "close": 2735.0
+      },
+      {
+        "date": "03-12-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2744.0,
+        "high": 2744.0,
+        "low": 2707.2,
+        "close": 2720.3
+      },
+      {
+        "date": "23-12-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2811.0,
+        "high": 2842.7,
+        "low": 2811.0,
+        "close": 2829.8
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 2700.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2862.9
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2862.9
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "01-12-2025",
+      "open": 2750.0,
+      "high": 2753.1,
+      "low": 2700.0,
+      "close": 2731.5
+    },
+    {
+      "date": "02-12-2025",
+      "open": 2717.1,
+      "high": 2741.1,
+      "low": 2717.1,
+      "close": 2735.0
+    },
+    {
+      "date": "03-12-2025",
+      "open": 2744.0,
+      "high": 2744.0,
+      "low": 2707.2,
+      "close": 2720.3
+    },
+    {
+      "date": "04-12-2025",
+      "open": 2720.3,
+      "high": 2742.5,
+      "low": 2710.0,
+      "close": 2730.4
+    },
+    {
+      "date": "05-12-2025",
+      "open": 2730.5,
+      "high": 2750.4,
+      "low": 2716.9,
+      "close": 2747.0
+    },
+    {
+      "date": "08-12-2025",
+      "open": 2747.0,
+      "high": 2769.9,
+      "low": 2730.0,
+      "close": 2744.2
+    },
+    {
+      "date": "09-12-2025",
+      "open": 2740.0,
+      "high": 2779.6,
+      "low": 2726.5,
+      "close": 2746.0
+    },
+    {
+      "date": "10-12-2025",
+      "open": 2770.9,
+      "high": 2779.8,
+      "low": 2740.9,
+      "close": 2746.8
+    },
+    {
+      "date": "11-12-2025",
+      "open": 2757.0,
+      "high": 2802.7,
+      "low": 2742.7,
+      "close": 2797.8
+    },
+    {
+      "date": "12-12-2025",
+      "open": 2814.0,
+      "high": 2845.2,
+      "low": 2796.6,
+      "close": 2836.7
+    },
+    {
+      "date": "15-12-2025",
+      "open": 2836.7,
+      "high": 2849.9,
+      "low": 2817.0,
+      "close": 2821.0
+    },
+    {
+      "date": "16-12-2025",
+      "open": 2822.0,
+      "high": 2832.7,
+      "low": 2786.2,
+      "close": 2799.1
+    },
+    {
+      "date": "17-12-2025",
+      "open": 2785.2,
+      "high": 2814.9,
+      "low": 2780.0,
+      "close": 2806.6
+    },
+    {
+      "date": "18-12-2025",
+      "open": 2810.0,
+      "high": 2820.0,
+      "low": 2786.9,
+      "close": 2807.6
+    },
+    {
+      "date": "19-12-2025",
+      "open": 2800.0,
+      "high": 2831.1,
+      "low": 2790.1,
+      "close": 2812.5
+    },
+    {
+      "date": "22-12-2025",
+      "open": 2812.7,
+      "high": 2858.0,
+      "low": 2798.1,
+      "close": 2809.7
+    },
+    {
+      "date": "23-12-2025",
+      "open": 2811.0,
+      "high": 2842.7,
+      "low": 2811.0,
+      "close": 2829.8
+    },
+    {
+      "date": "24-12-2025",
+      "open": 2830.8,
+      "high": 2862.9,
+      "low": 2820.0,
+      "close": 2826.9
+    },
+    {
+      "date": "26-12-2025",
+      "open": 2828.0,
+      "high": 2840.4,
+      "low": 2809.3,
+      "close": 2817.7
+    },
+    {
+      "date": "29-12-2025",
+      "open": 2821.0,
+      "high": 2850.0,
+      "low": 2812.5,
+      "close": 2842.4
+    }
+  ]
+}

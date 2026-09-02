@@ -1,0 +1,239 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "JIOFIN",
+  "window": {
+    "start_date": "19-07-2025",
+    "end_date": "18-08-2025",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "05-08-2025",
+      "price": 338.6,
+      "distance_to_current_trading_rows": 8
+    },
+    "monthly_low": {
+      "date": "29-07-2025",
+      "price": 306.3,
+      "distance_to_current_trading_rows": 13
+    },
+    "current": {
+      "date": "18-08-2025",
+      "open": 331.25,
+      "high": 333.7,
+      "low": 327.6,
+      "close": 329.35
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "23-07-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 311.6,
+        "high": 315.2,
+        "low": 311.6,
+        "close": 314.45
+      },
+      {
+        "date": "25-07-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 315.55,
+        "high": 315.55,
+        "low": 310.2,
+        "close": 311.25
+      },
+      {
+        "date": "29-07-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 306.3,
+        "high": 322.5,
+        "low": 306.3,
+        "close": 321.1
+      },
+      {
+        "date": "13-08-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 328.6,
+        "high": 332.6,
+        "low": 328.6,
+        "close": 330.6
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 306.3
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 338.6
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 338.6
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "21-07-2025",
+      "open": 318.2,
+      "high": 320.8,
+      "low": 314.1,
+      "close": 317.25
+    },
+    {
+      "date": "22-07-2025",
+      "open": 318.0,
+      "high": 318.45,
+      "low": 309.85,
+      "close": 310.8
+    },
+    {
+      "date": "23-07-2025",
+      "open": 311.6,
+      "high": 315.2,
+      "low": 311.6,
+      "close": 314.45
+    },
+    {
+      "date": "24-07-2025",
+      "open": 315.0,
+      "high": 319.4,
+      "low": 313.45,
+      "close": 316.45
+    },
+    {
+      "date": "25-07-2025",
+      "open": 315.55,
+      "high": 315.55,
+      "low": 310.2,
+      "close": 311.25
+    },
+    {
+      "date": "28-07-2025",
+      "open": 311.25,
+      "high": 315.85,
+      "low": 306.5,
+      "close": 307.35
+    },
+    {
+      "date": "29-07-2025",
+      "open": 306.3,
+      "high": 322.5,
+      "low": 306.3,
+      "close": 321.1
+    },
+    {
+      "date": "30-07-2025",
+      "open": 323.0,
+      "high": 324.0,
+      "low": 319.7,
+      "close": 320.3
+    },
+    {
+      "date": "31-07-2025",
+      "open": 317.0,
+      "high": 332.65,
+      "low": 316.45,
+      "close": 329.25
+    },
+    {
+      "date": "01-08-2025",
+      "open": 329.95,
+      "high": 332.7,
+      "low": 326.0,
+      "close": 329.5
+    },
+    {
+      "date": "04-08-2025",
+      "open": 329.85,
+      "high": 335.5,
+      "low": 328.6,
+      "close": 333.9
+    },
+    {
+      "date": "05-08-2025",
+      "open": 334.45,
+      "high": 338.6,
+      "low": 331.5,
+      "close": 332.85
+    },
+    {
+      "date": "06-08-2025",
+      "open": 333.2,
+      "high": 333.6,
+      "low": 325.6,
+      "close": 326.55
+    },
+    {
+      "date": "07-08-2025",
+      "open": 323.0,
+      "high": 328.0,
+      "low": 316.8,
+      "close": 325.5
+    },
+    {
+      "date": "08-08-2025",
+      "open": 325.1,
+      "high": 326.0,
+      "low": 320.1,
+      "close": 321.15
+    },
+    {
+      "date": "11-08-2025",
+      "open": 321.0,
+      "high": 328.6,
+      "low": 320.8,
+      "close": 327.75
+    },
+    {
+      "date": "12-08-2025",
+      "open": 327.95,
+      "high": 331.7,
+      "low": 326.55,
+      "close": 327.0
+    },
+    {
+      "date": "13-08-2025",
+      "open": 328.6,
+      "high": 332.6,
+      "low": 328.6,
+      "close": 330.6
+    },
+    {
+      "date": "14-08-2025",
+      "open": 330.6,
+      "high": 331.95,
+      "low": 325.85,
+      "close": 327.4
+    },
+    {
+      "date": "18-08-2025",
+      "open": 331.25,
+      "high": 333.7,
+      "low": 327.6,
+      "close": 329.35
+    }
+  ]
+}

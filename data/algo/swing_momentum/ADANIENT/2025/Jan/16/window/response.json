@@ -1,0 +1,244 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ADANIENT",
+  "window": {
+    "start_date": "17-12-2024",
+    "end_date": "16-01-2025",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "01-01-2025",
+      "price": 2644.2,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "13-01-2025",
+      "price": 2216.9,
+      "distance_to_current_trading_rows": 3
+    },
+    "current": {
+      "date": "16-01-2025",
+      "open": 2500.0,
+      "high": 2570.0,
+      "low": 2418.85,
+      "close": 2427.85
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "07-01-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2474.65,
+        "high": 2525.0,
+        "low": 2474.65,
+        "close": 2520.55
+      },
+      {
+        "date": "13-01-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 2365.0,
+        "high": 2365.0,
+        "low": 2216.9,
+        "close": 2225.15
+      },
+      {
+        "date": "14-01-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 2241.5,
+        "high": 2422.9,
+        "low": 2241.5,
+        "close": 2380.55
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 2644.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 2216.9
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 2216.9
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "17-12-2024",
+      "open": 2512.0,
+      "high": 2525.0,
+      "low": 2480.75,
+      "close": 2487.6
+    },
+    {
+      "date": "18-12-2024",
+      "open": 2489.0,
+      "high": 2496.6,
+      "low": 2452.0,
+      "close": 2457.4
+    },
+    {
+      "date": "19-12-2024",
+      "open": 2429.0,
+      "high": 2434.0,
+      "low": 2397.1,
+      "close": 2419.35
+    },
+    {
+      "date": "20-12-2024",
+      "open": 2429.0,
+      "high": 2453.85,
+      "low": 2333.0,
+      "close": 2344.95
+    },
+    {
+      "date": "23-12-2024",
+      "open": 2373.95,
+      "high": 2379.5,
+      "low": 2332.75,
+      "close": 2338.95
+    },
+    {
+      "date": "24-12-2024",
+      "open": 2355.2,
+      "high": 2412.9,
+      "low": 2340.0,
+      "close": 2372.45
+    },
+    {
+      "date": "26-12-2024",
+      "open": 2378.05,
+      "high": 2410.0,
+      "low": 2368.0,
+      "close": 2400.25
+    },
+    {
+      "date": "27-12-2024",
+      "open": 2415.0,
+      "high": 2446.15,
+      "low": 2390.5,
+      "close": 2409.95
+    },
+    {
+      "date": "30-12-2024",
+      "open": 2425.0,
+      "high": 2610.0,
+      "low": 2421.95,
+      "close": 2592.35
+    },
+    {
+      "date": "31-12-2024",
+      "open": 2575.0,
+      "high": 2577.75,
+      "low": 2507.45,
+      "close": 2528.65
+    },
+    {
+      "date": "01-01-2025",
+      "open": 2536.0,
+      "high": 2644.2,
+      "low": 2518.25,
+      "close": 2554.85
+    },
+    {
+      "date": "02-01-2025",
+      "open": 2565.7,
+      "high": 2602.0,
+      "low": 2537.0,
+      "close": 2597.7
+    },
+    {
+      "date": "03-01-2025",
+      "open": 2580.0,
+      "high": 2619.0,
+      "low": 2556.6,
+      "close": 2564.6
+    },
+    {
+      "date": "06-01-2025",
+      "open": 2557.65,
+      "high": 2568.85,
+      "low": 2463.5,
+      "close": 2474.45
+    },
+    {
+      "date": "07-01-2025",
+      "open": 2474.65,
+      "high": 2525.0,
+      "low": 2474.65,
+      "close": 2520.55
+    },
+    {
+      "date": "08-01-2025",
+      "open": 2520.55,
+      "high": 2530.0,
+      "low": 2490.0,
+      "close": 2515.25
+    },
+    {
+      "date": "09-01-2025",
+      "open": 2517.0,
+      "high": 2517.55,
+      "low": 2469.5,
+      "close": 2477.9
+    },
+    {
+      "date": "10-01-2025",
+      "open": 2480.0,
+      "high": 2484.6,
+      "low": 2368.25,
+      "close": 2374.4
+    },
+    {
+      "date": "13-01-2025",
+      "open": 2365.0,
+      "high": 2365.0,
+      "low": 2216.9,
+      "close": 2225.15
+    },
+    {
+      "date": "14-01-2025",
+      "open": 2241.5,
+      "high": 2422.9,
+      "low": 2241.5,
+      "close": 2380.55
+    },
+    {
+      "date": "15-01-2025",
+      "open": 2399.0,
+      "high": 2421.95,
+      "low": 2372.65,
+      "close": 2388.15
+    },
+    {
+      "date": "16-01-2025",
+      "open": 2500.0,
+      "high": 2570.0,
+      "low": 2418.85,
+      "close": 2427.85
+    }
+  ]
+}

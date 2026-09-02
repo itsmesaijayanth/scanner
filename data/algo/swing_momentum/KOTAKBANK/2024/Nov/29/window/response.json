@@ -1,0 +1,228 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "KOTAKBANK",
+  "window": {
+    "start_date": "30-10-2024",
+    "end_date": "29-11-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "27-11-2024",
+      "price": 1805.5,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "13-11-2024",
+      "price": 1679.05,
+      "distance_to_current_trading_rows": 10
+    },
+    "current": {
+      "date": "29-11-2024",
+      "open": 1757.0,
+      "high": 1773.6,
+      "low": 1757.0,
+      "close": 1765.25
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "04-11-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1744.0,
+        "high": 1744.0,
+        "low": 1724.25,
+        "close": 1729.35
+      },
+      {
+        "date": "29-11-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1757.0,
+        "high": 1773.6,
+        "low": 1757.0,
+        "close": 1765.25
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1679.05
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1805.5
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1805.5
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "30-10-2024",
+      "open": 1727.0,
+      "high": 1760.0,
+      "low": 1726.6,
+      "close": 1734.6
+    },
+    {
+      "date": "31-10-2024",
+      "open": 1727.35,
+      "high": 1746.6,
+      "low": 1723.95,
+      "close": 1731.1
+    },
+    {
+      "date": "01-11-2024",
+      "open": 1739.6,
+      "high": 1754.15,
+      "low": 1736.35,
+      "close": 1744.4
+    },
+    {
+      "date": "04-11-2024",
+      "open": 1744.0,
+      "high": 1744.0,
+      "low": 1724.25,
+      "close": 1729.35
+    },
+    {
+      "date": "05-11-2024",
+      "open": 1721.5,
+      "high": 1760.5,
+      "low": 1711.0,
+      "close": 1757.15
+    },
+    {
+      "date": "06-11-2024",
+      "open": 1760.1,
+      "high": 1768.45,
+      "low": 1746.6,
+      "close": 1762.6
+    },
+    {
+      "date": "07-11-2024",
+      "open": 1763.0,
+      "high": 1765.0,
+      "low": 1733.0,
+      "close": 1746.9
+    },
+    {
+      "date": "08-11-2024",
+      "open": 1745.0,
+      "high": 1764.1,
+      "low": 1738.9,
+      "close": 1745.8
+    },
+    {
+      "date": "11-11-2024",
+      "open": 1745.0,
+      "high": 1763.3,
+      "low": 1737.2,
+      "close": 1744.0
+    },
+    {
+      "date": "12-11-2024",
+      "open": 1744.8,
+      "high": 1749.4,
+      "low": 1715.2,
+      "close": 1721.4
+    },
+    {
+      "date": "13-11-2024",
+      "open": 1714.0,
+      "high": 1728.15,
+      "low": 1679.05,
+      "close": 1687.85
+    },
+    {
+      "date": "14-11-2024",
+      "open": 1690.0,
+      "high": 1712.6,
+      "low": 1689.8,
+      "close": 1707.9
+    },
+    {
+      "date": "18-11-2024",
+      "open": 1714.0,
+      "high": 1728.25,
+      "low": 1699.7,
+      "close": 1722.75
+    },
+    {
+      "date": "19-11-2024",
+      "open": 1729.8,
+      "high": 1739.8,
+      "low": 1713.5,
+      "close": 1727.75
+    },
+    {
+      "date": "21-11-2024",
+      "open": 1715.1,
+      "high": 1740.75,
+      "low": 1703.75,
+      "close": 1737.1
+    },
+    {
+      "date": "22-11-2024",
+      "open": 1734.0,
+      "high": 1772.2,
+      "low": 1732.9,
+      "close": 1761.45
+    },
+    {
+      "date": "25-11-2024",
+      "open": 1782.0,
+      "high": 1794.6,
+      "low": 1766.9,
+      "close": 1790.75
+    },
+    {
+      "date": "26-11-2024",
+      "open": 1795.0,
+      "high": 1795.95,
+      "low": 1775.0,
+      "close": 1783.6
+    },
+    {
+      "date": "27-11-2024",
+      "open": 1780.95,
+      "high": 1805.5,
+      "low": 1779.1,
+      "close": 1783.2
+    },
+    {
+      "date": "28-11-2024",
+      "open": 1783.25,
+      "high": 1788.9,
+      "low": 1753.5,
+      "close": 1759.2
+    },
+    {
+      "date": "29-11-2024",
+      "open": 1757.0,
+      "high": 1773.6,
+      "low": 1757.0,
+      "close": 1765.25
+    }
+  ]
+}

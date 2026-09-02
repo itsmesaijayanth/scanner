@@ -1,0 +1,235 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "M&M",
+  "window": {
+    "start_date": "23-07-2025",
+    "end_date": "22-08-2025",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "18-08-2025",
+      "price": 3432.0,
+      "distance_to_current_trading_rows": 4
+    },
+    "monthly_low": {
+      "date": "01-08-2025",
+      "price": 3116.7,
+      "distance_to_current_trading_rows": 14
+    },
+    "current": {
+      "date": "22-08-2025",
+      "open": 3380.0,
+      "high": 3420.0,
+      "low": 3375.4,
+      "close": 3403.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "01-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3205.0,
+        "high": 3205.0,
+        "low": 3116.7,
+        "close": 3159.3
+      },
+      {
+        "date": "21-08-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3410.0,
+        "high": 3410.0,
+        "low": 3370.0,
+        "close": 3375.1
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 3116.7
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 3432.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 3432.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "23-07-2025",
+      "open": 3260.0,
+      "high": 3303.0,
+      "low": 3248.0,
+      "close": 3268.8
+    },
+    {
+      "date": "24-07-2025",
+      "open": 3255.0,
+      "high": 3286.5,
+      "low": 3243.7,
+      "close": 3260.9
+    },
+    {
+      "date": "25-07-2025",
+      "open": 3256.0,
+      "high": 3259.0,
+      "low": 3214.0,
+      "close": 3246.4
+    },
+    {
+      "date": "28-07-2025",
+      "open": 3246.4,
+      "high": 3256.9,
+      "low": 3199.2,
+      "close": 3209.8
+    },
+    {
+      "date": "29-07-2025",
+      "open": 3203.0,
+      "high": 3225.9,
+      "low": 3186.6,
+      "close": 3199.4
+    },
+    {
+      "date": "30-07-2025",
+      "open": 3195.0,
+      "high": 3241.6,
+      "low": 3151.9,
+      "close": 3208.9
+    },
+    {
+      "date": "31-07-2025",
+      "open": 3225.0,
+      "high": 3238.2,
+      "low": 3135.6,
+      "close": 3203.1
+    },
+    {
+      "date": "01-08-2025",
+      "open": 3205.0,
+      "high": 3205.0,
+      "low": 3116.7,
+      "close": 3159.3
+    },
+    {
+      "date": "04-08-2025",
+      "open": 3170.0,
+      "high": 3223.0,
+      "low": 3160.0,
+      "close": 3200.2
+    },
+    {
+      "date": "05-08-2025",
+      "open": 3195.0,
+      "high": 3222.0,
+      "low": 3170.1,
+      "close": 3212.2
+    },
+    {
+      "date": "06-08-2025",
+      "open": 3212.2,
+      "high": 3240.1,
+      "low": 3178.6,
+      "close": 3227.5
+    },
+    {
+      "date": "07-08-2025",
+      "open": 3198.0,
+      "high": 3229.6,
+      "low": 3161.1,
+      "close": 3211.1
+    },
+    {
+      "date": "08-08-2025",
+      "open": 3207.0,
+      "high": 3214.9,
+      "low": 3135.6,
+      "close": 3144.2
+    },
+    {
+      "date": "11-08-2025",
+      "open": 3150.9,
+      "high": 3230.0,
+      "low": 3130.3,
+      "close": 3186.2
+    },
+    {
+      "date": "12-08-2025",
+      "open": 3186.1,
+      "high": 3253.0,
+      "low": 3185.1,
+      "close": 3236.5
+    },
+    {
+      "date": "13-08-2025",
+      "open": 3255.0,
+      "high": 3300.0,
+      "low": 3238.7,
+      "close": 3282.2
+    },
+    {
+      "date": "14-08-2025",
+      "open": 3273.2,
+      "high": 3313.5,
+      "low": 3262.0,
+      "close": 3265.4
+    },
+    {
+      "date": "18-08-2025",
+      "open": 3350.0,
+      "high": 3432.0,
+      "low": 3335.3,
+      "close": 3383.1
+    },
+    {
+      "date": "19-08-2025",
+      "open": 3400.0,
+      "high": 3403.9,
+      "low": 3338.1,
+      "close": 3354.0
+    },
+    {
+      "date": "20-08-2025",
+      "open": 3354.1,
+      "high": 3404.2,
+      "low": 3335.0,
+      "close": 3395.6
+    },
+    {
+      "date": "21-08-2025",
+      "open": 3410.0,
+      "high": 3410.0,
+      "low": 3370.0,
+      "close": 3375.1
+    },
+    {
+      "date": "22-08-2025",
+      "open": 3380.0,
+      "high": 3420.0,
+      "low": 3375.4,
+      "close": 3403.0
+    }
+  ]
+}

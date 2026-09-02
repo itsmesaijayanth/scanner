@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "GRASIM",
+  "window": {
+    "start_date": "05-11-2023",
+    "end_date": "05-12-2023",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "05-12-2023",
+      "price": 2078.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "06-11-2023",
+      "price": 1896.2,
+      "distance_to_current_trading_rows": 20
+    },
+    "current": {
+      "date": "05-12-2023",
+      "open": 2057.9,
+      "high": 2078.0,
+      "low": 2038.5,
+      "close": 2072.35
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "12-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1949.9,
+        "high": 1949.9,
+        "low": 1941.75,
+        "close": 1946.1
+      },
+      {
+        "date": "13-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1945.9,
+        "high": 1945.9,
+        "low": 1922.0,
+        "close": 1928.85
+      },
+      {
+        "date": "23-11-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1984.1,
+        "high": 1984.1,
+        "low": 1951.4,
+        "close": 1956.9
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1896.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2078.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2078.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "06-11-2023",
+      "open": 1902.1,
+      "high": 1936.55,
+      "low": 1896.2,
+      "close": 1918.7
+    },
+    {
+      "date": "07-11-2023",
+      "open": 1920.0,
+      "high": 1929.95,
+      "low": 1912.05,
+      "close": 1921.55
+    },
+    {
+      "date": "08-11-2023",
+      "open": 1929.0,
+      "high": 1943.0,
+      "low": 1920.0,
+      "close": 1933.85
+    },
+    {
+      "date": "09-11-2023",
+      "open": 1937.4,
+      "high": 1944.55,
+      "low": 1930.0,
+      "close": 1935.0
+    },
+    {
+      "date": "10-11-2023",
+      "open": 1930.05,
+      "high": 1947.8,
+      "low": 1921.2,
+      "close": 1943.0
+    },
+    {
+      "date": "12-11-2023",
+      "open": 1949.9,
+      "high": 1949.9,
+      "low": 1941.75,
+      "close": 1946.1
+    },
+    {
+      "date": "13-11-2023",
+      "open": 1945.9,
+      "high": 1945.9,
+      "low": 1922.0,
+      "close": 1928.85
+    },
+    {
+      "date": "15-11-2023",
+      "open": 1947.0,
+      "high": 1964.3,
+      "low": 1935.0,
+      "close": 1943.95
+    },
+    {
+      "date": "16-11-2023",
+      "open": 1949.7,
+      "high": 1954.85,
+      "low": 1913.85,
+      "close": 1942.6
+    },
+    {
+      "date": "17-11-2023",
+      "open": 1941.05,
+      "high": 1983.6,
+      "low": 1940.35,
+      "close": 1970.55
+    },
+    {
+      "date": "20-11-2023",
+      "open": 1971.6,
+      "high": 1978.15,
+      "low": 1953.1,
+      "close": 1972.3
+    },
+    {
+      "date": "21-11-2023",
+      "open": 1972.65,
+      "high": 1988.0,
+      "low": 1969.0,
+      "close": 1977.45
+    },
+    {
+      "date": "22-11-2023",
+      "open": 1979.8,
+      "high": 1984.9,
+      "low": 1958.75,
+      "close": 1974.1
+    },
+    {
+      "date": "23-11-2023",
+      "open": 1984.1,
+      "high": 1984.1,
+      "low": 1951.4,
+      "close": 1956.9
+    },
+    {
+      "date": "24-11-2023",
+      "open": 1963.9,
+      "high": 1969.45,
+      "low": 1945.45,
+      "close": 1949.4
+    },
+    {
+      "date": "28-11-2023",
+      "open": 1963.0,
+      "high": 1987.0,
+      "low": 1953.25,
+      "close": 1975.9
+    },
+    {
+      "date": "29-11-2023",
+      "open": 1988.1,
+      "high": 2009.0,
+      "low": 1981.05,
+      "close": 2003.25
+    },
+    {
+      "date": "30-11-2023",
+      "open": 2006.0,
+      "high": 2031.0,
+      "low": 1990.25,
+      "close": 2005.45
+    },
+    {
+      "date": "01-12-2023",
+      "open": 2019.95,
+      "high": 2039.0,
+      "low": 2008.0,
+      "close": 2016.05
+    },
+    {
+      "date": "04-12-2023",
+      "open": 2075.0,
+      "high": 2076.0,
+      "low": 2028.45,
+      "close": 2052.95
+    },
+    {
+      "date": "05-12-2023",
+      "open": 2057.9,
+      "high": 2078.0,
+      "low": 2038.5,
+      "close": 2072.35
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "MARUTI",
+  "window": {
+    "start_date": "30-04-2025",
+    "end_date": "30-05-2025",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "16-05-2025",
+      "price": 13086.0,
+      "distance_to_current_trading_rows": 10
+    },
+    "monthly_low": {
+      "date": "30-04-2025",
+      "price": 11800.0,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "30-05-2025",
+      "open": 12392.0,
+      "high": 12490.0,
+      "low": 12251.0,
+      "close": 12319.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "05-05-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 12490.0,
+        "high": 12490.0,
+        "low": 12362.0,
+        "close": 12458.0
+      },
+      {
+        "date": "07-05-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 12355.0,
+        "high": 12669.0,
+        "low": 12355.0,
+        "close": 12633.0
+      },
+      {
+        "date": "12-05-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 12426.0,
+        "high": 12630.0,
+        "low": 12426.0,
+        "close": 12616.0
+      },
+      {
+        "date": "22-05-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 12611.0,
+        "high": 12611.0,
+        "low": 12395.0,
+        "close": 12445.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 11800.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 13086.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 13086.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "30-04-2025",
+      "open": 11825.0,
+      "high": 12325.0,
+      "low": 11800.0,
+      "close": 12257.0
+    },
+    {
+      "date": "02-05-2025",
+      "open": 12257.0,
+      "high": 12727.0,
+      "low": 12250.0,
+      "close": 12406.0
+    },
+    {
+      "date": "05-05-2025",
+      "open": 12490.0,
+      "high": 12490.0,
+      "low": 12362.0,
+      "close": 12458.0
+    },
+    {
+      "date": "06-05-2025",
+      "open": 12438.0,
+      "high": 12599.0,
+      "low": 12371.0,
+      "close": 12581.0
+    },
+    {
+      "date": "07-05-2025",
+      "open": 12355.0,
+      "high": 12669.0,
+      "low": 12355.0,
+      "close": 12633.0
+    },
+    {
+      "date": "08-05-2025",
+      "open": 12560.0,
+      "high": 12597.0,
+      "low": 12330.0,
+      "close": 12392.0
+    },
+    {
+      "date": "09-05-2025",
+      "open": 12135.0,
+      "high": 12360.0,
+      "low": 12115.0,
+      "close": 12250.0
+    },
+    {
+      "date": "12-05-2025",
+      "open": 12426.0,
+      "high": 12630.0,
+      "low": 12426.0,
+      "close": 12616.0
+    },
+    {
+      "date": "13-05-2025",
+      "open": 12600.0,
+      "high": 12700.0,
+      "low": 12430.0,
+      "close": 12482.0
+    },
+    {
+      "date": "14-05-2025",
+      "open": 12485.0,
+      "high": 12718.0,
+      "low": 12411.0,
+      "close": 12670.0
+    },
+    {
+      "date": "15-05-2025",
+      "open": 12600.0,
+      "high": 13023.0,
+      "low": 12548.0,
+      "close": 12952.0
+    },
+    {
+      "date": "16-05-2025",
+      "open": 12950.0,
+      "high": 13086.0,
+      "low": 12912.0,
+      "close": 12995.0
+    },
+    {
+      "date": "19-05-2025",
+      "open": 12990.0,
+      "high": 13046.0,
+      "low": 12930.0,
+      "close": 12989.0
+    },
+    {
+      "date": "20-05-2025",
+      "open": 13005.0,
+      "high": 13010.0,
+      "low": 12610.0,
+      "close": 12638.0
+    },
+    {
+      "date": "21-05-2025",
+      "open": 12675.0,
+      "high": 12808.0,
+      "low": 12594.0,
+      "close": 12615.0
+    },
+    {
+      "date": "22-05-2025",
+      "open": 12611.0,
+      "high": 12611.0,
+      "low": 12395.0,
+      "close": 12445.0
+    },
+    {
+      "date": "23-05-2025",
+      "open": 12450.0,
+      "high": 12495.0,
+      "low": 12423.0,
+      "close": 12453.0
+    },
+    {
+      "date": "26-05-2025",
+      "open": 12455.0,
+      "high": 12539.0,
+      "low": 12391.0,
+      "close": 12421.0
+    },
+    {
+      "date": "27-05-2025",
+      "open": 12421.0,
+      "high": 12479.0,
+      "low": 12290.0,
+      "close": 12414.0
+    },
+    {
+      "date": "28-05-2025",
+      "open": 12414.0,
+      "high": 12415.0,
+      "low": 12305.0,
+      "close": 12331.0
+    },
+    {
+      "date": "29-05-2025",
+      "open": 12340.0,
+      "high": 12428.0,
+      "low": 12266.0,
+      "close": 12392.0
+    },
+    {
+      "date": "30-05-2025",
+      "open": 12392.0,
+      "high": 12490.0,
+      "low": 12251.0,
+      "close": 12319.0
+    }
+  ]
+}

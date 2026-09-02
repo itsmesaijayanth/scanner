@@ -1,7 +1,7 @@
 [project]
 name = "nse-nifty50-scraper"
 version = "0.1.0"
-description = "Download 30-day NSE historical JSON data for Nifty 50 symbols."
+description = "Download NSE historical JSON data and run Nifty 50 swing momentum analysis."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -13,6 +13,8 @@ dependencies = [
 
 [project.scripts]
 nse-fetch = "nse_nifty50_scraper.cli:main"
+nse-seed-history = "nse_nifty50_scraper.seed:main"
+swing-momentum = "nse_nifty50_scraper.algo.cli:main"
 
 [dependency-groups]
 dev = [

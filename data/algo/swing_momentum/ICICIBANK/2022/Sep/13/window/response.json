@@ -1,0 +1,248 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ICICIBANK",
+  "window": {
+    "start_date": "14-08-2022",
+    "end_date": "13-09-2022",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "13-09-2022",
+      "price": 913.95,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "23-08-2022",
+      "price": 842.8,
+      "distance_to_current_trading_rows": 14
+    },
+    "current": {
+      "date": "13-09-2022",
+      "open": 913.95,
+      "high": 913.95,
+      "low": 905.3,
+      "close": 910.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "24-08-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 857.05,
+        "high": 875.35,
+        "low": 857.05,
+        "close": 873.3
+      },
+      {
+        "date": "01-09-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 863.0,
+        "high": 885.7,
+        "low": 863.0,
+        "close": 874.35
+      },
+      {
+        "date": "05-09-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 871.55,
+        "high": 885.9,
+        "low": 871.55,
+        "close": 882.45
+      },
+      {
+        "date": "08-09-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 885.5,
+        "high": 900.8,
+        "low": 885.5,
+        "close": 898.8
+      },
+      {
+        "date": "13-09-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 913.95,
+        "high": 913.95,
+        "low": 905.3,
+        "close": 910.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 842.8
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 913.95
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 913.95
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "16-08-2022",
+      "open": 881.45,
+      "high": 884.5,
+      "low": 876.4,
+      "close": 879.25
+    },
+    {
+      "date": "17-08-2022",
+      "open": 881.8,
+      "high": 885.5,
+      "low": 878.4,
+      "close": 883.25
+    },
+    {
+      "date": "18-08-2022",
+      "open": 880.55,
+      "high": 887.65,
+      "low": 875.05,
+      "close": 885.1
+    },
+    {
+      "date": "19-08-2022",
+      "open": 885.0,
+      "high": 886.9,
+      "low": 864.3,
+      "close": 870.4
+    },
+    {
+      "date": "22-08-2022",
+      "open": 865.55,
+      "high": 867.4,
+      "low": 849.6,
+      "close": 852.25
+    },
+    {
+      "date": "23-08-2022",
+      "open": 845.35,
+      "high": 868.0,
+      "low": 842.8,
+      "close": 863.9
+    },
+    {
+      "date": "24-08-2022",
+      "open": 857.05,
+      "high": 875.35,
+      "low": 857.05,
+      "close": 873.3
+    },
+    {
+      "date": "25-08-2022",
+      "open": 873.3,
+      "high": 881.45,
+      "low": 866.7,
+      "close": 872.35
+    },
+    {
+      "date": "26-08-2022",
+      "open": 874.15,
+      "high": 877.5,
+      "low": 867.3,
+      "close": 870.85
+    },
+    {
+      "date": "29-08-2022",
+      "open": 850.05,
+      "high": 861.0,
+      "low": 847.0,
+      "close": 855.85
+    },
+    {
+      "date": "30-08-2022",
+      "open": 860.5,
+      "high": 890.75,
+      "low": 859.1,
+      "close": 887.3
+    },
+    {
+      "date": "01-09-2022",
+      "open": 863.0,
+      "high": 885.7,
+      "low": 863.0,
+      "close": 874.35
+    },
+    {
+      "date": "02-09-2022",
+      "open": 874.1,
+      "high": 881.3,
+      "low": 867.0,
+      "close": 872.4
+    },
+    {
+      "date": "05-09-2022",
+      "open": 871.55,
+      "high": 885.9,
+      "low": 871.55,
+      "close": 882.45
+    },
+    {
+      "date": "06-09-2022",
+      "open": 882.5,
+      "high": 889.95,
+      "low": 878.1,
+      "close": 883.65
+    },
+    {
+      "date": "07-09-2022",
+      "open": 878.55,
+      "high": 882.65,
+      "low": 872.5,
+      "close": 876.2
+    },
+    {
+      "date": "08-09-2022",
+      "open": 885.5,
+      "high": 900.8,
+      "low": 885.5,
+      "close": 898.8
+    },
+    {
+      "date": "09-09-2022",
+      "open": 910.15,
+      "high": 911.95,
+      "low": 897.7,
+      "close": 901.25
+    },
+    {
+      "date": "12-09-2022",
+      "open": 905.05,
+      "high": 908.9,
+      "low": 902.8,
+      "close": 907.2
+    },
+    {
+      "date": "13-09-2022",
+      "open": 913.95,
+      "high": 913.95,
+      "low": 905.3,
+      "close": 910.0
+    }
+  ]
+}

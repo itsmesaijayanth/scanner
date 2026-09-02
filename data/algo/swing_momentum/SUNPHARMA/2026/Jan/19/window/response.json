@@ -1,0 +1,250 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SUNPHARMA",
+  "window": {
+    "start_date": "20-12-2025",
+    "end_date": "19-01-2026",
+    "calendar_days": 30,
+    "trading_rows": 19
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "07-01-2026",
+      "price": 1806.6,
+      "distance_to_current_trading_rows": 7
+    },
+    "monthly_low": {
+      "date": "19-01-2026",
+      "price": 1600.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "19-01-2026",
+      "open": 1650.0,
+      "high": 1687.3,
+      "low": 1600.0,
+      "close": 1675.4
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "26-12-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1737.0,
+        "high": 1737.0,
+        "low": 1708.0,
+        "close": 1719.5
+      },
+      {
+        "date": "30-12-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1723.1,
+        "high": 1723.1,
+        "low": 1707.0,
+        "close": 1720.2
+      },
+      {
+        "date": "06-01-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1725.7,
+        "high": 1762.6,
+        "low": 1725.7,
+        "close": 1760.2
+      },
+      {
+        "date": "09-01-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1765.2,
+        "high": 1765.2,
+        "low": 1727.0,
+        "close": 1729.9
+      },
+      {
+        "date": "14-01-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1737.1,
+        "high": 1737.1,
+        "low": 1689.2,
+        "close": 1700.7
+      },
+      {
+        "date": "16-01-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1708.0,
+        "high": 1708.0,
+        "low": 1659.3,
+        "close": 1668.9
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1806.6
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1600.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1600.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "22-12-2025",
+      "open": 1744.9,
+      "high": 1773.2,
+      "low": 1743.1,
+      "close": 1769.8
+    },
+    {
+      "date": "23-12-2025",
+      "open": 1772.0,
+      "high": 1774.6,
+      "low": 1751.7,
+      "close": 1755.9
+    },
+    {
+      "date": "24-12-2025",
+      "open": 1755.9,
+      "high": 1759.0,
+      "low": 1719.0,
+      "close": 1737.0
+    },
+    {
+      "date": "26-12-2025",
+      "open": 1737.0,
+      "high": 1737.0,
+      "low": 1708.0,
+      "close": 1719.5
+    },
+    {
+      "date": "29-12-2025",
+      "open": 1719.5,
+      "high": 1727.5,
+      "low": 1710.3,
+      "close": 1717.2
+    },
+    {
+      "date": "30-12-2025",
+      "open": 1723.1,
+      "high": 1723.1,
+      "low": 1707.0,
+      "close": 1720.2
+    },
+    {
+      "date": "31-12-2025",
+      "open": 1720.2,
+      "high": 1725.6,
+      "low": 1715.5,
+      "close": 1719.7
+    },
+    {
+      "date": "01-01-2026",
+      "open": 1720.0,
+      "high": 1726.0,
+      "low": 1708.9,
+      "close": 1721.1
+    },
+    {
+      "date": "02-01-2026",
+      "open": 1721.1,
+      "high": 1732.0,
+      "low": 1719.4,
+      "close": 1728.0
+    },
+    {
+      "date": "05-01-2026",
+      "open": 1728.0,
+      "high": 1746.0,
+      "low": 1723.4,
+      "close": 1728.9
+    },
+    {
+      "date": "06-01-2026",
+      "open": 1725.7,
+      "high": 1762.6,
+      "low": 1725.7,
+      "close": 1760.2
+    },
+    {
+      "date": "07-01-2026",
+      "open": 1755.0,
+      "high": 1806.6,
+      "low": 1748.5,
+      "close": 1782.6
+    },
+    {
+      "date": "08-01-2026",
+      "open": 1766.0,
+      "high": 1778.6,
+      "low": 1757.7,
+      "close": 1760.7
+    },
+    {
+      "date": "09-01-2026",
+      "open": 1765.2,
+      "high": 1765.2,
+      "low": 1727.0,
+      "close": 1729.9
+    },
+    {
+      "date": "12-01-2026",
+      "open": 1732.1,
+      "high": 1744.3,
+      "low": 1714.1,
+      "close": 1736.0
+    },
+    {
+      "date": "13-01-2026",
+      "open": 1743.0,
+      "high": 1743.8,
+      "low": 1712.1,
+      "close": 1728.7
+    },
+    {
+      "date": "14-01-2026",
+      "open": 1737.1,
+      "high": 1737.1,
+      "low": 1689.2,
+      "close": 1700.7
+    },
+    {
+      "date": "16-01-2026",
+      "open": 1708.0,
+      "high": 1708.0,
+      "low": 1659.3,
+      "close": 1668.9
+    },
+    {
+      "date": "19-01-2026",
+      "open": 1650.0,
+      "high": 1687.3,
+      "low": 1600.0,
+      "close": 1675.4
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "LT",
+  "window": {
+    "start_date": "29-10-2024",
+    "end_date": "28-11-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "25-11-2024",
+      "price": 3761.0,
+      "distance_to_current_trading_rows": 3
+    },
+    "monthly_low": {
+      "date": "29-10-2024",
+      "price": 3316.0,
+      "distance_to_current_trading_rows": 20
+    },
+    "current": {
+      "date": "28-11-2024",
+      "open": 3700.0,
+      "high": 3720.5,
+      "low": 3648.0,
+      "close": 3666.05
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "29-10-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 3316.0,
+        "high": 3384.4,
+        "low": 3316.0,
+        "close": 3380.9
+      },
+      {
+        "date": "04-11-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3624.95,
+        "high": 3624.95,
+        "low": 3530.9,
+        "close": 3574.45
+      },
+      {
+        "date": "26-11-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3754.9,
+        "high": 3754.9,
+        "low": 3690.0,
+        "close": 3702.6
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 3316.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 3761.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 3761.0
+    }
+  },
+  "verdict": {
+    "state": "confirmed_downtrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "29-10-2024",
+      "open": 3316.0,
+      "high": 3384.4,
+      "low": 3316.0,
+      "close": 3380.9
+    },
+    {
+      "date": "30-10-2024",
+      "open": 3379.95,
+      "high": 3438.4,
+      "low": 3353.0,
+      "close": 3408.35
+    },
+    {
+      "date": "31-10-2024",
+      "open": 3530.0,
+      "high": 3654.95,
+      "low": 3508.35,
+      "close": 3622.3
+    },
+    {
+      "date": "01-11-2024",
+      "open": 3624.95,
+      "high": 3641.9,
+      "low": 3620.0,
+      "close": 3626.35
+    },
+    {
+      "date": "04-11-2024",
+      "open": 3624.95,
+      "high": 3624.95,
+      "low": 3530.9,
+      "close": 3574.45
+    },
+    {
+      "date": "05-11-2024",
+      "open": 3556.0,
+      "high": 3585.0,
+      "low": 3541.9,
+      "close": 3574.8
+    },
+    {
+      "date": "06-11-2024",
+      "open": 3594.0,
+      "high": 3659.9,
+      "low": 3557.4,
+      "close": 3645.45
+    },
+    {
+      "date": "07-11-2024",
+      "open": 3647.35,
+      "high": 3663.0,
+      "low": 3620.0,
+      "close": 3646.55
+    },
+    {
+      "date": "08-11-2024",
+      "open": 3640.4,
+      "high": 3667.0,
+      "low": 3620.65,
+      "close": 3660.3
+    },
+    {
+      "date": "11-11-2024",
+      "open": 3646.0,
+      "high": 3661.0,
+      "low": 3606.0,
+      "close": 3628.85
+    },
+    {
+      "date": "12-11-2024",
+      "open": 3650.0,
+      "high": 3651.0,
+      "low": 3580.0,
+      "close": 3591.35
+    },
+    {
+      "date": "13-11-2024",
+      "open": 3585.0,
+      "high": 3604.85,
+      "low": 3535.65,
+      "close": 3547.95
+    },
+    {
+      "date": "14-11-2024",
+      "open": 3558.0,
+      "high": 3565.75,
+      "low": 3500.15,
+      "close": 3526.25
+    },
+    {
+      "date": "18-11-2024",
+      "open": 3521.1,
+      "high": 3568.3,
+      "low": 3510.85,
+      "close": 3542.15
+    },
+    {
+      "date": "19-11-2024",
+      "open": 3559.9,
+      "high": 3607.0,
+      "low": 3495.0,
+      "close": 3505.9
+    },
+    {
+      "date": "21-11-2024",
+      "open": 3530.0,
+      "high": 3530.55,
+      "low": 3452.45,
+      "close": 3483.5
+    },
+    {
+      "date": "22-11-2024",
+      "open": 3500.0,
+      "high": 3613.5,
+      "low": 3473.1,
+      "close": 3603.5
+    },
+    {
+      "date": "25-11-2024",
+      "open": 3660.0,
+      "high": 3761.0,
+      "low": 3654.0,
+      "close": 3753.0
+    },
+    {
+      "date": "26-11-2024",
+      "open": 3754.9,
+      "high": 3754.9,
+      "low": 3690.0,
+      "close": 3702.6
+    },
+    {
+      "date": "27-11-2024",
+      "open": 3704.0,
+      "high": 3720.0,
+      "low": 3685.0,
+      "close": 3698.7
+    },
+    {
+      "date": "28-11-2024",
+      "open": 3700.0,
+      "high": 3720.5,
+      "low": 3648.0,
+      "close": 3666.05
+    }
+  ]
+}

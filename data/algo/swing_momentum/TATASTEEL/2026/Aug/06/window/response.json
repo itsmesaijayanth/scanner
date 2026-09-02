@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TATASTEEL",
+  "window": {
+    "start_date": "07-07-2026",
+    "end_date": "06-08-2026",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-08-2026",
+      "price": 193.65,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "24-07-2026",
+      "price": 181.2,
+      "distance_to_current_trading_rows": 9
+    },
+    "current": {
+      "date": "06-08-2026",
+      "open": 193.45,
+      "high": 193.65,
+      "low": 188.99,
+      "close": 189.3
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "14-07-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 186.7,
+        "high": 190.35,
+        "low": 186.7,
+        "close": 188.27
+      },
+      {
+        "date": "22-07-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 187.99,
+        "high": 187.99,
+        "low": 184.91,
+        "close": 186.53
+      },
+      {
+        "date": "23-07-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 186.0,
+        "high": 186.0,
+        "low": 183.5,
+        "close": 184.23
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 181.2
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 193.65
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 193.65
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "07-07-2026",
+      "open": 191.0,
+      "high": 191.3,
+      "low": 189.0,
+      "close": 189.79
+    },
+    {
+      "date": "08-07-2026",
+      "open": 187.66,
+      "high": 189.79,
+      "low": 186.52,
+      "close": 188.2
+    },
+    {
+      "date": "09-07-2026",
+      "open": 189.5,
+      "high": 189.87,
+      "low": 186.62,
+      "close": 187.91
+    },
+    {
+      "date": "10-07-2026",
+      "open": 189.68,
+      "high": 193.3,
+      "low": 188.74,
+      "close": 191.19
+    },
+    {
+      "date": "13-07-2026",
+      "open": 189.0,
+      "high": 189.27,
+      "low": 185.4,
+      "close": 187.11
+    },
+    {
+      "date": "14-07-2026",
+      "open": 186.7,
+      "high": 190.35,
+      "low": 186.7,
+      "close": 188.27
+    },
+    {
+      "date": "15-07-2026",
+      "open": 188.74,
+      "high": 189.33,
+      "low": 184.81,
+      "close": 185.26
+    },
+    {
+      "date": "16-07-2026",
+      "open": 186.5,
+      "high": 186.75,
+      "low": 184.91,
+      "close": 185.49
+    },
+    {
+      "date": "17-07-2026",
+      "open": 185.2,
+      "high": 186.59,
+      "low": 183.41,
+      "close": 185.89
+    },
+    {
+      "date": "20-07-2026",
+      "open": 186.68,
+      "high": 187.19,
+      "low": 185.76,
+      "close": 186.41
+    },
+    {
+      "date": "21-07-2026",
+      "open": 186.75,
+      "high": 188.1,
+      "low": 184.7,
+      "close": 187.24
+    },
+    {
+      "date": "22-07-2026",
+      "open": 187.99,
+      "high": 187.99,
+      "low": 184.91,
+      "close": 186.53
+    },
+    {
+      "date": "23-07-2026",
+      "open": 186.0,
+      "high": 186.0,
+      "low": 183.5,
+      "close": 184.23
+    },
+    {
+      "date": "24-07-2026",
+      "open": 183.41,
+      "high": 183.52,
+      "low": 181.2,
+      "close": 182.67
+    },
+    {
+      "date": "27-07-2026",
+      "open": 183.6,
+      "high": 184.89,
+      "low": 183.33,
+      "close": 184.25
+    },
+    {
+      "date": "28-07-2026",
+      "open": 184.31,
+      "high": 185.14,
+      "low": 182.01,
+      "close": 182.63
+    },
+    {
+      "date": "29-07-2026",
+      "open": 183.5,
+      "high": 188.67,
+      "low": 183.04,
+      "close": 187.27
+    },
+    {
+      "date": "30-07-2026",
+      "open": 188.01,
+      "high": 188.99,
+      "low": 186.1,
+      "close": 186.92
+    },
+    {
+      "date": "31-07-2026",
+      "open": 188.25,
+      "high": 191.84,
+      "low": 186.31,
+      "close": 189.69
+    },
+    {
+      "date": "03-08-2026",
+      "open": 192.94,
+      "high": 193.5,
+      "low": 188.49,
+      "close": 191.0
+    },
+    {
+      "date": "04-08-2026",
+      "open": 190.7,
+      "high": 192.6,
+      "low": 189.0,
+      "close": 190.95
+    },
+    {
+      "date": "05-08-2026",
+      "open": 192.25,
+      "high": 192.99,
+      "low": 189.84,
+      "close": 192.99
+    },
+    {
+      "date": "06-08-2026",
+      "open": 193.45,
+      "high": 193.65,
+      "low": 188.99,
+      "close": 189.3
+    }
+  ]
+}

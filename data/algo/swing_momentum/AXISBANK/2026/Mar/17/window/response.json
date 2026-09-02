@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "AXISBANK",
+  "window": {
+    "start_date": "15-02-2026",
+    "end_date": "17-03-2026",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "26-02-2026",
+      "price": 1405.7,
+      "distance_to_current_trading_rows": 12
+    },
+    "monthly_low": {
+      "date": "16-03-2026",
+      "price": 1180.1,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "17-03-2026",
+      "open": 1219.7,
+      "high": 1232.3,
+      "low": 1210.0,
+      "close": 1228.1
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "16-02-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1324.0,
+        "high": 1361.9,
+        "low": 1324.0,
+        "close": 1358.3
+      },
+      {
+        "date": "20-02-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1351.0,
+        "high": 1376.5,
+        "low": 1351.0,
+        "close": 1368.3
+      },
+      {
+        "date": "24-02-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1398.0,
+        "high": 1398.0,
+        "low": 1383.5,
+        "close": 1387.6
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1405.7
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1180.1
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1180.1
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "16-02-2026",
+      "open": 1324.0,
+      "high": 1361.9,
+      "low": 1324.0,
+      "close": 1358.3
+    },
+    {
+      "date": "17-02-2026",
+      "open": 1358.3,
+      "high": 1360.9,
+      "low": 1350.4,
+      "close": 1357.2
+    },
+    {
+      "date": "18-02-2026",
+      "open": 1363.0,
+      "high": 1378.5,
+      "low": 1353.8,
+      "close": 1377.0
+    },
+    {
+      "date": "19-02-2026",
+      "open": 1381.1,
+      "high": 1382.8,
+      "low": 1351.0,
+      "close": 1356.6
+    },
+    {
+      "date": "20-02-2026",
+      "open": 1351.0,
+      "high": 1376.5,
+      "low": 1351.0,
+      "close": 1368.3
+    },
+    {
+      "date": "23-02-2026",
+      "open": 1380.5,
+      "high": 1402.0,
+      "low": 1380.2,
+      "close": 1386.7
+    },
+    {
+      "date": "24-02-2026",
+      "open": 1398.0,
+      "high": 1398.0,
+      "low": 1383.5,
+      "close": 1387.6
+    },
+    {
+      "date": "25-02-2026",
+      "open": 1394.0,
+      "high": 1404.3,
+      "low": 1387.6,
+      "close": 1403.0
+    },
+    {
+      "date": "26-02-2026",
+      "open": 1403.0,
+      "high": 1405.7,
+      "low": 1386.0,
+      "close": 1395.5
+    },
+    {
+      "date": "27-02-2026",
+      "open": 1387.0,
+      "high": 1395.5,
+      "low": 1381.0,
+      "close": 1383.9
+    },
+    {
+      "date": "02-03-2026",
+      "open": 1369.1,
+      "high": 1384.7,
+      "low": 1353.6,
+      "close": 1372.3
+    },
+    {
+      "date": "04-03-2026",
+      "open": 1344.5,
+      "high": 1357.6,
+      "low": 1327.0,
+      "close": 1351.3
+    },
+    {
+      "date": "05-03-2026",
+      "open": 1354.9,
+      "high": 1355.8,
+      "low": 1335.3,
+      "close": 1349.1
+    },
+    {
+      "date": "06-03-2026",
+      "open": 1347.0,
+      "high": 1347.9,
+      "low": 1313.5,
+      "close": 1315.8
+    },
+    {
+      "date": "09-03-2026",
+      "open": 1282.2,
+      "high": 1291.0,
+      "low": 1260.8,
+      "close": 1288.3
+    },
+    {
+      "date": "10-03-2026",
+      "open": 1295.2,
+      "high": 1319.5,
+      "low": 1284.6,
+      "close": 1314.7
+    },
+    {
+      "date": "11-03-2026",
+      "open": 1310.0,
+      "high": 1317.5,
+      "low": 1252.7,
+      "close": 1255.8
+    },
+    {
+      "date": "12-03-2026",
+      "open": 1243.2,
+      "high": 1251.1,
+      "low": 1231.8,
+      "close": 1234.5
+    },
+    {
+      "date": "13-03-2026",
+      "open": 1224.0,
+      "high": 1234.5,
+      "low": 1194.3,
+      "close": 1197.3
+    },
+    {
+      "date": "16-03-2026",
+      "open": 1199.2,
+      "high": 1219.9,
+      "low": 1180.1,
+      "close": 1214.7
+    },
+    {
+      "date": "17-03-2026",
+      "open": 1219.7,
+      "high": 1232.3,
+      "low": 1210.0,
+      "close": 1228.1
+    }
+  ]
+}

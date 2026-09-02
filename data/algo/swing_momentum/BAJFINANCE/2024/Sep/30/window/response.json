@@ -1,0 +1,246 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJFINANCE",
+  "window": {
+    "start_date": "31-08-2024",
+    "end_date": "30-09-2024",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "30-09-2024",
+      "price": 7824.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "10-09-2024",
+      "price": 7193.0,
+      "distance_to_current_trading_rows": 14
+    },
+    "current": {
+      "date": "30-09-2024",
+      "open": 7746.0,
+      "high": 7824.0,
+      "low": 7676.15,
+      "close": 7703.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "03-09-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7460.0,
+        "high": 7460.0,
+        "low": 7206.1,
+        "close": 7353.8
+      },
+      {
+        "date": "06-09-2024",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 7255.55,
+        "high": 7395.0,
+        "low": 7255.55,
+        "close": 7317.15
+      },
+      {
+        "date": "10-09-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7369.95,
+        "high": 7369.95,
+        "low": 7193.0,
+        "close": 7241.85
+      },
+      {
+        "date": "16-09-2024",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7680.0,
+        "high": 7680.0,
+        "low": 7322.0,
+        "close": 7345.75
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 7193.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 7824.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 7824.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "02-09-2024",
+      "open": 7274.0,
+      "high": 7450.0,
+      "low": 7229.0,
+      "close": 7440.05
+    },
+    {
+      "date": "03-09-2024",
+      "open": 7460.0,
+      "high": 7460.0,
+      "low": 7206.1,
+      "close": 7353.8
+    },
+    {
+      "date": "04-09-2024",
+      "open": 7254.95,
+      "high": 7377.0,
+      "low": 7245.25,
+      "close": 7299.5
+    },
+    {
+      "date": "05-09-2024",
+      "open": 7320.0,
+      "high": 7326.65,
+      "low": 7193.0,
+      "close": 7244.9
+    },
+    {
+      "date": "06-09-2024",
+      "open": 7255.55,
+      "high": 7395.0,
+      "low": 7255.55,
+      "close": 7317.15
+    },
+    {
+      "date": "09-09-2024",
+      "open": 7324.0,
+      "high": 7377.95,
+      "low": 7262.8,
+      "close": 7347.45
+    },
+    {
+      "date": "10-09-2024",
+      "open": 7369.95,
+      "high": 7369.95,
+      "low": 7193.0,
+      "close": 7241.85
+    },
+    {
+      "date": "11-09-2024",
+      "open": 7250.0,
+      "high": 7432.0,
+      "low": 7206.3,
+      "close": 7345.55
+    },
+    {
+      "date": "12-09-2024",
+      "open": 7420.0,
+      "high": 7440.0,
+      "low": 7296.6,
+      "close": 7428.3
+    },
+    {
+      "date": "13-09-2024",
+      "open": 7428.3,
+      "high": 7660.0,
+      "low": 7352.0,
+      "close": 7598.5
+    },
+    {
+      "date": "16-09-2024",
+      "open": 7680.0,
+      "high": 7680.0,
+      "low": 7322.0,
+      "close": 7345.75
+    },
+    {
+      "date": "17-09-2024",
+      "open": 7337.5,
+      "high": 7455.0,
+      "low": 7286.15,
+      "close": 7365.5
+    },
+    {
+      "date": "18-09-2024",
+      "open": 7387.25,
+      "high": 7672.5,
+      "low": 7378.5,
+      "close": 7631.1
+    },
+    {
+      "date": "19-09-2024",
+      "open": 7675.0,
+      "high": 7748.0,
+      "low": 7560.0,
+      "close": 7590.35
+    },
+    {
+      "date": "20-09-2024",
+      "open": 7635.0,
+      "high": 7655.0,
+      "low": 7487.25,
+      "close": 7582.45
+    },
+    {
+      "date": "23-09-2024",
+      "open": 7625.75,
+      "high": 7635.95,
+      "low": 7531.7,
+      "close": 7595.1
+    },
+    {
+      "date": "24-09-2024",
+      "open": 7597.0,
+      "high": 7603.45,
+      "low": 7483.9,
+      "close": 7554.2
+    },
+    {
+      "date": "25-09-2024",
+      "open": 7545.0,
+      "high": 7640.0,
+      "low": 7498.05,
+      "close": 7623.9
+    },
+    {
+      "date": "26-09-2024",
+      "open": 7640.0,
+      "high": 7779.4,
+      "low": 7587.55,
+      "close": 7768.4
+    },
+    {
+      "date": "27-09-2024",
+      "open": 7780.0,
+      "high": 7810.0,
+      "low": 7711.0,
+      "close": 7756.0
+    },
+    {
+      "date": "30-09-2024",
+      "open": 7746.0,
+      "high": 7824.0,
+      "low": 7676.15,
+      "close": 7703.0
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ICICIBANK",
+  "window": {
+    "start_date": "24-02-2025",
+    "end_date": "26-03-2025",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "24-03-2025",
+      "price": 1373.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "28-02-2025",
+      "price": 1200.1,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "26-03-2025",
+      "open": 1344.05,
+      "high": 1358.0,
+      "low": 1331.5,
+      "close": 1335.9
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "06-03-2025",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1227.95,
+        "high": 1227.95,
+        "low": 1209.0,
+        "close": 1218.05
+      },
+      {
+        "date": "10-03-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1208.0,
+        "high": 1225.8,
+        "low": 1208.0,
+        "close": 1214.85
+      },
+      {
+        "date": "11-03-2025",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1217.2,
+        "high": 1248.0,
+        "low": 1217.2,
+        "close": 1245.4
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1200.1
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1373.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1373.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "24-02-2025",
+      "open": 1226.7,
+      "high": 1231.9,
+      "low": 1210.25,
+      "close": 1218.35
+    },
+    {
+      "date": "25-02-2025",
+      "open": 1226.6,
+      "high": 1231.65,
+      "low": 1221.0,
+      "close": 1224.15
+    },
+    {
+      "date": "27-02-2025",
+      "open": 1225.15,
+      "high": 1234.85,
+      "low": 1218.45,
+      "close": 1222.45
+    },
+    {
+      "date": "28-02-2025",
+      "open": 1216.0,
+      "high": 1225.0,
+      "low": 1200.1,
+      "close": 1204.1
+    },
+    {
+      "date": "03-03-2025",
+      "open": 1210.5,
+      "high": 1217.0,
+      "low": 1204.15,
+      "close": 1206.2
+    },
+    {
+      "date": "04-03-2025",
+      "open": 1207.15,
+      "high": 1216.65,
+      "low": 1206.25,
+      "close": 1210.4
+    },
+    {
+      "date": "05-03-2025",
+      "open": 1217.0,
+      "high": 1225.95,
+      "low": 1211.3,
+      "close": 1215.7
+    },
+    {
+      "date": "06-03-2025",
+      "open": 1227.95,
+      "high": 1227.95,
+      "low": 1209.0,
+      "close": 1218.05
+    },
+    {
+      "date": "07-03-2025",
+      "open": 1211.1,
+      "high": 1217.85,
+      "low": 1206.3,
+      "close": 1214.55
+    },
+    {
+      "date": "10-03-2025",
+      "open": 1208.0,
+      "high": 1225.8,
+      "low": 1208.0,
+      "close": 1214.85
+    },
+    {
+      "date": "11-03-2025",
+      "open": 1217.2,
+      "high": 1248.0,
+      "low": 1217.2,
+      "close": 1245.4
+    },
+    {
+      "date": "12-03-2025",
+      "open": 1246.95,
+      "high": 1251.95,
+      "low": 1235.3,
+      "close": 1243.95
+    },
+    {
+      "date": "13-03-2025",
+      "open": 1251.05,
+      "high": 1255.6,
+      "low": 1245.3,
+      "close": 1250.05
+    },
+    {
+      "date": "17-03-2025",
+      "open": 1257.05,
+      "high": 1273.95,
+      "low": 1254.75,
+      "close": 1269.0
+    },
+    {
+      "date": "18-03-2025",
+      "open": 1285.5,
+      "high": 1313.85,
+      "low": 1280.65,
+      "close": 1309.85
+    },
+    {
+      "date": "19-03-2025",
+      "open": 1305.6,
+      "high": 1318.3,
+      "low": 1302.15,
+      "close": 1313.1
+    },
+    {
+      "date": "20-03-2025",
+      "open": 1320.0,
+      "high": 1324.25,
+      "low": 1311.05,
+      "close": 1321.7
+    },
+    {
+      "date": "21-03-2025",
+      "open": 1316.0,
+      "high": 1349.0,
+      "low": 1311.6,
+      "close": 1343.1
+    },
+    {
+      "date": "24-03-2025",
+      "open": 1355.95,
+      "high": 1373.0,
+      "low": 1345.05,
+      "close": 1358.15
+    },
+    {
+      "date": "25-03-2025",
+      "open": 1359.0,
+      "high": 1363.8,
+      "low": 1330.05,
+      "close": 1343.7
+    },
+    {
+      "date": "26-03-2025",
+      "open": 1344.05,
+      "high": 1358.0,
+      "low": 1331.5,
+      "close": 1335.9
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "POWERGRID",
+  "window": {
+    "start_date": "24-12-2025",
+    "end_date": "23-01-2026",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "06-01-2026",
+      "price": 273.3,
+      "distance_to_current_trading_rows": 12
+    },
+    "monthly_low": {
+      "date": "21-01-2026",
+      "price": 252.05,
+      "distance_to_current_trading_rows": 2
+    },
+    "current": {
+      "date": "23-01-2026",
+      "open": 259.25,
+      "high": 259.95,
+      "low": 252.6,
+      "close": 254.15
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "recent",
+    "events": [
+      {
+        "date": "01-01-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 264.1,
+        "high": 267.55,
+        "low": 264.1,
+        "close": 266.8
+      },
+      {
+        "date": "06-01-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 266.0,
+        "high": 273.3,
+        "low": 266.0,
+        "close": 268.55
+      },
+      {
+        "date": "21-01-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 252.05,
+        "high": 258.85,
+        "low": 252.05,
+        "close": 255.8
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 273.3
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 252.05
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 252.05
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "medium",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with recent strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "24-12-2025",
+      "open": 267.8,
+      "high": 270.05,
+      "low": 266.3,
+      "close": 268.05
+    },
+    {
+      "date": "26-12-2025",
+      "open": 268.0,
+      "high": 269.3,
+      "low": 264.85,
+      "close": 265.45
+    },
+    {
+      "date": "29-12-2025",
+      "open": 265.95,
+      "high": 266.45,
+      "low": 260.0,
+      "close": 260.6
+    },
+    {
+      "date": "30-12-2025",
+      "open": 260.0,
+      "high": 261.45,
+      "low": 258.95,
+      "close": 260.35
+    },
+    {
+      "date": "31-12-2025",
+      "open": 261.4,
+      "high": 265.2,
+      "low": 260.55,
+      "close": 264.6
+    },
+    {
+      "date": "01-01-2026",
+      "open": 264.1,
+      "high": 267.55,
+      "low": 264.1,
+      "close": 266.8
+    },
+    {
+      "date": "02-01-2026",
+      "open": 267.5,
+      "high": 272.1,
+      "low": 266.25,
+      "close": 270.95
+    },
+    {
+      "date": "05-01-2026",
+      "open": 271.25,
+      "high": 272.8,
+      "low": 268.7,
+      "close": 271.65
+    },
+    {
+      "date": "06-01-2026",
+      "open": 266.0,
+      "high": 273.3,
+      "low": 266.0,
+      "close": 268.55
+    },
+    {
+      "date": "07-01-2026",
+      "open": 268.5,
+      "high": 268.95,
+      "low": 263.45,
+      "close": 264.1
+    },
+    {
+      "date": "08-01-2026",
+      "open": 264.0,
+      "high": 265.3,
+      "low": 257.95,
+      "close": 259.3
+    },
+    {
+      "date": "09-01-2026",
+      "open": 260.3,
+      "high": 263.8,
+      "low": 256.25,
+      "close": 258.0
+    },
+    {
+      "date": "12-01-2026",
+      "open": 258.0,
+      "high": 259.5,
+      "low": 254.3,
+      "close": 258.55
+    },
+    {
+      "date": "13-01-2026",
+      "open": 259.05,
+      "high": 259.95,
+      "low": 256.1,
+      "close": 258.8
+    },
+    {
+      "date": "14-01-2026",
+      "open": 257.1,
+      "high": 259.7,
+      "low": 256.75,
+      "close": 258.35
+    },
+    {
+      "date": "16-01-2026",
+      "open": 258.3,
+      "high": 261.55,
+      "low": 256.2,
+      "close": 257.3
+    },
+    {
+      "date": "19-01-2026",
+      "open": 256.9,
+      "high": 258.8,
+      "low": 256.65,
+      "close": 257.65
+    },
+    {
+      "date": "20-01-2026",
+      "open": 257.65,
+      "high": 257.85,
+      "low": 253.4,
+      "close": 254.05
+    },
+    {
+      "date": "21-01-2026",
+      "open": 252.05,
+      "high": 258.85,
+      "low": 252.05,
+      "close": 255.8
+    },
+    {
+      "date": "22-01-2026",
+      "open": 256.6,
+      "high": 259.85,
+      "low": 255.45,
+      "close": 259.25
+    },
+    {
+      "date": "23-01-2026",
+      "open": 259.25,
+      "high": 259.95,
+      "low": 252.6,
+      "close": 254.15
+    }
+  ]
+}

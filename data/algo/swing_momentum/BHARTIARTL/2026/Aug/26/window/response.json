@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BHARTIARTL",
+  "window": {
+    "start_date": "27-07-2026",
+    "end_date": "26-08-2026",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "05-08-2026",
+      "price": 2031.0,
+      "distance_to_current_trading_rows": 15
+    },
+    "monthly_low": {
+      "date": "27-07-2026",
+      "price": 1890.0,
+      "distance_to_current_trading_rows": 22
+    },
+    "current": {
+      "date": "26-08-2026",
+      "open": 1933.5,
+      "high": 1942.9,
+      "low": 1902.1,
+      "close": 1902.1
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "03-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1987.4,
+        "high": 1987.4,
+        "low": 1943.0,
+        "close": 1970.5
+      },
+      {
+        "date": "04-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1980.0,
+        "high": 1980.0,
+        "low": 1936.0,
+        "close": 1970.1
+      },
+      {
+        "date": "07-08-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1938.3,
+        "high": 1961.0,
+        "low": 1938.3,
+        "close": 1959.9
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1890.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 2031.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 2031.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "27-07-2026",
+      "open": 1892.0,
+      "high": 1917.0,
+      "low": 1890.0,
+      "close": 1905.3
+    },
+    {
+      "date": "28-07-2026",
+      "open": 1901.0,
+      "high": 1908.4,
+      "low": 1892.4,
+      "close": 1901.8
+    },
+    {
+      "date": "29-07-2026",
+      "open": 1915.2,
+      "high": 1957.0,
+      "low": 1913.1,
+      "close": 1950.2
+    },
+    {
+      "date": "30-07-2026",
+      "open": 1954.0,
+      "high": 1963.2,
+      "low": 1943.9,
+      "close": 1956.8
+    },
+    {
+      "date": "31-07-2026",
+      "open": 1969.0,
+      "high": 1976.4,
+      "low": 1947.4,
+      "close": 1972.0
+    },
+    {
+      "date": "03-08-2026",
+      "open": 1987.4,
+      "high": 1987.4,
+      "low": 1943.0,
+      "close": 1970.5
+    },
+    {
+      "date": "04-08-2026",
+      "open": 1980.0,
+      "high": 1980.0,
+      "low": 1936.0,
+      "close": 1970.1
+    },
+    {
+      "date": "05-08-2026",
+      "open": 2020.0,
+      "high": 2031.0,
+      "low": 1951.8,
+      "close": 1978.0
+    },
+    {
+      "date": "06-08-2026",
+      "open": 1969.0,
+      "high": 1970.0,
+      "low": 1944.3,
+      "close": 1948.0
+    },
+    {
+      "date": "07-08-2026",
+      "open": 1938.3,
+      "high": 1961.0,
+      "low": 1938.3,
+      "close": 1959.9
+    },
+    {
+      "date": "10-08-2026",
+      "open": 1955.0,
+      "high": 1959.0,
+      "low": 1935.0,
+      "close": 1943.0
+    },
+    {
+      "date": "11-08-2026",
+      "open": 1934.8,
+      "high": 1938.3,
+      "low": 1914.4,
+      "close": 1915.2
+    },
+    {
+      "date": "12-08-2026",
+      "open": 1908.6,
+      "high": 1945.0,
+      "low": 1901.3,
+      "close": 1945.0
+    },
+    {
+      "date": "13-08-2026",
+      "open": 1965.0,
+      "high": 1970.0,
+      "low": 1930.5,
+      "close": 1939.1
+    },
+    {
+      "date": "14-08-2026",
+      "open": 1939.1,
+      "high": 2005.8,
+      "low": 1932.0,
+      "close": 1992.1
+    },
+    {
+      "date": "17-08-2026",
+      "open": 1984.2,
+      "high": 1993.2,
+      "low": 1969.3,
+      "close": 1969.3
+    },
+    {
+      "date": "18-08-2026",
+      "open": 1956.7,
+      "high": 1959.7,
+      "low": 1923.2,
+      "close": 1934.2
+    },
+    {
+      "date": "19-08-2026",
+      "open": 1924.8,
+      "high": 1941.8,
+      "low": 1922.0,
+      "close": 1922.0
+    },
+    {
+      "date": "20-08-2026",
+      "open": 1944.0,
+      "high": 1952.2,
+      "low": 1933.0,
+      "close": 1941.7
+    },
+    {
+      "date": "21-08-2026",
+      "open": 1950.0,
+      "high": 1954.9,
+      "low": 1940.5,
+      "close": 1946.0
+    },
+    {
+      "date": "24-08-2026",
+      "open": 1950.0,
+      "high": 1952.5,
+      "low": 1932.5,
+      "close": 1935.0
+    },
+    {
+      "date": "25-08-2026",
+      "open": 1926.0,
+      "high": 1947.0,
+      "low": 1923.4,
+      "close": 1947.0
+    },
+    {
+      "date": "26-08-2026",
+      "open": 1933.5,
+      "high": 1942.9,
+      "low": 1902.1,
+      "close": 1902.1
+    }
+  ]
+}

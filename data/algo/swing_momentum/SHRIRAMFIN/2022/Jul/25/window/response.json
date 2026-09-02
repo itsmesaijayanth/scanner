@@ -1,0 +1,228 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "SHRIRAMFIN",
+  "window": {
+    "start_date": "25-06-2022",
+    "end_date": "25-07-2022",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "25-07-2022",
+      "price": 1509.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "29-06-2022",
+      "price": 1218.0,
+      "distance_to_current_trading_rows": 18
+    },
+    "current": {
+      "date": "25-07-2022",
+      "open": 1473.0,
+      "high": 1509.0,
+      "low": 1473.0,
+      "close": 1496.5
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "27-06-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1269.0,
+        "high": 1269.0,
+        "low": 1245.4,
+        "close": 1252.45
+      },
+      {
+        "date": "25-07-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 1473.0,
+        "high": 1509.0,
+        "low": 1473.0,
+        "close": 1496.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 1218.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 1509.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 1509.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "27-06-2022",
+      "open": 1269.0,
+      "high": 1269.0,
+      "low": 1245.4,
+      "close": 1252.45
+    },
+    {
+      "date": "28-06-2022",
+      "open": 1243.0,
+      "high": 1263.45,
+      "low": 1239.3,
+      "close": 1251.05
+    },
+    {
+      "date": "29-06-2022",
+      "open": 1240.0,
+      "high": 1259.8,
+      "low": 1218.0,
+      "close": 1224.1
+    },
+    {
+      "date": "30-06-2022",
+      "open": 1235.0,
+      "high": 1297.2,
+      "low": 1229.15,
+      "close": 1281.35
+    },
+    {
+      "date": "01-07-2022",
+      "open": 1266.2,
+      "high": 1274.8,
+      "low": 1238.5,
+      "close": 1265.7
+    },
+    {
+      "date": "04-07-2022",
+      "open": 1251.0,
+      "high": 1289.1,
+      "low": 1250.0,
+      "close": 1264.85
+    },
+    {
+      "date": "05-07-2022",
+      "open": 1268.85,
+      "high": 1310.45,
+      "low": 1261.05,
+      "close": 1277.4
+    },
+    {
+      "date": "06-07-2022",
+      "open": 1273.15,
+      "high": 1296.3,
+      "low": 1270.1,
+      "close": 1284.05
+    },
+    {
+      "date": "07-07-2022",
+      "open": 1280.0,
+      "high": 1321.55,
+      "low": 1258.0,
+      "close": 1308.25
+    },
+    {
+      "date": "08-07-2022",
+      "open": 1319.8,
+      "high": 1323.55,
+      "low": 1271.0,
+      "close": 1280.45
+    },
+    {
+      "date": "11-07-2022",
+      "open": 1275.65,
+      "high": 1280.0,
+      "low": 1240.1,
+      "close": 1256.15
+    },
+    {
+      "date": "12-07-2022",
+      "open": 1249.0,
+      "high": 1257.5,
+      "low": 1233.7,
+      "close": 1236.3
+    },
+    {
+      "date": "13-07-2022",
+      "open": 1244.1,
+      "high": 1274.9,
+      "low": 1240.35,
+      "close": 1268.9
+    },
+    {
+      "date": "14-07-2022",
+      "open": 1274.0,
+      "high": 1299.45,
+      "low": 1270.05,
+      "close": 1294.95
+    },
+    {
+      "date": "15-07-2022",
+      "open": 1300.0,
+      "high": 1318.0,
+      "low": 1275.9,
+      "close": 1314.65
+    },
+    {
+      "date": "18-07-2022",
+      "open": 1332.0,
+      "high": 1418.95,
+      "low": 1323.0,
+      "close": 1397.1
+    },
+    {
+      "date": "19-07-2022",
+      "open": 1382.2,
+      "high": 1399.0,
+      "low": 1357.35,
+      "close": 1391.55
+    },
+    {
+      "date": "20-07-2022",
+      "open": 1410.0,
+      "high": 1431.25,
+      "low": 1401.55,
+      "close": 1408.05
+    },
+    {
+      "date": "21-07-2022",
+      "open": 1403.0,
+      "high": 1468.45,
+      "low": 1395.4,
+      "close": 1461.9
+    },
+    {
+      "date": "22-07-2022",
+      "open": 1467.0,
+      "high": 1499.9,
+      "low": 1456.5,
+      "close": 1496.1
+    },
+    {
+      "date": "25-07-2022",
+      "open": 1473.0,
+      "high": 1509.0,
+      "low": 1473.0,
+      "close": 1496.5
+    }
+  ]
+}

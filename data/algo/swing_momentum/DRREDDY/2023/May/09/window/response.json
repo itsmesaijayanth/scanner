@@ -1,0 +1,248 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "DRREDDY",
+  "window": {
+    "start_date": "09-04-2023",
+    "end_date": "09-05-2023",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "05-05-2023",
+      "price": 4989.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "10-04-2023",
+      "price": 4688.0,
+      "distance_to_current_trading_rows": 19
+    },
+    "current": {
+      "date": "09-05-2023",
+      "open": 4918.05,
+      "high": 4939.9,
+      "low": 4890.05,
+      "close": 4933.25
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "13-04-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 4888.0,
+        "high": 4888.0,
+        "low": 4831.2,
+        "close": 4852.9
+      },
+      {
+        "date": "20-04-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 4916.0,
+        "high": 4916.0,
+        "low": 4822.25,
+        "close": 4858.2
+      },
+      {
+        "date": "24-04-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 4854.0,
+        "high": 4854.0,
+        "low": 4752.1,
+        "close": 4806.1
+      },
+      {
+        "date": "26-04-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 4810.0,
+        "high": 4874.25,
+        "low": 4810.0,
+        "close": 4845.1
+      },
+      {
+        "date": "02-05-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 4903.4,
+        "high": 4958.95,
+        "low": 4903.4,
+        "close": 4950.4
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 4688.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 4989.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 4989.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "10-04-2023",
+      "open": 4732.0,
+      "high": 4772.2,
+      "low": 4688.0,
+      "close": 4759.65
+    },
+    {
+      "date": "11-04-2023",
+      "open": 4773.0,
+      "high": 4805.9,
+      "low": 4708.0,
+      "close": 4763.35
+    },
+    {
+      "date": "12-04-2023",
+      "open": 4763.35,
+      "high": 4919.6,
+      "low": 4726.2,
+      "close": 4881.0
+    },
+    {
+      "date": "13-04-2023",
+      "open": 4888.0,
+      "high": 4888.0,
+      "low": 4831.2,
+      "close": 4852.9
+    },
+    {
+      "date": "17-04-2023",
+      "open": 4876.95,
+      "high": 4922.95,
+      "low": 4819.75,
+      "close": 4852.3
+    },
+    {
+      "date": "18-04-2023",
+      "open": 4861.4,
+      "high": 4918.0,
+      "low": 4845.5,
+      "close": 4912.4
+    },
+    {
+      "date": "19-04-2023",
+      "open": 4887.4,
+      "high": 4940.0,
+      "low": 4880.55,
+      "close": 4909.35
+    },
+    {
+      "date": "20-04-2023",
+      "open": 4916.0,
+      "high": 4916.0,
+      "low": 4822.25,
+      "close": 4858.2
+    },
+    {
+      "date": "21-04-2023",
+      "open": 4858.1,
+      "high": 4879.0,
+      "low": 4823.15,
+      "close": 4868.75
+    },
+    {
+      "date": "24-04-2023",
+      "open": 4854.0,
+      "high": 4854.0,
+      "low": 4752.1,
+      "close": 4806.1
+    },
+    {
+      "date": "25-04-2023",
+      "open": 4803.55,
+      "high": 4841.15,
+      "low": 4757.75,
+      "close": 4833.3
+    },
+    {
+      "date": "26-04-2023",
+      "open": 4810.0,
+      "high": 4874.25,
+      "low": 4810.0,
+      "close": 4845.1
+    },
+    {
+      "date": "27-04-2023",
+      "open": 4845.0,
+      "high": 4939.0,
+      "low": 4818.1,
+      "close": 4918.55
+    },
+    {
+      "date": "28-04-2023",
+      "open": 4918.55,
+      "high": 4935.0,
+      "low": 4877.1,
+      "close": 4929.85
+    },
+    {
+      "date": "02-05-2023",
+      "open": 4903.4,
+      "high": 4958.95,
+      "low": 4903.4,
+      "close": 4950.4
+    },
+    {
+      "date": "03-05-2023",
+      "open": 4949.9,
+      "high": 4960.0,
+      "low": 4915.0,
+      "close": 4952.25
+    },
+    {
+      "date": "04-05-2023",
+      "open": 4952.25,
+      "high": 4975.0,
+      "low": 4920.35,
+      "close": 4968.0
+    },
+    {
+      "date": "05-05-2023",
+      "open": 4974.95,
+      "high": 4989.0,
+      "low": 4925.55,
+      "close": 4942.5
+    },
+    {
+      "date": "08-05-2023",
+      "open": 4945.0,
+      "high": 4966.7,
+      "low": 4846.65,
+      "close": 4907.1
+    },
+    {
+      "date": "09-05-2023",
+      "open": 4918.05,
+      "high": 4939.9,
+      "low": 4890.05,
+      "close": 4933.25
+    }
+  ]
+}

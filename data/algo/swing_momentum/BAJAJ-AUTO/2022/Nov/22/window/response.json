@@ -1,0 +1,230 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJAJ-AUTO",
+  "window": {
+    "start_date": "23-10-2022",
+    "end_date": "22-11-2022",
+    "calendar_days": 30,
+    "trading_rows": 20
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "07-11-2022",
+      "price": 3818.65,
+      "distance_to_current_trading_rows": 10
+    },
+    "monthly_low": {
+      "date": "22-11-2022",
+      "price": 3585.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "22-11-2022",
+      "open": 3636.0,
+      "high": 3643.0,
+      "low": 3585.0,
+      "close": 3619.1
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "27-10-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3690.6,
+        "high": 3690.6,
+        "low": 3606.15,
+        "close": 3622.3
+      },
+      {
+        "date": "02-11-2022",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 3746.0,
+        "high": 3746.0,
+        "low": 3693.6,
+        "close": 3736.8
+      },
+      {
+        "date": "15-11-2022",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 3726.05,
+        "high": 3789.0,
+        "low": 3726.05,
+        "close": 3764.15
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 3818.65
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 3585.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 3585.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "24-10-2022",
+      "open": 3715.0,
+      "high": 3720.0,
+      "low": 3680.0,
+      "close": 3699.8
+    },
+    {
+      "date": "25-10-2022",
+      "open": 3699.0,
+      "high": 3727.0,
+      "low": 3644.0,
+      "close": 3654.1
+    },
+    {
+      "date": "27-10-2022",
+      "open": 3690.6,
+      "high": 3690.6,
+      "low": 3606.15,
+      "close": 3622.3
+    },
+    {
+      "date": "28-10-2022",
+      "open": 3640.45,
+      "high": 3719.0,
+      "low": 3631.0,
+      "close": 3670.7
+    },
+    {
+      "date": "31-10-2022",
+      "open": 3689.1,
+      "high": 3706.35,
+      "low": 3659.1,
+      "close": 3671.85
+    },
+    {
+      "date": "01-11-2022",
+      "open": 3686.55,
+      "high": 3744.2,
+      "low": 3663.0,
+      "close": 3732.7
+    },
+    {
+      "date": "02-11-2022",
+      "open": 3746.0,
+      "high": 3746.0,
+      "low": 3693.6,
+      "close": 3736.8
+    },
+    {
+      "date": "03-11-2022",
+      "open": 3754.0,
+      "high": 3814.0,
+      "low": 3731.05,
+      "close": 3773.5
+    },
+    {
+      "date": "04-11-2022",
+      "open": 3779.45,
+      "high": 3809.9,
+      "low": 3762.9,
+      "close": 3771.1
+    },
+    {
+      "date": "07-11-2022",
+      "open": 3790.0,
+      "high": 3818.65,
+      "low": 3758.5,
+      "close": 3769.85
+    },
+    {
+      "date": "09-11-2022",
+      "open": 3790.0,
+      "high": 3794.0,
+      "low": 3717.85,
+      "close": 3739.55
+    },
+    {
+      "date": "10-11-2022",
+      "open": 3739.55,
+      "high": 3770.0,
+      "low": 3717.0,
+      "close": 3724.6
+    },
+    {
+      "date": "11-11-2022",
+      "open": 3743.25,
+      "high": 3783.95,
+      "low": 3708.5,
+      "close": 3727.65
+    },
+    {
+      "date": "14-11-2022",
+      "open": 3746.3,
+      "high": 3768.0,
+      "low": 3710.45,
+      "close": 3726.0
+    },
+    {
+      "date": "15-11-2022",
+      "open": 3726.05,
+      "high": 3789.0,
+      "low": 3726.05,
+      "close": 3764.15
+    },
+    {
+      "date": "16-11-2022",
+      "open": 3757.0,
+      "high": 3798.5,
+      "low": 3739.65,
+      "close": 3747.45
+    },
+    {
+      "date": "17-11-2022",
+      "open": 3749.0,
+      "high": 3767.35,
+      "low": 3678.4,
+      "close": 3694.15
+    },
+    {
+      "date": "18-11-2022",
+      "open": 3694.15,
+      "high": 3706.85,
+      "low": 3621.0,
+      "close": 3632.95
+    },
+    {
+      "date": "21-11-2022",
+      "open": 3615.0,
+      "high": 3645.8,
+      "low": 3606.4,
+      "close": 3619.5
+    },
+    {
+      "date": "22-11-2022",
+      "open": 3636.0,
+      "high": 3643.0,
+      "low": 3585.0,
+      "close": 3619.1
+    }
+  ]
+}

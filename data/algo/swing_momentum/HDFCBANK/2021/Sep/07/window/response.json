@@ -1,0 +1,83 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "HDFCBANK",
+  "window": {
+    "start_date": "08-08-2021",
+    "end_date": "07-09-2021",
+    "calendar_days": 30,
+    "trading_rows": 3
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "03-09-2021",
+      "price": 1598.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "07-09-2021",
+      "price": 1555.2,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "07-09-2021",
+      "open": 1562.5,
+      "high": 1582.0,
+      "low": 1555.2,
+      "close": 1569.25
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": []
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1598.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 1555.2
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 1555.2
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-09-2021",
+      "open": 1586.1,
+      "high": 1598.0,
+      "low": 1568.3,
+      "close": 1576.05
+    },
+    {
+      "date": "06-09-2021",
+      "open": 1579.95,
+      "high": 1580.95,
+      "low": 1561.95,
+      "close": 1565.7
+    },
+    {
+      "date": "07-09-2021",
+      "open": 1562.5,
+      "high": 1582.0,
+      "low": 1555.2,
+      "close": 1569.25
+    }
+  ]
+}

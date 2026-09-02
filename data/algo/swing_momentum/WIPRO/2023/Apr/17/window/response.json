@@ -1,0 +1,200 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "WIPRO",
+  "window": {
+    "start_date": "18-03-2023",
+    "end_date": "17-04-2023",
+    "calendar_days": 30,
+    "trading_rows": 17
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "20-03-2023",
+      "price": 375.95,
+      "distance_to_current_trading_rows": 16
+    },
+    "monthly_low": {
+      "date": "17-04-2023",
+      "price": 352.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "17-04-2023",
+      "open": 359.95,
+      "high": 361.95,
+      "low": 352.0,
+      "close": 361.35
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "23-03-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 364.9,
+        "high": 364.9,
+        "low": 360.35,
+        "close": 361.5
+      },
+      {
+        "date": "13-04-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 369.9,
+        "high": 369.9,
+        "low": 366.0,
+        "close": 368.3
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 375.95
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 352.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 352.0
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "20-03-2023",
+      "open": 375.0,
+      "high": 375.95,
+      "low": 365.15,
+      "close": 367.15
+    },
+    {
+      "date": "21-03-2023",
+      "open": 369.0,
+      "high": 370.25,
+      "low": 365.45,
+      "close": 366.4
+    },
+    {
+      "date": "22-03-2023",
+      "open": 367.85,
+      "high": 370.0,
+      "low": 365.85,
+      "close": 366.4
+    },
+    {
+      "date": "23-03-2023",
+      "open": 364.9,
+      "high": 364.9,
+      "low": 360.35,
+      "close": 361.5
+    },
+    {
+      "date": "24-03-2023",
+      "open": 363.35,
+      "high": 366.85,
+      "low": 361.0,
+      "close": 361.75
+    },
+    {
+      "date": "27-03-2023",
+      "open": 361.75,
+      "high": 364.0,
+      "low": 359.2,
+      "close": 361.25
+    },
+    {
+      "date": "28-03-2023",
+      "open": 363.0,
+      "high": 364.05,
+      "low": 355.4,
+      "close": 356.2
+    },
+    {
+      "date": "29-03-2023",
+      "open": 358.0,
+      "high": 360.75,
+      "low": 355.0,
+      "close": 359.05
+    },
+    {
+      "date": "31-03-2023",
+      "open": 363.35,
+      "high": 365.75,
+      "low": 361.3,
+      "close": 365.25
+    },
+    {
+      "date": "03-04-2023",
+      "open": 367.95,
+      "high": 368.4,
+      "low": 365.15,
+      "close": 367.95
+    },
+    {
+      "date": "05-04-2023",
+      "open": 369.7,
+      "high": 371.9,
+      "low": 367.2,
+      "close": 369.75
+    },
+    {
+      "date": "06-04-2023",
+      "open": 369.0,
+      "high": 370.45,
+      "low": 365.85,
+      "close": 366.65
+    },
+    {
+      "date": "10-04-2023",
+      "open": 368.0,
+      "high": 374.4,
+      "low": 367.6,
+      "close": 373.3
+    },
+    {
+      "date": "11-04-2023",
+      "open": 373.5,
+      "high": 374.85,
+      "low": 368.6,
+      "close": 370.25
+    },
+    {
+      "date": "12-04-2023",
+      "open": 370.6,
+      "high": 373.45,
+      "low": 369.35,
+      "close": 372.15
+    },
+    {
+      "date": "13-04-2023",
+      "open": 369.9,
+      "high": 369.9,
+      "low": 366.0,
+      "close": 368.3
+    },
+    {
+      "date": "17-04-2023",
+      "open": 359.95,
+      "high": 361.95,
+      "low": 352.0,
+      "close": 361.35
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "COALINDIA",
+  "window": {
+    "start_date": "23-11-2021",
+    "end_date": "23-12-2021",
+    "calendar_days": 30,
+    "trading_rows": 23
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "25-11-2021",
+      "price": 162.8,
+      "distance_to_current_trading_rows": 20
+    },
+    "monthly_low": {
+      "date": "20-12-2021",
+      "price": 139.15,
+      "distance_to_current_trading_rows": 3
+    },
+    "current": {
+      "date": "23-12-2021",
+      "open": 146.25,
+      "high": 147.95,
+      "low": 146.0,
+      "close": 147.7
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "23-11-2021",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 150.0,
+        "high": 156.75,
+        "low": 150.0,
+        "close": 156.2
+      },
+      {
+        "date": "30-11-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 158.5,
+        "high": 158.5,
+        "low": 151.35,
+        "close": 152.0
+      },
+      {
+        "date": "13-12-2021",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 152.8,
+        "high": 152.8,
+        "low": 147.95,
+        "close": 149.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 162.8
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 139.15
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 139.15
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "23-11-2021",
+      "open": 150.0,
+      "high": 156.75,
+      "low": 150.0,
+      "close": 156.2
+    },
+    {
+      "date": "24-11-2021",
+      "open": 158.3,
+      "high": 161.65,
+      "low": 155.6,
+      "close": 159.1
+    },
+    {
+      "date": "25-11-2021",
+      "open": 161.5,
+      "high": 162.8,
+      "low": 156.0,
+      "close": 158.55
+    },
+    {
+      "date": "26-11-2021",
+      "open": 157.75,
+      "high": 159.4,
+      "low": 155.35,
+      "close": 155.9
+    },
+    {
+      "date": "29-11-2021",
+      "open": 155.9,
+      "high": 156.65,
+      "low": 151.9,
+      "close": 154.25
+    },
+    {
+      "date": "30-11-2021",
+      "open": 158.5,
+      "high": 158.5,
+      "low": 151.35,
+      "close": 152.0
+    },
+    {
+      "date": "01-12-2021",
+      "open": 153.6,
+      "high": 156.25,
+      "low": 152.55,
+      "close": 155.55
+    },
+    {
+      "date": "02-12-2021",
+      "open": 156.9,
+      "high": 159.55,
+      "low": 155.15,
+      "close": 159.3
+    },
+    {
+      "date": "03-12-2021",
+      "open": 159.0,
+      "high": 160.7,
+      "low": 158.25,
+      "close": 159.75
+    },
+    {
+      "date": "06-12-2021",
+      "open": 152.0,
+      "high": 152.45,
+      "low": 148.1,
+      "close": 148.55
+    },
+    {
+      "date": "07-12-2021",
+      "open": 150.1,
+      "high": 150.95,
+      "low": 149.15,
+      "close": 150.65
+    },
+    {
+      "date": "08-12-2021",
+      "open": 151.25,
+      "high": 151.75,
+      "low": 150.05,
+      "close": 150.9
+    },
+    {
+      "date": "09-12-2021",
+      "open": 151.75,
+      "high": 153.5,
+      "low": 150.65,
+      "close": 152.65
+    },
+    {
+      "date": "10-12-2021",
+      "open": 152.65,
+      "high": 153.75,
+      "low": 150.9,
+      "close": 151.3
+    },
+    {
+      "date": "13-12-2021",
+      "open": 152.8,
+      "high": 152.8,
+      "low": 147.95,
+      "close": 149.0
+    },
+    {
+      "date": "14-12-2021",
+      "open": 149.0,
+      "high": 149.75,
+      "low": 146.75,
+      "close": 148.9
+    },
+    {
+      "date": "15-12-2021",
+      "open": 149.15,
+      "high": 150.6,
+      "low": 147.95,
+      "close": 148.1
+    },
+    {
+      "date": "16-12-2021",
+      "open": 148.1,
+      "high": 150.1,
+      "low": 147.55,
+      "close": 149.75
+    },
+    {
+      "date": "17-12-2021",
+      "open": 149.1,
+      "high": 149.4,
+      "low": 146.0,
+      "close": 146.45
+    },
+    {
+      "date": "20-12-2021",
+      "open": 145.35,
+      "high": 145.65,
+      "low": 139.15,
+      "close": 140.7
+    },
+    {
+      "date": "21-12-2021",
+      "open": 141.8,
+      "high": 146.0,
+      "low": 141.4,
+      "close": 144.65
+    },
+    {
+      "date": "22-12-2021",
+      "open": 145.45,
+      "high": 149.4,
+      "low": 144.45,
+      "close": 145.35
+    },
+    {
+      "date": "23-12-2021",
+      "open": 146.25,
+      "high": 147.95,
+      "low": 146.0,
+      "close": 147.7
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TATASTEEL",
+  "window": {
+    "start_date": "02-07-2023",
+    "end_date": "01-08-2023",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "01-08-2023",
+      "price": 124.15,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "07-07-2023",
+      "price": 111.25,
+      "distance_to_current_trading_rows": 17
+    },
+    "current": {
+      "date": "01-08-2023",
+      "open": 123.55,
+      "high": 124.15,
+      "low": 122.55,
+      "close": 123.2
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "24-07-2023",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 116.5,
+        "high": 116.5,
+        "low": 114.35,
+        "close": 115.5
+      },
+      {
+        "date": "31-07-2023",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 120.6,
+        "high": 123.85,
+        "low": 120.6,
+        "close": 123.15
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 111.25
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 124.15
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 124.15
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "03-07-2023",
+      "open": 112.25,
+      "high": 114.25,
+      "low": 112.05,
+      "close": 113.1
+    },
+    {
+      "date": "04-07-2023",
+      "open": 113.2,
+      "high": 113.4,
+      "low": 112.1,
+      "close": 112.4
+    },
+    {
+      "date": "05-07-2023",
+      "open": 112.55,
+      "high": 113.55,
+      "low": 112.2,
+      "close": 112.95
+    },
+    {
+      "date": "06-07-2023",
+      "open": 112.0,
+      "high": 112.85,
+      "low": 111.5,
+      "close": 112.65
+    },
+    {
+      "date": "07-07-2023",
+      "open": 112.0,
+      "high": 113.3,
+      "low": 111.25,
+      "close": 111.6
+    },
+    {
+      "date": "10-07-2023",
+      "open": 112.25,
+      "high": 115.7,
+      "low": 111.65,
+      "close": 115.3
+    },
+    {
+      "date": "11-07-2023",
+      "open": 115.6,
+      "high": 116.1,
+      "low": 114.8,
+      "close": 115.15
+    },
+    {
+      "date": "12-07-2023",
+      "open": 115.15,
+      "high": 116.05,
+      "low": 114.0,
+      "close": 114.7
+    },
+    {
+      "date": "13-07-2023",
+      "open": 116.0,
+      "high": 116.95,
+      "low": 114.5,
+      "close": 114.85
+    },
+    {
+      "date": "14-07-2023",
+      "open": 115.7,
+      "high": 117.9,
+      "low": 114.8,
+      "close": 117.15
+    },
+    {
+      "date": "17-07-2023",
+      "open": 117.95,
+      "high": 119.35,
+      "low": 117.1,
+      "close": 117.75
+    },
+    {
+      "date": "18-07-2023",
+      "open": 118.0,
+      "high": 118.15,
+      "low": 116.4,
+      "close": 116.6
+    },
+    {
+      "date": "19-07-2023",
+      "open": 116.7,
+      "high": 117.2,
+      "low": 116.1,
+      "close": 116.7
+    },
+    {
+      "date": "20-07-2023",
+      "open": 116.7,
+      "high": 117.25,
+      "low": 116.35,
+      "close": 116.95
+    },
+    {
+      "date": "21-07-2023",
+      "open": 116.6,
+      "high": 117.95,
+      "low": 115.5,
+      "close": 116.6
+    },
+    {
+      "date": "24-07-2023",
+      "open": 116.5,
+      "high": 116.5,
+      "low": 114.35,
+      "close": 115.5
+    },
+    {
+      "date": "25-07-2023",
+      "open": 115.0,
+      "high": 119.9,
+      "low": 114.35,
+      "close": 119.25
+    },
+    {
+      "date": "26-07-2023",
+      "open": 119.8,
+      "high": 120.6,
+      "low": 118.85,
+      "close": 119.95
+    },
+    {
+      "date": "27-07-2023",
+      "open": 120.25,
+      "high": 121.45,
+      "low": 119.15,
+      "close": 119.8
+    },
+    {
+      "date": "28-07-2023",
+      "open": 120.2,
+      "high": 121.1,
+      "low": 118.7,
+      "close": 120.6
+    },
+    {
+      "date": "31-07-2023",
+      "open": 120.6,
+      "high": 123.85,
+      "low": 120.6,
+      "close": 123.15
+    },
+    {
+      "date": "01-08-2023",
+      "open": 123.55,
+      "high": 124.15,
+      "low": 122.55,
+      "close": 123.2
+    }
+  ]
+}

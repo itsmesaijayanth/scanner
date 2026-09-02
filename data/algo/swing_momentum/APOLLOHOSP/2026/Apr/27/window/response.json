@@ -1,0 +1,216 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "APOLLOHOSP",
+  "window": {
+    "start_date": "28-03-2026",
+    "end_date": "27-04-2026",
+    "calendar_days": 30,
+    "trading_rows": 18
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "27-04-2026",
+      "price": 7850.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "02-04-2026",
+      "price": 7150.5,
+      "distance_to_current_trading_rows": 15
+    },
+    "current": {
+      "date": "27-04-2026",
+      "open": 7759.0,
+      "high": 7850.0,
+      "low": 7735.0,
+      "close": 7825.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "02-04-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 7150.5,
+        "high": 7368.0,
+        "low": 7150.5,
+        "close": 7317.5
+      },
+      {
+        "date": "07-04-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7370.5,
+        "high": 7370.5,
+        "low": 7220.5,
+        "close": 7326.5
+      },
+      {
+        "date": "16-04-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 7678.0,
+        "high": 7678.0,
+        "low": 7510.0,
+        "close": 7553.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 7150.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 7850.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 7850.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "30-03-2026",
+      "open": 7470.0,
+      "high": 7509.5,
+      "low": 7360.5,
+      "close": 7419.0
+    },
+    {
+      "date": "01-04-2026",
+      "open": 7549.0,
+      "high": 7587.0,
+      "low": 7250.5,
+      "close": 7305.5
+    },
+    {
+      "date": "02-04-2026",
+      "open": 7150.5,
+      "high": 7368.0,
+      "low": 7150.5,
+      "close": 7317.5
+    },
+    {
+      "date": "06-04-2026",
+      "open": 7350.0,
+      "high": 7397.0,
+      "low": 7243.0,
+      "close": 7373.0
+    },
+    {
+      "date": "07-04-2026",
+      "open": 7370.5,
+      "high": 7370.5,
+      "low": 7220.5,
+      "close": 7326.5
+    },
+    {
+      "date": "08-04-2026",
+      "open": 7385.0,
+      "high": 7518.0,
+      "low": 7332.5,
+      "close": 7401.5
+    },
+    {
+      "date": "09-04-2026",
+      "open": 7400.0,
+      "high": 7512.0,
+      "low": 7364.0,
+      "close": 7481.5
+    },
+    {
+      "date": "10-04-2026",
+      "open": 7500.0,
+      "high": 7563.0,
+      "low": 7461.5,
+      "close": 7511.5
+    },
+    {
+      "date": "13-04-2026",
+      "open": 7420.0,
+      "high": 7566.0,
+      "low": 7403.5,
+      "close": 7516.5
+    },
+    {
+      "date": "15-04-2026",
+      "open": 7516.5,
+      "high": 7686.0,
+      "low": 7500.0,
+      "close": 7642.0
+    },
+    {
+      "date": "16-04-2026",
+      "open": 7678.0,
+      "high": 7678.0,
+      "low": 7510.0,
+      "close": 7553.0
+    },
+    {
+      "date": "17-04-2026",
+      "open": 7553.0,
+      "high": 7710.0,
+      "low": 7515.0,
+      "close": 7699.0
+    },
+    {
+      "date": "20-04-2026",
+      "open": 7705.0,
+      "high": 7730.5,
+      "low": 7622.0,
+      "close": 7657.0
+    },
+    {
+      "date": "21-04-2026",
+      "open": 7686.5,
+      "high": 7765.0,
+      "low": 7667.5,
+      "close": 7744.0
+    },
+    {
+      "date": "22-04-2026",
+      "open": 7702.0,
+      "high": 7801.5,
+      "low": 7615.0,
+      "close": 7662.0
+    },
+    {
+      "date": "23-04-2026",
+      "open": 7685.0,
+      "high": 7815.0,
+      "low": 7601.0,
+      "close": 7781.0
+    },
+    {
+      "date": "24-04-2026",
+      "open": 7814.0,
+      "high": 7845.0,
+      "low": 7684.5,
+      "close": 7732.5
+    },
+    {
+      "date": "27-04-2026",
+      "open": 7759.0,
+      "high": 7850.0,
+      "low": 7735.0,
+      "close": 7825.0
+    }
+  ]
+}
