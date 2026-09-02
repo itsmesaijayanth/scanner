@@ -2,7 +2,7 @@
 
 ## 1. Goal
 
-Build a small Python repository that downloads a rolling 30-day window of historical trade data for all Nifty 50 companies from NSE's internal quote API and stores the raw JSON responses in a predictable folder structure.
+Build a small Python repository that downloads the latest trading-day historical data for all Nifty 50 companies from NSE's internal quote API and stores each symbol's raw JSON object in a predictable folder structure.
 
 The scraper must not depend on pasted cookies. It should create a fresh NSE browser-like session each run, collect current cookies, call the API for every configured symbol, save the JSON data, and commit/push the new daily data from GitHub Actions.
 
@@ -14,6 +14,8 @@ A `uv`-managed Python project with:
 - A Nifty 50 symbol configuration file.
 - A command-line scraper.
 - Structured JSON output by symbol and run date.
+- Daily mode by default.
+- Window mode retained for future historical-window downloads.
 - Basic tests for date handling, path generation, and response saving.
 - A GitHub Actions workflow that runs every day at 4:30 PM India time and pushes newly downloaded data back to the repository.
 
@@ -124,21 +126,27 @@ nse-nifty50-scraper/
 
 ## 8. Data Output Structure
 
-For each run:
+For daily mode, each symbol is saved using the trade date from NSE's `mtimestamp` field:
 
 ```text
-data/raw/{SYMBOL}/DD-MM-YYYY/response.json
+data/raw/{SYMBOL}/YYYY/Mon/DD/response.json
 ```
 
 Example:
 
 ```text
-data/raw/SBIN/26-08-2026/response.json
-data/raw/RELIANCE/26-08-2026/response.json
-data/raw/TCS/26-08-2026/response.json
+data/raw/SBIN/2026/Aug/26/response.json
+data/raw/RELIANCE/2026/Aug/26/response.json
+data/raw/TCS/2026/Aug/26/response.json
 ```
 
-Each file stores one symbol's raw NSE response.
+Each file stores one symbol's latest daily object, not a full 30-day array.
+
+For future window mode, full API responses are saved under:
+
+```text
+data/raw/{SYMBOL}/windows/DD-MM-YYYY/response.json
+```
 
 Possible optional metadata file:
 
@@ -160,23 +168,25 @@ This can store:
 Primary command:
 
 ```bash
-uv run nse-fetch --from-date 26-07-2026 --to-date 26-08-2026
+uv run nse-fetch
 ```
 
 Useful options:
 
 ```bash
-uv run nse-fetch --symbols SBIN,TCS,RELIANCE --from-date 26-07-2026 --to-date 26-08-2026
-uv run nse-fetch --days 30
+uv run nse-fetch --symbols SBIN,TCS,RELIANCE
+uv run nse-fetch --mode daily --days 7
+uv run nse-fetch --mode window --from-date 26-07-2026 --to-date 26-08-2026
 uv run nse-fetch --output-dir data/raw
 ```
 
 Default behavior:
 
 - If no symbol is provided, fetch all symbols from `config/nifty50.json`.
-- If explicit dates are provided, use them.
-- If no dates are provided, use the last 30 calendar days ending today.
-- Save output under `data/raw/{symbol}/{run_date}/response.json`.
+- If no dates are provided, daily mode uses a short 7-day lookback ending today.
+- In daily mode, save only the newest row by `mtimestamp`.
+- In window mode, save the full JSON response for the requested window.
+- Save daily output under `data/raw/{symbol}/{year}/{month}/{day}/response.json`.
 
 ## 10. Nifty 50 Config Format
 
@@ -203,7 +213,7 @@ Workflow:
 3. Install uv.
 4. Sync dependencies.
 5. Run tests.
-6. Run scraper for all configured symbols.
+6. Run scraper in daily mode for all configured symbols.
 7. Commit changed files under `data/raw/` and `data/runs/`.
 8. Push commit back to the same branch.
 
@@ -258,7 +268,7 @@ Step 2:
 
 - Implement NSE client from the working sample.
 - Replace `urllib` with `httpx` for cleaner sessions and timeouts.
-- Store raw JSON.
+- Store raw JSON daily objects by NSE trade date.
 
 Step 3:
 
@@ -276,12 +286,13 @@ Step 5:
 
 ## 15. Open Questions Before Implementation
 
-1. Daily run should fetch a rolling 30-day window.
+1. Daily run should store only the latest trading-day row.
 2. Data will be committed into the same repository by GitHub Actions.
-3. Store one JSON file per symbol using `SYMBOL/DD-MM-YYYY/response.json`.
+3. Store one JSON file per symbol using `SYMBOL/YYYY/Mon/DD/response.json`.
 
 Implementation default:
 
-- Fetch last 30 calendar days every day.
+- Daily mode is the default.
+- Window mode remains available for future historical-window downloads.
 - Commit to the same branch.
 - Store one JSON file per symbol plus `data/runs/DD-MM-YYYY.json`.

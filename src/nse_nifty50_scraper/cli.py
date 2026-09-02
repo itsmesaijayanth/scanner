@@ -32,7 +32,11 @@ def fetch(
         str | None,
         typer.Option("--to-date", help="End date in DD-MM-YYYY format."),
     ] = None,
-    days: Annotated[int, typer.Option("--days", help="Rolling window size.")] = 30,
+    mode: Annotated[
+        str,
+        typer.Option("--mode", help="Use 'daily' for latest row or 'window' for full response."),
+    ] = "daily",
+    days: Annotated[int, typer.Option("--days", help="Lookback/window size.")] = 7,
     config: Annotated[
         Path,
         typer.Option("--config", help="Path to Nifty 50 symbol config."),
@@ -50,6 +54,9 @@ def fetch(
         typer.Option("--delay-seconds", help="Delay between symbol requests."),
     ] = 1.0,
 ) -> None:
+    if mode not in {"daily", "window"}:
+        raise typer.BadParameter("--mode must be either 'daily' or 'window'.")
+
     if from_date or to_date:
         if not from_date or not to_date:
             raise typer.BadParameter("Use both --from-date and --to-date, or neither.")
@@ -66,8 +73,8 @@ def fetch(
     run_date = today_ist()
 
     typer.echo(
-        f"Fetching {len(selected_symbols)} symbols for {format_nse_date(start)} "
-        f"to {format_nse_date(end)}"
+        f"Fetching {len(selected_symbols)} symbols in {mode} mode for "
+        f"{format_nse_date(start)} to {format_nse_date(end)}"
     )
     result = run_fetch(
         symbols=selected_symbols,
@@ -76,6 +83,7 @@ def fetch(
         output_dir=output_dir,
         runs_dir=runs_dir,
         run_date=run_date,
+        mode=mode,
         delay_seconds=delay_seconds,
     )
     typer.echo(f"Done: {result.succeeded} succeeded, {result.failed} failed")

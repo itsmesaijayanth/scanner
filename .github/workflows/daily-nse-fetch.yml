@@ -2,8 +2,8 @@ name: Daily NSE Fetch
 
 on:
   schedule:
-    - cron: "30 16 * * *"
-      timezone: "Asia/Kolkata"
+    # GitHub cron is UTC. 11:00 UTC is 4:30 PM Asia/Kolkata.
+    - cron: "0 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +29,7 @@ jobs:
         run: uv sync --locked
 
       - name: Fetch NSE data
-        run: uv run nse-fetch --days 30
+        run: uv run nse-fetch --mode daily --days 7
 
       - name: Detect data changes
         id: changes
