@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "httpx>=0.28.1",
     "pydantic>=2.11.0",
+    "pymongo>=4.13.0",
     "python-dateutil>=2.9.0.post0",
     "typer>=0.16.0",
 ]
@@ -14,10 +15,12 @@ dependencies = [
 [project.scripts]
 nse-fetch = "nse_nifty50_scraper.cli:main"
 nse-seed-history = "nse_nifty50_scraper.seed:main"
+nse-mongo-seed = "nse_nifty50_scraper.mongo_seed:main"
 swing-momentum = "nse_nifty50_scraper.algo.cli:main"
 
 [dependency-groups]
 dev = [
+    "mongomock>=4.3.0",
     "pytest>=8.4.0",
     "ruff>=0.12.0",
 ]

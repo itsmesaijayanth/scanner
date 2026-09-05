@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import datetime as dt
-import json
 import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -9,12 +8,13 @@ from typing import Any
 
 from nse_nifty50_scraper.config import SymbolConfig
 from nse_nifty50_scraper.dates import format_nse_date, parse_nse_timestamp
-from nse_nifty50_scraper.nse_client import NSEClient, NSEClientError
-from nse_nifty50_scraper.paths import (
-    run_summary_path,
-    symbol_daily_response_path,
-    symbol_window_response_path,
+from nse_nifty50_scraper.db.persist import (
+    persist_daily_bar,
+    persist_run_summary,
+    persist_window_response,
 )
+from nse_nifty50_scraper.nse_client import NSEClient, NSEClientError
+from nse_nifty50_scraper.paths import run_summary_path
 
 
 @dataclass
@@ -39,8 +39,10 @@ class RunResult:
 
 
 def write_json(path: Path, data: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    """Backward-compatible wrapper around json_io.write_json."""
+    from nse_nifty50_scraper.json_io import write_json as _write_json
+
+    _write_json(path, data)
 
 
 def latest_daily_record(data: Any) -> tuple[dict[str, Any], dt.date]:
@@ -87,8 +89,7 @@ def run_fetch(
 
                 if mode == "daily":
                     record, trade_date = latest_daily_record(data)
-                    path = symbol_daily_response_path(output_dir, symbol.symbol, trade_date)
-                    write_json(path, record)
+                    path = persist_daily_bar(output_dir, symbol.symbol, trade_date, record)
                     results.append(
                         SymbolResult(
                             symbol=symbol.symbol,
@@ -98,8 +99,7 @@ def run_fetch(
                         )
                     )
                 elif mode == "window":
-                    path = symbol_window_response_path(output_dir, symbol.symbol, run_date)
-                    write_json(path, data)
+                    path = persist_window_response(output_dir, symbol.symbol, run_date, data)
                     results.append(
                         SymbolResult(symbol=symbol.symbol, status="success", path=str(path))
                     )
@@ -121,7 +121,12 @@ def run_fetch(
         results=results,
     )
 
-    write_json(run_summary_path(runs_dir, run_date), asdict(summary))
+    persist_run_summary(
+        run_summary_path(runs_dir, run_date),
+        run_date,
+        asdict(summary),
+        kind="fetch",
+    )
 
     if symbols and failed / len(symbols) * 100 >= fail_threshold_percent:
         raise RuntimeError(f"Too many symbols failed: {failed}/{len(symbols)}")

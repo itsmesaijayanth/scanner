@@ -10,8 +10,8 @@ from nse_nifty50_scraper.algo.models import DailyRow
 from nse_nifty50_scraper.algo.swing_momentum import ALGORITHM_NAME, analyze_swing_momentum
 from nse_nifty50_scraper.config import SymbolConfig
 from nse_nifty50_scraper.dates import format_nse_date
+from nse_nifty50_scraper.db.persist import persist_algo_result, persist_run_summary
 from nse_nifty50_scraper.paths import algorithm_window_response_path
-from nse_nifty50_scraper.runner import write_json
 
 
 @dataclass
@@ -87,11 +87,17 @@ def _run_symbol(
                 window_end_date=output_end,
             )
 
-        write_json(path, analysis)
+        written = persist_algo_result(
+            output_dir,
+            ALGORITHM_NAME,
+            symbol.symbol,
+            output_end_date,
+            analysis,
+        )
         return AlgoSymbolResult(
             symbol=symbol.symbol,
             status="success",
-            path=str(path),
+            path=str(written),
             window_end_date=output_end,
         )
     except ValueError as exc:
@@ -146,7 +152,12 @@ def run_swing_momentum(
         results=results,
     )
     if write_summary:
-        write_json(runs_dir / f"{ALGORITHM_NAME}-{format_nse_date(run_date)}.json", asdict(summary))
+        persist_run_summary(
+            runs_dir / f"{ALGORITHM_NAME}-{format_nse_date(run_date)}.json",
+            run_date,
+            asdict(summary),
+            kind=ALGORITHM_NAME,
+        )
     return summary
 
 
@@ -216,8 +227,10 @@ def backfill_swing_momentum(
         failed=total_failed,
         skipped=total_skipped,
     )
-    write_json(
+    persist_run_summary(
         runs_dir / f"{ALGORITHM_NAME}-backfill-{format_nse_date(run_date)}.json",
+        run_date,
         asdict(summary),
+        kind=f"{ALGORITHM_NAME}_backfill",
     )
     return summary

@@ -65,6 +65,47 @@ Seed selected symbols first while testing:
 uv run nse-seed-history --symbols SBIN,TCS --years 1 --chunk-days 90
 ```
 
+## MongoDB Dual Write
+
+JSON files remain the on-disk source of truth. When Mongo is enabled, fetch/seed/algo runs also upsert into MongoDB.
+
+Collections:
+
+- `daily_bars` — one document per `symbol + trade_date`
+- `algo_results` — one document per `algorithm + symbol + window_end_date`
+- `runs` — fetch/seed/algo run summaries
+
+Enable Mongo by setting either `MONGO_URI` or `MONGO_ENABLED=true`:
+
+```bash
+export MONGO_URI="mongodb://localhost:27017"
+export MONGO_DB="nse_scanner"          # optional
+export MONGO_STRICT="false"            # optional; true raises on write failures
+```
+
+After enabling, normal commands dual-write automatically:
+
+```bash
+uv run nse-fetch
+uv run swing-momentum
+```
+
+### Seed Existing JSON Into Mongo
+
+Import already-downloaded JSON (idempotent bulk upserts):
+
+```bash
+uv run nse-mongo-seed
+```
+
+Useful options:
+
+```bash
+uv run nse-mongo-seed --only raw
+uv run nse-mongo-seed --only algo
+uv run nse-mongo-seed --symbols SBIN,TCS --batch-size 1000
+```
+
 ## Run Swing Momentum Algorithm
 
 Run the 30-calendar-day swing momentum algorithm for all configured symbols:

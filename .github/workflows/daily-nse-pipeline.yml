@@ -15,6 +15,10 @@ jobs:
   pipeline:
     name: Fetch NSE Data and Run Swing Momentum
     runs-on: ubuntu-latest
+    env:
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+      MONGO_DB: nse_scanner
+      MONGO_STRICT: "true"
 
     steps:
       - name: Checkout repository
@@ -29,6 +33,14 @@ jobs:
 
       - name: Install dependencies
         run: uv sync --locked
+
+      - name: Verify MongoDB connection
+        run: |
+          uv run python -c "
+          from nse_nifty50_scraper.db.connection import MongoConnection
+          MongoConnection().ping()
+          print('Mongo OK')
+          "
 
       - name: Fetch NSE data
         run: uv run nse-fetch --mode daily --days 7
