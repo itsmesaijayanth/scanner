@@ -15,9 +15,8 @@ from nse_nifty50_scraper.dates import (
     parse_nse_timestamp,
     today_ist,
 )
+from nse_nifty50_scraper.db.persist import persist_daily_bar, persist_run_summary
 from nse_nifty50_scraper.nse_client import NSEClient, NSEClientError
-from nse_nifty50_scraper.paths import symbol_daily_response_path
-from nse_nifty50_scraper.runner import write_json
 
 app = typer.Typer(help="Seed historical NSE rows into daily JSON files.")
 
@@ -83,8 +82,7 @@ def save_rows(output_dir: Path, symbol: str, rows: list[dict[str, Any]]) -> int:
             continue
 
         trade_date = parse_nse_timestamp(timestamp)
-        path = symbol_daily_response_path(output_dir, symbol, trade_date)
-        write_json(path, row)
+        persist_daily_bar(output_dir, symbol, trade_date, row)
         saved += 1
 
     return saved
@@ -146,7 +144,12 @@ def seed_history(
         symbols=len(selected_symbols),
         chunks=chunk_results,
     )
-    write_json(runs_dir / f"seed-{result.run_date}.json", asdict(result))
+    persist_run_summary(
+        runs_dir / f"seed-{result.run_date}.json",
+        today_ist(),
+        asdict(result),
+        kind="seed",
+    )
     return result
 
 

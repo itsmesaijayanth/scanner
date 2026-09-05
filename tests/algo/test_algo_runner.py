@@ -127,9 +127,7 @@ def test_backfill_swing_momentum_processes_all_trading_dates(tmp_path):
     assert (
         output_dir / "swing_momentum" / "SBIN" / "2026" / "Aug" / "01" / "window" / "response.json"
     ).exists()
-    assert (
-        runs_dir / "swing_momentum-backfill-04-08-2026.json"
-    ).exists()
+    assert (runs_dir / "swing_momentum-backfill-04-08-2026.json").exists()
 
 
 def test_backfill_swing_momentum_resumes_existing_outputs(tmp_path):
