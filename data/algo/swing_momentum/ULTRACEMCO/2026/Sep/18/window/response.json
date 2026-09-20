@@ -1,0 +1,197 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "ULTRACEMCO",
+  "window": {
+    "start_date": "19-08-2026",
+    "end_date": "18-09-2026",
+    "calendar_days": 30,
+    "trading_rows": 14
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "26-08-2026",
+      "price": 11820.0,
+      "distance_to_current_trading_rows": 8
+    },
+    "monthly_low": {
+      "date": "18-09-2026",
+      "price": 10819.0,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "18-09-2026",
+      "open": 10890.0,
+      "high": 11060.0,
+      "low": 10819.0,
+      "close": 11014.0
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "19-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 11499.0,
+        "high": 11499.0,
+        "low": 11396.0,
+        "close": 11450.0
+      },
+      {
+        "date": "26-08-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 11580.0,
+        "high": 11820.0,
+        "low": 11580.0,
+        "close": 11717.0
+      },
+      {
+        "date": "27-08-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 11674.0,
+        "high": 11815.0,
+        "low": 11674.0,
+        "close": 11717.0
+      },
+      {
+        "date": "03-09-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 11450.0,
+        "high": 11450.0,
+        "low": 11275.0,
+        "close": 11275.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 11820.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 10819.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 10819.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "19-08-2026",
+      "open": 11499.0,
+      "high": 11499.0,
+      "low": 11396.0,
+      "close": 11450.0
+    },
+    {
+      "date": "20-08-2026",
+      "open": 11500.0,
+      "high": 11643.0,
+      "low": 11422.0,
+      "close": 11575.0
+    },
+    {
+      "date": "21-08-2026",
+      "open": 11549.0,
+      "high": 11620.0,
+      "low": 11526.0,
+      "close": 11570.0
+    },
+    {
+      "date": "24-08-2026",
+      "open": 11566.0,
+      "high": 11606.0,
+      "low": 11484.0,
+      "close": 11504.0
+    },
+    {
+      "date": "25-08-2026",
+      "open": 11505.0,
+      "high": 11554.0,
+      "low": 11445.0,
+      "close": 11540.0
+    },
+    {
+      "date": "26-08-2026",
+      "open": 11580.0,
+      "high": 11820.0,
+      "low": 11580.0,
+      "close": 11717.0
+    },
+    {
+      "date": "27-08-2026",
+      "open": 11674.0,
+      "high": 11815.0,
+      "low": 11674.0,
+      "close": 11717.0
+    },
+    {
+      "date": "28-08-2026",
+      "open": 11705.0,
+      "high": 11746.0,
+      "low": 11523.0,
+      "close": 11589.0
+    },
+    {
+      "date": "31-08-2026",
+      "open": 11550.0,
+      "high": 11560.0,
+      "low": 11415.0,
+      "close": 11450.0
+    },
+    {
+      "date": "01-09-2026",
+      "open": 11450.0,
+      "high": 11550.0,
+      "low": 11390.0,
+      "close": 11400.0
+    },
+    {
+      "date": "02-09-2026",
+      "open": 11350.0,
+      "high": 11398.0,
+      "low": 11180.0,
+      "close": 11393.0
+    },
+    {
+      "date": "03-09-2026",
+      "open": 11450.0,
+      "high": 11450.0,
+      "low": 11275.0,
+      "close": 11275.0
+    },
+    {
+      "date": "04-09-2026",
+      "open": 11357.0,
+      "high": 11434.0,
+      "low": 11292.0,
+      "close": 11408.0
+    },
+    {
+      "date": "18-09-2026",
+      "open": 10890.0,
+      "high": 11060.0,
+      "low": 10819.0,
+      "close": 11014.0
+    }
+  ]
+}

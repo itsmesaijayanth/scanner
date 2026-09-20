@@ -1,0 +1,170 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "APOLLOHOSP",
+  "window": {
+    "start_date": "19-08-2026",
+    "end_date": "18-09-2026",
+    "calendar_days": 30,
+    "trading_rows": 14
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "18-09-2026",
+      "price": 8944.5,
+      "distance_to_current_trading_rows": 0
+    },
+    "monthly_low": {
+      "date": "24-08-2026",
+      "price": 8591.5,
+      "distance_to_current_trading_rows": 10
+    },
+    "current": {
+      "date": "18-09-2026",
+      "open": 8800.0,
+      "high": 8944.5,
+      "low": 8798.0,
+      "close": 8944.5
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "20-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 8788.0,
+        "high": 8788.0,
+        "low": 8679.5,
+        "close": 8735.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 8591.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 8944.5
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 8944.5
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "19-08-2026",
+      "open": 8817.0,
+      "high": 8862.5,
+      "low": 8695.5,
+      "close": 8750.0
+    },
+    {
+      "date": "20-08-2026",
+      "open": 8788.0,
+      "high": 8788.0,
+      "low": 8679.5,
+      "close": 8735.0
+    },
+    {
+      "date": "21-08-2026",
+      "open": 8727.0,
+      "high": 8746.0,
+      "low": 8638.0,
+      "close": 8693.0
+    },
+    {
+      "date": "24-08-2026",
+      "open": 8680.0,
+      "high": 8702.0,
+      "low": 8591.5,
+      "close": 8702.0
+    },
+    {
+      "date": "25-08-2026",
+      "open": 8663.0,
+      "high": 8889.0,
+      "low": 8640.0,
+      "close": 8889.0
+    },
+    {
+      "date": "26-08-2026",
+      "open": 8844.5,
+      "high": 8868.0,
+      "low": 8763.5,
+      "close": 8766.5
+    },
+    {
+      "date": "27-08-2026",
+      "open": 8849.0,
+      "high": 8868.0,
+      "low": 8758.5,
+      "close": 8800.0
+    },
+    {
+      "date": "28-08-2026",
+      "open": 8848.0,
+      "high": 8905.0,
+      "low": 8818.5,
+      "close": 8838.5
+    },
+    {
+      "date": "31-08-2026",
+      "open": 8850.0,
+      "high": 8902.0,
+      "low": 8813.0,
+      "close": 8898.5
+    },
+    {
+      "date": "01-09-2026",
+      "open": 8854.5,
+      "high": 8867.5,
+      "low": 8704.5,
+      "close": 8755.0
+    },
+    {
+      "date": "02-09-2026",
+      "open": 8680.0,
+      "high": 8746.5,
+      "low": 8640.0,
+      "close": 8719.0
+    },
+    {
+      "date": "03-09-2026",
+      "open": 8690.0,
+      "high": 8785.5,
+      "low": 8655.5,
+      "close": 8692.0
+    },
+    {
+      "date": "04-09-2026",
+      "open": 8702.5,
+      "high": 8740.0,
+      "low": 8641.0,
+      "close": 8650.0
+    },
+    {
+      "date": "18-09-2026",
+      "open": 8800.0,
+      "high": 8944.5,
+      "low": 8798.0,
+      "close": 8944.5
+    }
+  ]
+}
