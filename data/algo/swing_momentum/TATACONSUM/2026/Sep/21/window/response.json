@@ -1,0 +1,174 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "TATACONSUM",
+  "window": {
+    "start_date": "22-08-2026",
+    "end_date": "21-09-2026",
+    "calendar_days": 30,
+    "trading_rows": 12
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "26-08-2026",
+      "price": 1063.5,
+      "distance_to_current_trading_rows": 9
+    },
+    "monthly_low": {
+      "date": "18-09-2026",
+      "price": 996.0,
+      "distance_to_current_trading_rows": 1
+    },
+    "current": {
+      "date": "21-09-2026",
+      "open": 998.9,
+      "high": 1015.5,
+      "low": 997.2,
+      "close": 1000.6
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "25-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1061.7,
+        "high": 1061.7,
+        "low": 1051.1,
+        "close": 1060.5
+      },
+      {
+        "date": "26-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1063.5,
+        "high": 1063.5,
+        "low": 1039.6,
+        "close": 1047.1
+      },
+      {
+        "date": "28-08-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 1047.0,
+        "high": 1047.0,
+        "low": 1030.4,
+        "close": 1040.7
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 1063.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 996.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 996.0
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "24-08-2026",
+      "open": 1049.0,
+      "high": 1062.5,
+      "low": 1041.8,
+      "close": 1062.5
+    },
+    {
+      "date": "25-08-2026",
+      "open": 1061.7,
+      "high": 1061.7,
+      "low": 1051.1,
+      "close": 1060.5
+    },
+    {
+      "date": "26-08-2026",
+      "open": 1063.5,
+      "high": 1063.5,
+      "low": 1039.6,
+      "close": 1047.1
+    },
+    {
+      "date": "27-08-2026",
+      "open": 1041.0,
+      "high": 1048.4,
+      "low": 1035.6,
+      "close": 1042.0
+    },
+    {
+      "date": "28-08-2026",
+      "open": 1047.0,
+      "high": 1047.0,
+      "low": 1030.4,
+      "close": 1040.7
+    },
+    {
+      "date": "31-08-2026",
+      "open": 1036.4,
+      "high": 1045.1,
+      "low": 1028.0,
+      "close": 1037.5
+    },
+    {
+      "date": "01-09-2026",
+      "open": 1037.5,
+      "high": 1041.8,
+      "low": 1025.1,
+      "close": 1030.5
+    },
+    {
+      "date": "02-09-2026",
+      "open": 1025.5,
+      "high": 1027.4,
+      "low": 1008.3,
+      "close": 1012.0
+    },
+    {
+      "date": "03-09-2026",
+      "open": 1012.5,
+      "high": 1023.0,
+      "low": 1008.0,
+      "close": 1019.2
+    },
+    {
+      "date": "04-09-2026",
+      "open": 1020.0,
+      "high": 1022.9,
+      "low": 1008.5,
+      "close": 1010.0
+    },
+    {
+      "date": "18-09-2026",
+      "open": 1016.2,
+      "high": 1018.7,
+      "low": 996.0,
+      "close": 996.0
+    },
+    {
+      "date": "21-09-2026",
+      "open": 998.9,
+      "high": 1015.5,
+      "low": 997.2,
+      "close": 1000.6
+    }
+  ]
+}
