@@ -1,0 +1,170 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "KOTAKBANK",
+  "window": {
+    "start_date": "25-08-2026",
+    "end_date": "24-09-2026",
+    "calendar_days": 30,
+    "trading_rows": 14
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "01-09-2026",
+      "price": 429.1,
+      "distance_to_current_trading_rows": 8
+    },
+    "monthly_low": {
+      "date": "25-08-2026",
+      "price": 398.15,
+      "distance_to_current_trading_rows": 13
+    },
+    "current": {
+      "date": "24-09-2026",
+      "open": 407.0,
+      "high": 410.0,
+      "low": 404.3,
+      "close": 405.0
+    }
+  },
+  "signals": {
+    "active_signal": null,
+    "strength": "none",
+    "events": [
+      {
+        "date": "04-09-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 421.65,
+        "high": 425.95,
+        "low": 421.65,
+        "close": 424.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 398.15
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 429.1
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 429.1
+    }
+  },
+  "verdict": {
+    "state": "unconfirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "No active momentum signal aligned with the trend."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "25-08-2026",
+      "open": 398.3,
+      "high": 402.05,
+      "low": 398.15,
+      "close": 401.6
+    },
+    {
+      "date": "26-08-2026",
+      "open": 402.5,
+      "high": 417.45,
+      "low": 401.0,
+      "close": 416.7
+    },
+    {
+      "date": "27-08-2026",
+      "open": 415.75,
+      "high": 427.7,
+      "low": 415.0,
+      "close": 424.2
+    },
+    {
+      "date": "28-08-2026",
+      "open": 424.6,
+      "high": 426.2,
+      "low": 421.0,
+      "close": 423.7
+    },
+    {
+      "date": "31-08-2026",
+      "open": 421.0,
+      "high": 425.05,
+      "low": 419.4,
+      "close": 419.4
+    },
+    {
+      "date": "01-09-2026",
+      "open": 420.8,
+      "high": 429.1,
+      "low": 420.75,
+      "close": 425.0
+    },
+    {
+      "date": "02-09-2026",
+      "open": 421.9,
+      "high": 425.75,
+      "low": 418.95,
+      "close": 423.5
+    },
+    {
+      "date": "03-09-2026",
+      "open": 425.0,
+      "high": 426.9,
+      "low": 421.15,
+      "close": 421.15
+    },
+    {
+      "date": "04-09-2026",
+      "open": 421.65,
+      "high": 425.95,
+      "low": 421.65,
+      "close": 424.5
+    },
+    {
+      "date": "18-09-2026",
+      "open": 415.5,
+      "high": 419.2,
+      "low": 412.5,
+      "close": 412.5
+    },
+    {
+      "date": "21-09-2026",
+      "open": 415.2,
+      "high": 420.6,
+      "low": 414.55,
+      "close": 414.8
+    },
+    {
+      "date": "22-09-2026",
+      "open": 416.5,
+      "high": 417.8,
+      "low": 412.55,
+      "close": 412.65
+    },
+    {
+      "date": "23-09-2026",
+      "open": 414.65,
+      "high": 417.25,
+      "low": 411.35,
+      "close": 413.25
+    },
+    {
+      "date": "24-09-2026",
+      "open": 407.0,
+      "high": 410.0,
+      "low": 404.3,
+      "close": 405.0
+    }
+  ]
+}
