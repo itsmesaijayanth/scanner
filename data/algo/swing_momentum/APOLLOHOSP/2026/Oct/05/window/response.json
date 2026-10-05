@@ -1,0 +1,158 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "APOLLOHOSP",
+  "window": {
+    "start_date": "05-09-2026",
+    "end_date": "05-10-2026",
+    "calendar_days": 30,
+    "trading_rows": 11
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "23-09-2026",
+      "price": 9070.5,
+      "distance_to_current_trading_rows": 7
+    },
+    "monthly_low": {
+      "date": "05-10-2026",
+      "price": 7880.5,
+      "distance_to_current_trading_rows": 0
+    },
+    "current": {
+      "date": "05-10-2026",
+      "open": 7880.5,
+      "high": 8076.0,
+      "low": 7880.5,
+      "close": 7985.0
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "strong",
+    "events": [
+      {
+        "date": "24-09-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 9069.0,
+        "high": 9069.0,
+        "low": 8888.5,
+        "close": 8888.5
+      },
+      {
+        "date": "05-10-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 7880.5,
+        "high": 8076.0,
+        "low": 7880.5,
+        "close": 7985.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 9070.5
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 7880.5
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 7880.5
+    }
+  },
+  "verdict": {
+    "state": "confirmed_uptrend",
+    "confidence": "high",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with strong strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "18-09-2026",
+      "open": 8800.0,
+      "high": 8944.5,
+      "low": 8798.0,
+      "close": 8944.5
+    },
+    {
+      "date": "21-09-2026",
+      "open": 8889.0,
+      "high": 8974.5,
+      "low": 8826.5,
+      "close": 8912.0
+    },
+    {
+      "date": "22-09-2026",
+      "open": 8960.0,
+      "high": 9000.0,
+      "low": 8822.5,
+      "close": 8835.5
+    },
+    {
+      "date": "23-09-2026",
+      "open": 8875.0,
+      "high": 9070.5,
+      "low": 8865.0,
+      "close": 9069.0
+    },
+    {
+      "date": "24-09-2026",
+      "open": 9069.0,
+      "high": 9069.0,
+      "low": 8888.5,
+      "close": 8888.5
+    },
+    {
+      "date": "25-09-2026",
+      "open": 8891.0,
+      "high": 8934.5,
+      "low": 8821.5,
+      "close": 8889.0
+    },
+    {
+      "date": "28-09-2026",
+      "open": 8889.0,
+      "high": 8902.5,
+      "low": 8804.0,
+      "close": 8860.0
+    },
+    {
+      "date": "29-09-2026",
+      "open": 8885.0,
+      "high": 8906.0,
+      "low": 8657.5,
+      "close": 8659.0
+    },
+    {
+      "date": "30-09-2026",
+      "open": 8582.0,
+      "high": 8659.0,
+      "low": 8053.0,
+      "close": 8165.5
+    },
+    {
+      "date": "01-10-2026",
+      "open": 8090.0,
+      "high": 8135.0,
+      "low": 7910.0,
+      "close": 8133.5
+    },
+    {
+      "date": "05-10-2026",
+      "open": 7880.5,
+      "high": 8076.0,
+      "low": 7880.5,
+      "close": 7985.0
+    }
+  ]
+}
