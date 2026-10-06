@@ -1,0 +1,156 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "BAJAJ-AUTO",
+  "window": {
+    "start_date": "06-09-2026",
+    "end_date": "06-10-2026",
+    "calendar_days": 30,
+    "trading_rows": 12
+  },
+  "trend": {
+    "direction": "UpTrend",
+    "reason": "monthly_low_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "18-09-2026",
+      "price": 11540.0,
+      "distance_to_current_trading_rows": 11
+    },
+    "monthly_low": {
+      "date": "01-10-2026",
+      "price": 9900.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "current": {
+      "date": "06-10-2026",
+      "open": 10050.0,
+      "high": 10062.0,
+      "low": 9955.0,
+      "close": 10017.0
+    }
+  },
+  "signals": {
+    "active_signal": "bullish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "30-09-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 10779.0,
+        "high": 10953.0,
+        "low": 10779.0,
+        "close": 10874.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_high",
+    "target_reference": {
+      "label": "monthly_high",
+      "price": 11540.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_low",
+      "price": 9900.0
+    },
+    "risk_reference": {
+      "label": "monthly_low",
+      "price": 9900.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_uptrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is UpTrend because monthly_low_is_closer_to_current_day.",
+      "Active signal is bullish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "18-09-2026",
+      "open": 11501.0,
+      "high": 11540.0,
+      "low": 11406.0,
+      "close": 11414.0
+    },
+    {
+      "date": "21-09-2026",
+      "open": 11470.0,
+      "high": 11533.0,
+      "low": 11450.0,
+      "close": 11460.0
+    },
+    {
+      "date": "22-09-2026",
+      "open": 11460.0,
+      "high": 11515.0,
+      "low": 11281.0,
+      "close": 11363.0
+    },
+    {
+      "date": "23-09-2026",
+      "open": 11363.0,
+      "high": 11425.0,
+      "low": 11293.0,
+      "close": 11400.0
+    },
+    {
+      "date": "24-09-2026",
+      "open": 11341.0,
+      "high": 11383.0,
+      "low": 11201.0,
+      "close": 11208.0
+    },
+    {
+      "date": "25-09-2026",
+      "open": 11245.0,
+      "high": 11332.0,
+      "low": 11212.0,
+      "close": 11281.0
+    },
+    {
+      "date": "28-09-2026",
+      "open": 11250.0,
+      "high": 11270.0,
+      "low": 10953.0,
+      "close": 11024.0
+    },
+    {
+      "date": "29-09-2026",
+      "open": 11016.0,
+      "high": 11020.0,
+      "low": 10805.0,
+      "close": 10811.0
+    },
+    {
+      "date": "30-09-2026",
+      "open": 10779.0,
+      "high": 10953.0,
+      "low": 10779.0,
+      "close": 10874.0
+    },
+    {
+      "date": "01-10-2026",
+      "open": 10701.0,
+      "high": 10714.0,
+      "low": 9900.0,
+      "close": 10045.0
+    },
+    {
+      "date": "05-10-2026",
+      "open": 10036.0,
+      "high": 10089.0,
+      "low": 9920.0,
+      "close": 10024.0
+    },
+    {
+      "date": "06-10-2026",
+      "open": 10050.0,
+      "high": 10062.0,
+      "low": 9955.0,
+      "close": 10017.0
+    }
+  ]
+}
