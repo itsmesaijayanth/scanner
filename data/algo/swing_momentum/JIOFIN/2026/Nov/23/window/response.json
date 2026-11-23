@@ -1,0 +1,237 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "JIOFIN",
+  "window": {
+    "start_date": "24-10-2026",
+    "end_date": "23-11-2026",
+    "calendar_days": 30,
+    "trading_rows": 21
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "11-11-2026",
+      "price": 233.87,
+      "distance_to_current_trading_rows": 8
+    },
+    "monthly_low": {
+      "date": "26-10-2026",
+      "price": 202.6,
+      "distance_to_current_trading_rows": 20
+    },
+    "current": {
+      "date": "23-11-2026",
+      "open": 225.55,
+      "high": 228.4,
+      "low": 219.32,
+      "close": 219.7
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "30-10-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 207.0,
+        "high": 207.0,
+        "low": 204.5,
+        "close": 204.5
+      },
+      {
+        "date": "08-11-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 232.9,
+        "high": 232.9,
+        "low": 229.55,
+        "close": 230.0
+      },
+      {
+        "date": "18-11-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 228.0,
+        "high": 228.0,
+        "low": 222.61,
+        "close": 224.5
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 202.6
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 233.87
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 233.87
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "26-10-2026",
+      "open": 204.9,
+      "high": 206.16,
+      "low": 202.6,
+      "close": 205.23
+    },
+    {
+      "date": "27-10-2026",
+      "open": 205.4,
+      "high": 208.0,
+      "low": 204.3,
+      "close": 207.24
+    },
+    {
+      "date": "28-10-2026",
+      "open": 207.24,
+      "high": 208.75,
+      "low": 204.16,
+      "close": 205.15
+    },
+    {
+      "date": "29-10-2026",
+      "open": 205.25,
+      "high": 207.8,
+      "low": 204.58,
+      "close": 207.0
+    },
+    {
+      "date": "30-10-2026",
+      "open": 207.0,
+      "high": 207.0,
+      "low": 204.5,
+      "close": 204.5
+    },
+    {
+      "date": "02-11-2026",
+      "open": 206.95,
+      "high": 213.94,
+      "low": 206.56,
+      "close": 213.25
+    },
+    {
+      "date": "03-11-2026",
+      "open": 215.0,
+      "high": 216.44,
+      "low": 212.8,
+      "close": 214.27
+    },
+    {
+      "date": "04-11-2026",
+      "open": 213.5,
+      "high": 222.83,
+      "low": 212.51,
+      "close": 222.27
+    },
+    {
+      "date": "05-11-2026",
+      "open": 226.25,
+      "high": 231.45,
+      "low": 224.72,
+      "close": 229.62
+    },
+    {
+      "date": "06-11-2026",
+      "open": 226.0,
+      "high": 231.2,
+      "low": 225.29,
+      "close": 231.2
+    },
+    {
+      "date": "08-11-2026",
+      "open": 232.9,
+      "high": 232.9,
+      "low": 229.55,
+      "close": 230.0
+    },
+    {
+      "date": "09-11-2026",
+      "open": 230.0,
+      "high": 230.51,
+      "low": 227.12,
+      "close": 230.0
+    },
+    {
+      "date": "11-11-2026",
+      "open": 231.8,
+      "high": 233.87,
+      "low": 228.6,
+      "close": 230.6
+    },
+    {
+      "date": "12-11-2026",
+      "open": 229.7,
+      "high": 233.5,
+      "low": 228.62,
+      "close": 231.2
+    },
+    {
+      "date": "13-11-2026",
+      "open": 229.28,
+      "high": 229.4,
+      "low": 226.91,
+      "close": 227.5
+    },
+    {
+      "date": "16-11-2026",
+      "open": 228.0,
+      "high": 228.82,
+      "low": 225.6,
+      "close": 226.0
+    },
+    {
+      "date": "17-11-2026",
+      "open": 226.0,
+      "high": 230.69,
+      "low": 225.36,
+      "close": 228.96
+    },
+    {
+      "date": "18-11-2026",
+      "open": 228.0,
+      "high": 228.0,
+      "low": 222.61,
+      "close": 224.5
+    },
+    {
+      "date": "19-11-2026",
+      "open": 223.5,
+      "high": 226.8,
+      "low": 222.95,
+      "close": 226.8
+    },
+    {
+      "date": "20-11-2026",
+      "open": 225.0,
+      "high": 226.59,
+      "low": 223.81,
+      "close": 224.97
+    },
+    {
+      "date": "23-11-2026",
+      "open": 225.55,
+      "high": 228.4,
+      "low": 219.32,
+      "close": 219.7
+    }
+  ]
+}
