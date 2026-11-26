@@ -1,0 +1,253 @@
+{
+  "algorithm": "swing_momentum",
+  "version": "0.1.0",
+  "symbol": "MARUTI",
+  "window": {
+    "start_date": "27-10-2026",
+    "end_date": "26-11-2026",
+    "calendar_days": 30,
+    "trading_rows": 22
+  },
+  "trend": {
+    "direction": "DownTrend",
+    "reason": "monthly_high_is_closer_to_current_day",
+    "monthly_high": {
+      "date": "23-11-2026",
+      "price": 14333.0,
+      "distance_to_current_trading_rows": 2
+    },
+    "monthly_low": {
+      "date": "27-10-2026",
+      "price": 11190.0,
+      "distance_to_current_trading_rows": 21
+    },
+    "current": {
+      "date": "26-11-2026",
+      "open": 14132.0,
+      "high": 14165.0,
+      "low": 13912.0,
+      "close": 14015.0
+    }
+  },
+  "signals": {
+    "active_signal": "bearish_momentum",
+    "strength": "weak",
+    "events": [
+      {
+        "date": "29-10-2026",
+        "type": "bearish_momentum",
+        "rule": "open_equals_high",
+        "open": 11559.0,
+        "high": 11559.0,
+        "low": 11396.0,
+        "close": 11426.0
+      },
+      {
+        "date": "02-11-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 11545.0,
+        "high": 11769.0,
+        "low": 11545.0,
+        "close": 11672.0
+      },
+      {
+        "date": "08-11-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 12763.0,
+        "high": 12888.0,
+        "low": 12763.0,
+        "close": 12815.0
+      },
+      {
+        "date": "17-11-2026",
+        "type": "bullish_momentum",
+        "rule": "open_equals_low",
+        "open": 12600.0,
+        "high": 12815.0,
+        "low": 12600.0,
+        "close": 12625.0
+      }
+    ]
+  },
+  "levels": {
+    "expected_next_zone": "monthly_low",
+    "target_reference": {
+      "label": "monthly_low",
+      "price": 11190.0
+    },
+    "opposite_extreme": {
+      "label": "monthly_high",
+      "price": 14333.0
+    },
+    "risk_reference": {
+      "label": "monthly_high",
+      "price": 14333.0
+    }
+  },
+  "verdict": {
+    "state": "weakly_confirmed_downtrend",
+    "confidence": "low",
+    "notes": [
+      "Trend is DownTrend because monthly_high_is_closer_to_current_day.",
+      "Active signal is bearish_momentum with weak strength."
+    ]
+  },
+  "source_rows": [
+    {
+      "date": "27-10-2026",
+      "open": 11220.0,
+      "high": 11460.0,
+      "low": 11190.0,
+      "close": 11450.0
+    },
+    {
+      "date": "28-10-2026",
+      "open": 11469.0,
+      "high": 11616.0,
+      "low": 11250.0,
+      "close": 11579.0
+    },
+    {
+      "date": "29-10-2026",
+      "open": 11559.0,
+      "high": 11559.0,
+      "low": 11396.0,
+      "close": 11426.0
+    },
+    {
+      "date": "30-10-2026",
+      "open": 11430.0,
+      "high": 11473.0,
+      "low": 11342.0,
+      "close": 11397.0
+    },
+    {
+      "date": "02-11-2026",
+      "open": 11545.0,
+      "high": 11769.0,
+      "low": 11545.0,
+      "close": 11672.0
+    },
+    {
+      "date": "03-11-2026",
+      "open": 11751.0,
+      "high": 11902.0,
+      "low": 11675.0,
+      "close": 11869.0
+    },
+    {
+      "date": "04-11-2026",
+      "open": 11860.0,
+      "high": 11995.0,
+      "low": 11786.0,
+      "close": 11995.0
+    },
+    {
+      "date": "05-11-2026",
+      "open": 12279.0,
+      "high": 12681.0,
+      "low": 12250.0,
+      "close": 12652.0
+    },
+    {
+      "date": "06-11-2026",
+      "open": 12647.0,
+      "high": 12836.0,
+      "low": 12451.0,
+      "close": 12750.0
+    },
+    {
+      "date": "08-11-2026",
+      "open": 12763.0,
+      "high": 12888.0,
+      "low": 12763.0,
+      "close": 12815.0
+    },
+    {
+      "date": "09-11-2026",
+      "open": 12815.0,
+      "high": 12929.0,
+      "low": 12657.0,
+      "close": 12928.0
+    },
+    {
+      "date": "11-11-2026",
+      "open": 13100.0,
+      "high": 13205.0,
+      "low": 12992.0,
+      "close": 13185.0
+    },
+    {
+      "date": "12-11-2026",
+      "open": 13184.0,
+      "high": 13215.0,
+      "low": 12900.0,
+      "close": 13024.0
+    },
+    {
+      "date": "13-11-2026",
+      "open": 12901.0,
+      "high": 12978.0,
+      "low": 12786.0,
+      "close": 12854.0
+    },
+    {
+      "date": "16-11-2026",
+      "open": 12855.0,
+      "high": 12990.0,
+      "low": 12535.0,
+      "close": 12571.0
+    },
+    {
+      "date": "17-11-2026",
+      "open": 12600.0,
+      "high": 12815.0,
+      "low": 12600.0,
+      "close": 12625.0
+    },
+    {
+      "date": "18-11-2026",
+      "open": 12645.0,
+      "high": 12828.0,
+      "low": 12584.0,
+      "close": 12632.0
+    },
+    {
+      "date": "19-11-2026",
+      "open": 12632.0,
+      "high": 13617.0,
+      "low": 12602.0,
+      "close": 13589.0
+    },
+    {
+      "date": "20-11-2026",
+      "open": 13579.0,
+      "high": 14047.0,
+      "low": 13505.0,
+      "close": 14011.0
+    },
+    {
+      "date": "23-11-2026",
+      "open": 14225.0,
+      "high": 14333.0,
+      "low": 13989.0,
+      "close": 14010.0
+    },
+    {
+      "date": "25-11-2026",
+      "open": 14200.0,
+      "high": 14246.0,
+      "low": 14029.0,
+      "close": 14200.0
+    },
+    {
+      "date": "26-11-2026",
+      "open": 14132.0,
+      "high": 14165.0,
+      "low": 13912.0,
+      "close": 14015.0
+    }
+  ]
+}
